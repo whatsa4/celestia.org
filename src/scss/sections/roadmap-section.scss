@@ -1,0 +1,144 @@
+.roadmap-section{
+  .roadmap-items{
+    list-style:none;
+    width:1000%;
+    margin:0;
+    padding:0;
+
+    @include media-breakpoint-down(md) {
+      width:100%;
+      position:relative;
+    }
+
+    .roadmap-item{
+      width:2.5%;
+      float:left;
+
+      @include media-breakpoint-down(md) {
+        width:100%;
+        float:none;
+      }
+
+      &:nth-child(2n+0){
+        margin-top:200px;
+        padding-top:85px;
+
+        @include media-breakpoint-down(lg) {
+          margin-top:175px;
+        }
+
+        @include media-breakpoint-down(md) {
+          margin-top:unset;
+          padding-top:unset;
+        }
+
+        .box{
+          top:-25px;
+
+          @include media-breakpoint-down(md) {
+            top:unset;
+            padding-top:8px;
+          }
+        }
+
+        .circle{
+          top:0;
+
+          &:before{
+            height:1px;
+            width:480%;
+            content:'';
+            position:absolute;
+            transform:translateX(-100%) rotate(20deg);
+            left: 18px;
+            top: -20px;
+            z-index:0;
+            border-bottom:1px solid #000;
+
+            @include media-breakpoint-down(xl) {
+              width:20vw;
+            }
+
+            @include media-breakpoint-down(md) {
+              display:none;
+            }
+
+          }
+        }
+      }
+
+      &:nth-child(2n+1){
+
+        .box{
+          @include media-breakpoint-down(md) {
+            padding-top:8px;
+          }
+        }
+
+        .circle{
+
+          &:before{
+            height:1px;
+            width:480%;
+            content:'';
+            position:absolute;
+            transform:translateX(-100%) rotate(-20deg);
+            left: 18px;
+            top: 85px;
+            z-index:0;
+            border-bottom:1px solid #000;
+
+            @include media-breakpoint-down(xl) {
+              width:20vw;
+            }
+
+            @include media-breakpoint-down(md) {
+              display:none;
+            }
+
+          }
+        }
+      }
+
+      &:nth-child(1){
+        .circle{
+          &:before{
+            display:none;
+          }
+        }
+      }
+
+      &:last-child{
+        .circle{
+          &:before{
+            border-bottom:1px dotted #000;
+          }
+        }
+      }
+
+      &:before{
+        @include media-breakpoint-down(md) {
+          width:1px;
+          height:100%;
+          background:#000000;
+          position:absolute;
+          content:'';
+          left:30px;
+          top:40px;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        &:last-child{
+          &:before{
+            display:none;
+          }
+
+          .box{
+            padding-bottom:0;
+          }
+        }
+      }
+    }
+  }
+}

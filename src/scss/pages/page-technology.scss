@@ -1,0 +1,57 @@
+.technology-page{
+  background:url(../images/BG/technology.png) no-repeat scroll top 100vw right transparent;
+
+  @include media-breakpoint-down(xl) {
+    background-position: top 110vw right;
+  }
+  @include media-breakpoint-down(lg) {
+    background-position: top 1500px right;
+  }
+  @include media-breakpoint-down(md) {
+    background-position: top 1700px right;
+  }
+  @include media-breakpoint-down(sm) {
+    background-position: top 2500px right;
+  }
+
+  h1.main{
+    @include media-breakpoint-down(sm) {
+      margin-bottom:20px;
+    }
+  }
+  h5.main{
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: 34px;
+    max-width:990px;
+    font-weight:500;
+
+    @include media-breakpoint-down(md) {
+      font-size: 28px;
+      letter-spacing: 0.37px;
+      line-height: 32px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+      letter-spacing: 0.26px;
+      line-height: 22px;
+    }
+  }
+
+  h4.main{
+    max-width:880px;
+  }
+
+  .column-section{
+    .subtitle{
+      font-family: $inter;
+      font-weight:300;
+      font-size: 16px;
+      color: #414141;
+      letter-spacing: -0.1px;
+      line-height: 24px;
+      margin-top:20px;
+      max-width:880px;
+    }
+  }
+}

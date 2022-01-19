@@ -1,0 +1,72 @@
+.image-section{
+  width:100%;
+  position:relative;
+  padding:140px 0;
+
+  .bg{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+
+    .gatsby-image-wrapper{
+      position:absolute !important;
+      left:0;
+      top:0;
+      right:0;
+      bottom:0;
+      z-index:0;
+    }
+
+    .watermark{
+      position:absolute;
+      right:0;
+      bottom:-50px;
+      background:url(../images/watermark.png) no-repeat scroll center center transparent;
+      width:280px;
+      height:280px;
+      background-size:contain;
+      z-index:2;
+    }
+  }
+
+  .overlay{
+    background: rgba(22,21,22,0.80);
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+  }
+
+  .inner{
+    z-index:2;
+    position: relative;
+    font-family: $inter;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: -0.11px;
+    line-height: 30px;
+
+    h3{
+      color:#fff;
+      max-width:720px;
+
+      &.with-decor{
+        &:before{
+          background:url(../images/h2-decor-white.svg) no-repeat scroll center left transparent;
+          background-size:contain;
+        }
+      }
+    }
+
+    .button{
+      color:#fff;
+      i{
+        color:#fff;
+      }
+    }
+  }
+}

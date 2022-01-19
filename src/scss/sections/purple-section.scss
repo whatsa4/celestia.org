@@ -1,0 +1,54 @@
+.purple-section{
+  background:$purple;
+  color:#fff;
+  padding:110px 0 0;
+  position:relative;
+
+  &.without-backers{
+    background:none;
+
+    &:before{
+      top:0;
+      left:0;
+      width:100%;
+      background:url(../images/BG/backers-section-bg.png) no-repeat scroll center top transparent;
+      background-size: 100% 1400px;
+      position: absolute;
+      content: '';
+      z-index:0;
+      height:200%;
+
+      @include media-breakpoint-down(sm) {
+        background-size: auto 1800px;
+      }
+    }
+  }
+
+  .container{
+    position:relative;
+    z-index:2;
+  }
+
+  *{
+    color:#fff;
+  }
+
+  h2{
+    width:100%;
+    max-width:500px;
+    &.with-decor{
+      &:before{
+        background-image:url('../images/h2-decor-white.svg');
+      }
+    }
+  }
+
+  .text{
+    width:100%;
+    max-width:400px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding:110px 0 0;
+  }
+}

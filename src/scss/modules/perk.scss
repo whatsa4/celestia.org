@@ -1,0 +1,27 @@
+.perk{
+  text-align:center;
+
+  .title{
+    font-family: $ruberoid;
+    font-weight:bold;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 23px;
+    margin:auto;
+    display:block;
+    width:90%;
+    margin-top:15px;
+  }
+
+  .gatsby-image-wrapper{
+    height:100px;
+    margin:auto;
+    display:block;
+  }
+  svg{
+    max-height:100px;
+    margin:auto;
+  }
+}

@@ -1,0 +1,40 @@
+.whitepapers-section{
+  .whitepaper{
+    background: rgba(255,255,255,0.50);
+    border: 1px solid #E9E9E9;
+    box-shadow: 0 2px 4px 0 rgba(221,221,221,0.30);
+    border-radius: 6px;
+    padding:40px;
+    height:100%;
+
+    .category{
+      font-family: $ruberoid;
+      font-weight:600;
+      font-size: 13px;
+      color: #FF6F8A;
+      letter-spacing: 0;
+      line-height: 23px;
+      text-transform: uppercase;
+      margin-bottom:5px;
+    }
+
+    .title{
+      font-family: $ruberoid;
+      font-weight:bold;
+      font-size: 18px;
+      color: #000000;
+      letter-spacing: 0;
+      min-height:70px;
+      line-height: 23px;
+      margin-bottom:10px;
+    }
+    .subtitle{
+      font-family: $ruberoid;
+      font-weight:600;
+      font-size: 11px;
+      color: #A2A2A2;
+      letter-spacing: 0;
+      line-height: 16px;
+    }
+  }
+}

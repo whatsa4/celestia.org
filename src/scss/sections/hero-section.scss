@@ -1,0 +1,62 @@
+.hero-section{
+  padding:0 0 140px;
+
+  @include media-breakpoint-down(md) {
+    padding:0 0 65px;
+  }
+
+  .container{
+    background:url(../images/home/home-hero-image.svg) no-repeat scroll center right transparent;
+
+    @include media-breakpoint-down(xl) {
+      background-size:40vw;
+    }
+    @include media-breakpoint-down(lg) {
+      background-position:top right;
+    }
+    @include media-breakpoint-down(md) {
+      background-position:top center;
+      padding-top:40vw;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-top:60vw;
+      background-size:70vw;
+    }
+  }
+
+  h1{
+    margin-bottom:40px;
+    max-width:870px;
+    width:70%;
+
+    @include media-breakpoint-down(md) {
+      width:100%;
+      margin-bottom:20px;
+    }
+  }
+
+  .text{
+    font-family: $ruberoid;
+    font-weight:500;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0.22px;
+    line-height: 23px;
+    width:80%;
+    max-width:680px;
+    margin-bottom:45px;
+
+    @include media-breakpoint-down(sm) {
+      font-size:14px;
+      width:100%;
+      margin-bottom:20px;
+    }
+  }
+
+  .button-simple,.button-white, .button-icon, .button-external{
+    margin-right:20px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom:20px;
+    }
+  }
+}

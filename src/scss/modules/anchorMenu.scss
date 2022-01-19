@@ -1,0 +1,15 @@
+.anchorMenu{
+  a{
+    font-family: $ruberoid;
+    font-weight:bold;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0.18px;
+    line-height: 32px;
+    text-transform:uppercase;
+  }
+
+  @include media-breakpoint-down(md) {
+    display:none;
+  }
+}
