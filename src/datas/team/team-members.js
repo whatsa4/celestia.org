@@ -208,5 +208,19 @@ export const teamMembers = [
             email : '',
             linkedin : '',
         }
+    },
+    {
+        id : 15,
+        name : 'Viacheslav Gonkivskyi',
+        title: 'Software Engineer',
+        text: '_________________________________________________________________________',
+        image: 'team/ViacheslavGonkivskyi.png',
+        socials: {
+            twitter : 'https://twitter.com/VGonkivskyi',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : '',
+        }
     }
 ]
