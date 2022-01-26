@@ -213,14 +213,14 @@ export const teamMembers = [
         id : 15,
         name : 'Viacheslav Gonkivskyi',
         title: 'Software Engineer',
-        text: '_________________________________________________________________________',
+        text: 'Former software engineer at Luxoft',
         image: 'team/ViacheslavGonkivskyi.png',
         socials: {
             twitter : 'https://twitter.com/VGonkivskyi',
             discord : '',
-            github : '',
+            github : 'https://github.com/vgonkivs',
             email : '',
-            linkedin : '',
+            linkedin : 'www.linkedin.com/in/vgonkivskyi',
         }
     }
 ]
