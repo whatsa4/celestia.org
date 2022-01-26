@@ -206,7 +206,7 @@ export const teamMembers = [
             discord : '',
             github : 'https://github.com/vgonkivs',
             email : '',
-            linkedin : 'www.linkedin.com/in/vgonkivskyi',
+            linkedin : 'https://www.linkedin.com/in/vgonkivskyi/',
         }
     }
 ]
