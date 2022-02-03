@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ dev ]
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -47,4 +47,4 @@ jobs:
 
      # Finally, deploy it to your very own server
       - name: Deploy To Live
-        run: rsync -avzhn --delete -e 'ssh' public/* --rsync-path='mkdir -p ${{secrets.target_dir_main}} && rsync' ${{secrets.ssh_user}}@${{secrets.ssh_host}}:${{secrets.target_dir_main}}
+        run: rsync -avzhn --delete -e 'ssh' public/* --rsync-path='mkdir -p ${{secrets.target_dir_dev}} && rsync' ${{secrets.ssh_user}}@${{secrets.ssh_host}}:${{secrets.target_dir_dev}}
