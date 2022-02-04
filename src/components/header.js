@@ -66,14 +66,6 @@ const navigation = [
             }
         ]
     },{
-        text: "Technology",
-        url: "/technology/",
-        type: 'internal'
-    },{
-        text: "Team",
-        url: "/team/",
-        type: 'internal'
-    },{
         text: "Resources",
         url: "/resources/",
         type: 'internal',
@@ -93,6 +85,14 @@ const navigation = [
                 type: 'internal'
             }
         ]
+    },{
+        text: "Technology",
+        url: "/technology/",
+        type: 'internal'
+    },{
+        text: "Team",
+        url: "/team/",
+        type: 'internal'
     },{
         text: "Blog",
         url: "https://blog.celestia.org",
