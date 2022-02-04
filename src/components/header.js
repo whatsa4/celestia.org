@@ -73,14 +73,14 @@ const navigation = [
             {
                 text: "FAQ",
                 subtext: "Start here",
-                url: "/faq",
+                url: "/faq/",
                 icon: "menu/faq.svg",
                 type: 'internal'
             },
             {
                 text: "Videos, Podcasts, Whitepapers",
                 subtext: "Resources",
-                url: "/resources",
+                url: "/resources/",
                 icon: "menu/resources.svg",
                 type: 'internal'
             }
