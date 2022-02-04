@@ -42,8 +42,6 @@ export default class SignUp extends React.Component {
 
     _handleSubmit = e => {
         e.preventDefault();
-        const self = this;
-
         const listFields = {};
 
         if(this.state.newsletter){listFields['group[24870][1]'] = 1}
@@ -88,7 +86,7 @@ export default class SignUp extends React.Component {
                                 <input type="text" id={'email'} name={'email'} required onChange={(e) => this.change(e)}/>
                             </div>
                             <div className={'form-group'}>
-                                <label htmlFor="">Add me to waitlist</label>
+                                <label>Add me to waitlist</label>
                                 <div className={'row'}>
                                     <div className={'col col-auto'}>
                                         <div className="form-check">
@@ -105,7 +103,7 @@ export default class SignUp extends React.Component {
                                 </div>
                             </div>
                             <div className={'form-group'}>
-                                <label htmlFor="">Subscribe me to</label>
+                                <label>Subscribe me to</label>
                                 <div className={'row'}>
                                     <div className={'col col-auto'}>
                                         <div className="form-check">

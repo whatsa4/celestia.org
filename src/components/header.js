@@ -21,14 +21,14 @@ const navigation = [
                 text: "Experiment with devnet",
                 subtext: "Devnet",
                 url: "https://github.com/celestiaorg/networks",
-                icon: "menu/specification.svg",
+                icon: "menu/devnet.svg",
                 type: 'external'
             },
             {
                 text: "Read the original research paper",
                 subtext: "Research paper",
                 url: "https://arxiv.org/pdf/1905.09274.pdf",
-                icon: "menu/paper.svg",
+                icon: "menu/research.svg",
                 type: 'external'
             }
         ]
@@ -66,16 +66,32 @@ const navigation = [
             }
         ]
     },{
+        text: "Resources",
+        url: "/resources/",
+        type: 'internal',
+        submenus: [
+            {
+                text: "FAQ",
+                subtext: "Start here",
+                url: "/faq",
+                icon: "menu/faq.svg",
+                type: 'internal'
+            },
+            {
+                text: "Videos, Podcasts, Whitepapers",
+                subtext: "Resources",
+                url: "/resources",
+                icon: "menu/resources.svg",
+                type: 'internal'
+            }
+        ]
+    },{
         text: "Technology",
         url: "/technology/",
         type: 'internal'
     },{
         text: "Team",
         url: "/team/",
-        type: 'internal'
-    },{
-        text: "Resources",
-        url: "/resources/",
         type: 'internal'
     },{
         text: "Blog",
@@ -101,6 +117,7 @@ class Header extends React.Component {
             document.getElementById("header").classList.remove("blur");
         }
     };
+
 
     toggleMenu = () => {
         if (document.getElementById("hamburger").classList.contains('is-active')) {

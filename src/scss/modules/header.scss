@@ -112,11 +112,23 @@ header{
       width:170px;
     }
 
+    .submenu{
+      padding:15px 10px;
+    }
+
     nav{
       ul{
         li{
           font-size:14px;
           padding:16px;
+
+          .submenu{
+            ul{
+              li{
+                padding:10px 16px;
+              }
+            }
+          }
 
           @include media-breakpoint-down(lg) {
             font-size:24px;
@@ -212,7 +224,7 @@ header{
           padding:15px 25px;
           max-width:360px;
           position:absolute;
-          transition:600ms opacity cubic-bezier(0.83, 0, 0.17, 1);
+          transition:600ms opacity cubic-bezier(0.83, 0, 0.17, 1), 600ms padding cubic-bezier(0.83, 0, 0.17, 1);
           opacity:0;
           top:-500px;
 
@@ -279,12 +291,12 @@ header{
                 width:32px;
                 height:32px;
                 border-radius: 50%;
-                line-height:0;
                 text-align:center;
                 transition:600ms all cubic-bezier(0.83, 0, 0.17, 1);
 
                 img{
-                  width:100%;
+                  width:12px;
+                  height:100%;
                 }
               }
 
@@ -319,6 +331,7 @@ header{
           .submenu{
             opacity:1;
             top:60px;
+            min-width:300px;
 
             @include media-breakpoint-down(md) {
               top:15px;
