@@ -44,17 +44,16 @@
       font-family:'celestia';
       color:white;
       text-align:center;
-      line-height:2.25em;
+      line-height:2.5em;
       font-size:1em;
       position:absolute;
       transition:600ms all cubic-bezier(0.83, 0, 0.17, 1);
       left:0;
       width:100%;
       top:0;
-      
     }
     &:before{
-      content: "\e902";
+      content: "\e906";
       font-family:'celestia';
       color:white;
       text-align:center;
