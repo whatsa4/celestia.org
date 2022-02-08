@@ -45,8 +45,8 @@ const responsive = {
 const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
     return (
         <div className="carousel-button-group">
-            <button className={'button button button-left'} onClick={() => previous()}><i className={'icon-carousel-left'} aria-label={'prev'}/></button>
-            <button className={'button button button-right'} onClick={() => next()}><i className={'icon-carousel-right'} aria-label={'next'}/></button>
+            <button className={rest.carouselState.currentSlide === 0  ? 'button button button-left disable' : 'button button button-left'} onClick={() => previous()}><i className={'icon-carousel-left'} aria-label={'prev'}/></button>
+            <button className={rest.carouselState.currentSlide + rest.carouselState.slidesToShow === rest.carouselState.totalItems  ? 'button button button-right disable' : 'button button button-right'} onClick={() => next()}><i className={'icon-carousel-right'} aria-label={'next'}/></button>
         </div>
     );
 };
