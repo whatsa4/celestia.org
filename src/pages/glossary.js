@@ -12,7 +12,7 @@ class Result extends React.Component {
     render() {
         return (
             <li className={'row result'}>
-                <Link to={`/glossary/${this.props.result.url}`}>
+                <Link to={`/glossary/${this.props.result.url}`} state={{url: this.props.result.url}}>
                         <div className={'col-12'}>
                             <div className={'title'}>{this.props.result.title}</div>
                             {this.props.result.text}
@@ -115,8 +115,8 @@ function GetGlossaries(props){
                                         </div>
                                         <div className={'col-12 col-md-10'}>
                                             <ul className={'result-list'}>
-                                                {Object.values(glossary)[0].map(result => (
-                                                    <Result key={result.title} result={result}/>
+                                                {Object.values(glossary)[0].map((result,glossaryIndex,array) => (
+                                                    <Result key={result.title} result={result} group={index} index={glossaryIndex}/>
                                                 ))}
                                             </ul>
                                         </div>

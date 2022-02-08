@@ -4,6 +4,7 @@ import {FooterBoxes} from "../../datas/team/content";
 import Layout from "../../components/layout";
 import BreadCrumb from "../../components/breadcrumb";
 import SocialShare from "../../components/socialShare";
+import GlossaryNav from "../../components/glossary-nav";
 
 const title = '51% Attack';
 
@@ -46,6 +47,11 @@ class GlossarySubpage extends React.Component {
                             <GlossaryContent/>
 
                         </div>
+
+                        <div className={'container wide'}>
+                            <GlossaryNav url={this.props.location.state.url}/>
+                        </div>
+
                     </main>
                 </div>
             </Layout>
