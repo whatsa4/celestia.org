@@ -25,7 +25,8 @@ class GlossaryNav extends React.Component {
 
 
         return (
-            <div className={'row glossary-nav mt-5'}>
+            <div>
+            {prev && next ? <div className={'row glossary-nav mt-5'}>
                 <div className={'col col-12 col-md-6 border-right'}>
                     <Link to={'/glossary/'+prev.url+'/'} state={{url: prev.url}}>
                         <div className={'glossary'}>
@@ -48,8 +49,8 @@ class GlossaryNav extends React.Component {
                         </div>
                     </Link>
                 </div>
+            </div> : <div/>}
             </div>
-
         )
     }
 }
