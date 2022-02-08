@@ -46,6 +46,7 @@
 
   .char-bar{
     position: relative;
+    min-width:100px;
 
     .alpha-expand{
       width:100%;
@@ -82,6 +83,7 @@
 
     .alphabets{
       width:100%;
+      width:auto;
       position:absolute;
       right:0;
       overflow:hidden;
