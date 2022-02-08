@@ -49,7 +49,7 @@ class GlossarySubpage extends React.Component {
                         </div>
 
                         <div className={'container wide'}>
-                            <GlossaryNav url={this.props.location.state.url}/>
+                            <GlossaryNav url={this.props.location.state && this.props.location.state.url}/>
                         </div>
                     </main>
                 </div>
