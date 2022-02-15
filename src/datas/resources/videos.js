@@ -41,5 +41,11 @@ export const videos = [
         title: 'Interchain Conversations II-Pluggable Consensus & Data Availability Layer For Cosmos Zones & Rollups',
         image: 'resources/placeholders/video.png',
         url: 'https://www.youtube.com/watch?v=OWzVgRRLjMg',
+    },{
+        id: 8,
+        category: 'video',
+        title: 'Ismail Khoffi - Cofounder of Celestia Speaks on Shared Security in the BLOCKCHAIN',
+        image: 'resources/Ismail-Cosmoverse-thumbnail.png',
+        url: 'https://www.youtube.com/watch?v=MabYtuTncW0',
     } 
 ]
