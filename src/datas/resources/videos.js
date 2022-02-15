@@ -41,5 +41,5 @@ export const videos = [
         title: 'Interchain Conversations II-Pluggable Consensus & Data Availability Layer For Cosmos Zones & Rollups',
         image: 'resources/placeholders/video.png',
         url: 'https://www.youtube.com/watch?v=OWzVgRRLjMg',
-    }
+    } 
 ]
