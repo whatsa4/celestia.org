@@ -47,5 +47,11 @@ export const videos = [
         title: 'Ismail Khoffi - Cofounder of Celestia Speaks on Shared Security in the BLOCKCHAIN',
         image: 'resources/Ismail-Cosmoverse-thumbnail.png',
         url: 'https://www.youtube.com/watch?v=MabYtuTncW0',
-    } 
+    },{
+        id: 9,
+        category: 'video',
+        title: 'Live with Nick from Celestia',
+        image: 'resources/placeholders/video.png',
+        url: 'https://www.twitch.tv/videos/1271355438',
+    }
 ]
