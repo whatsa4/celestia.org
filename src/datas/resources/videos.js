@@ -21,19 +21,19 @@ export const videos = [
         id: 4,
         category: 'video',
         title: 'Whiteboard Series with NEAR | Ep: 40 Part 1, John Adler from Celestia (previously Lazy Ledger)',
-        image: 'resources/near-video.png',
+        image: 'resources/Celestia-Near-whiteboard-part1.png',
         url: 'https://www.youtube.com/watch?v=jM-om3AqH94',
     },{
         id: 5,
         category: 'video',
         title: 'Whiteboard Series with NEAR | Ep: 40 Part 2, John Adler from Celestia (previously Lazy Ledger)',
-        image: 'resources/near-video.png',
+        image: 'resources/Celestia-Near-whiteboard-part2.png',
         url: 'https://www.youtube.com/watch?v=MZQMObV3890',
     },{
         id: 6,
         category: 'video',
         title: 'Conversations with Jack ft. Mustafa Al-Bassam - S1E15 - by Sommelier Finance & OmniFlix Network',
-        image: 'resources/placeholders/video.png',
+        image: 'resources/Conversations-with-Jack.png',
         url: 'https://www.youtube.com/watch?v=hacZ4nX_Jjg',
     },{
         id: 7,
