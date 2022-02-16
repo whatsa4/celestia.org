@@ -53,5 +53,11 @@ export const videos = [
         title: 'Live with Nick from Celestia',
         image: 'resources/placeholders/video.png',
         url: 'https://www.twitch.tv/videos/1271355438',
+    },{
+        id: 10,
+        category: 'video',
+        title: 'Celestia Deep Dive: Data Availability Sampling, CEVMOS, Rollups & More',
+        image: 'resources/Celestia-cryptocito.png',
+        url: 'https://www.youtube.com/watch?v=3-kIa-r8Twc',
     }
 ]
