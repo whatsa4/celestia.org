@@ -1,10 +1,10 @@
 export const videos = [
     {
-        id: 8,
+        id: 10,
         category: 'video',
-        title: 'Ismail Khoffi - Cofounder of Celestia Speaks on Shared Security in the blockchain',
-        image: 'resources/Ismail-Cosmoverse-thumbnail.png',
-        url: 'https://www.youtube.com/watch?v=MabYtuTncW0',
+        title: 'Celestia Deep Dive: Data Availability Sampling, CEVMOS, Rollups & More',
+        image: 'resources/Celestia-cryptocito.png',
+        url: 'https://www.youtube.com/watch?v=3-kIa-r8Twc',     
     },{
         id: 9,
         category: 'video',
@@ -12,11 +12,11 @@ export const videos = [
         image: 'resources/placeholders/video.png',
         url: 'https://www.twitch.tv/videos/1271355438',
     },{
-        id: 10,
+        id: 8,
         category: 'video',
-        title: 'Celestia Deep Dive: Data Availability Sampling, CEVMOS, Rollups & More',
-        image: 'resources/Celestia-cryptocito.png',
-        url: 'https://www.youtube.com/watch?v=3-kIa-r8Twc',
+        title: 'Ismail Khoffi - Cofounder of Celestia Speaks on Shared Security in the blockchain',
+        image: 'resources/Ismail-Cosmoverse-thumbnail.png',
+        url: 'https://www.youtube.com/watch?v=MabYtuTncW0',
     },{
         id: 1,
         category: 'video',
