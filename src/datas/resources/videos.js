@@ -1,5 +1,23 @@
 export const videos = [
     {
+        id: 10,
+        category: 'video',
+        title: 'Celestia Deep Dive: Data Availability Sampling, CEVMOS, Rollups & More',
+        image: 'resources/Celestia-cryptocito.png',
+        url: 'https://www.youtube.com/watch?v=3-kIa-r8Twc',     
+    },{
+        id: 9,
+        category: 'video',
+        title: 'Live with Nick from Celestia',
+        image: 'resources/placeholders/video.png',
+        url: 'https://www.twitch.tv/videos/1271355438',
+    },{
+        id: 8,
+        category: 'video',
+        title: 'Ismail Khoffi - Cofounder of Celestia Speaks on Shared Security in the blockchain',
+        image: 'resources/Ismail-Cosmoverse-thumbnail.png',
+        url: 'https://www.youtube.com/watch?v=MabYtuTncW0',
+    },{
         id: 1,
         category: 'video',
         title: 'Celestia: A pluggable consensus and data availability layer',
@@ -21,19 +39,19 @@ export const videos = [
         id: 4,
         category: 'video',
         title: 'Whiteboard Series with NEAR | Ep: 40 Part 1, John Adler from Celestia (previously Lazy Ledger)',
-        image: 'resources/near-video.png',
+        image: 'resources/Celestia-Near-whiteboard-part1.png',
         url: 'https://www.youtube.com/watch?v=jM-om3AqH94',
     },{
         id: 5,
         category: 'video',
         title: 'Whiteboard Series with NEAR | Ep: 40 Part 2, John Adler from Celestia (previously Lazy Ledger)',
-        image: 'resources/near-video.png',
+        image: 'resources/Celestia-Near-whiteboard-part2.png',
         url: 'https://www.youtube.com/watch?v=MZQMObV3890',
     },{
         id: 6,
         category: 'video',
         title: 'Conversations with Jack ft. Mustafa Al-Bassam - S1E15 - by Sommelier Finance & OmniFlix Network',
-        image: 'resources/placeholders/video.png',
+        image: 'resources/Conversations-with-Jack.png',
         url: 'https://www.youtube.com/watch?v=hacZ4nX_Jjg',
     },{
         id: 7,
@@ -41,5 +59,5 @@ export const videos = [
         title: 'Interchain Conversations II-Pluggable Consensus & Data Availability Layer For Cosmos Zones & Rollups',
         image: 'resources/placeholders/video.png',
         url: 'https://www.youtube.com/watch?v=OWzVgRRLjMg',
-    }
+    },
 ]
