@@ -1,5 +1,12 @@
 export const podcasts = [
     {
+        id: 6,
+        category: 'podcast',
+        title: 'Is Celestia the monolithic chain killer? The future of modular blockchains - Nick white, COO of Celestia, Ep. 184',
+        subtitle: 'After Layer 1s and 2s, a new primitive is capturing the attention of the crypto community: the modular blockchain.',
+        url: 'https://podcasts.apple.com/us/podcast/is-celestia-the-monolithic-chain-killer-the/id1350649166?i=1000550438055',
+    },
+    {
         id: 5,
         category: 'podcast',
         title: 'Episode 208: Digging into Data Availability with Ismail Khoffi from Celestia',
@@ -33,12 +40,5 @@ export const podcasts = [
         title: 'Interchain.FM',
         subtitle: 'Celestia: Data Availability Layer for Easily Deploying Appchains in Cosmos',
         url: 'https://interchain.fm/episodes/celestia-data-availability-layer-for-easily-deploying-appchains-on-cosmos-8yOokETD',
-    },
-    {
-        id: 6,
-        category: 'podcast',
-        title: 'Is Celestia the monolithic chain killer? The future of modular blockchains - Nick white, COO of Celestia, Ep. 184',
-        subtitle: 'After Layer 1s and 2s, a new primitive is capturing the attention of the crypto community: the modular blockchain.',
-        url: 'https://podcasts.apple.com/us/podcast/is-celestia-the-monolithic-chain-killer-the/id1350649166?i=1000550438055',
     },
 ]
