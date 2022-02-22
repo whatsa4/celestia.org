@@ -30,7 +30,8 @@ export const resources = [
         id: 1,
     },{
         category: 'video',
-        id: 1,
+        id: 2,
+        image: 'resources/placeholders/video.png',
     },{
         category: 'whitepaper',
         id: 0,
