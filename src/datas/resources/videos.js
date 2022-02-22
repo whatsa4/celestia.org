@@ -1,5 +1,17 @@
 export const videos = [
     {
+        id: 12,
+        category: 'video',
+        title: 'Secure Off-chain Data Availability for Rollups',
+        image: 'resources/John-Adler-ETH-Denver.png',
+        url: 'https://www.youtube.com/watch?v=f88tGRBimmE',     
+    },{
+        id: 11,
+        category: 'video',
+        title: 'The Rollup Developer Experience panel',
+        image: 'resources/Aditi-Rollup-Panel.png',
+        url: 'https://www.youtube.com/watch?v=Tgk7eXUCgYk',     
+    },{
         id: 10,
         category: 'video',
         title: 'Celestia Deep Dive: Data Availability Sampling, CEVMOS, Rollups & More',
