@@ -71,16 +71,30 @@ export const advisors = [
     },
     {
         id : 6,
-        name : 'Nick White',
-        title: 'Co-founder, Harmony',
+        name : 'Matthew Di Ferrante',
+        title: 'Security expert and auditor, Ethereum contributor since 2014',
         text: '',
-        image: 'team/NickWhite.png',
+        image: 'team/MatthewDiFerrante.png',
         socials: {
-            twitter : 'https://twitter.com/nickwh8te',
+            twitter : 'https://twitter.com/matthewdif',
             discord : '',
-            github : 'https://github.com/nwhite1',
+            github : 'https://github.com/mattdf',
             email : '',
-            linkedin : 'https://www.linkedin.com/in/nickwh8te/',
+            linkedin : 'https://www.linkedin.com/in/matthewdiferrante/',
         }
-    }
+    },
+    {
+        id : 7,
+        name : 'Marko Baricevic',
+        title: 'Software Engineer, Interchain Foundation',
+        text: '',
+        image: 'team/MarkoBaricevic.png',
+        socials: {
+            twitter : 'https://twitter.com/mark0baricevic',
+            discord : '',
+            github : 'https://github.com/marbar3778',
+            email : '',
+            linkedin : 'https://www.linkedin.com/in/marko-baricevic-ab0b49214/',
+        }
+    },
 ]

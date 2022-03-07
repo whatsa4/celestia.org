@@ -126,20 +126,6 @@ export const teamMembers = [
         }
     },
     {
-        id : 10,
-        name : 'Marko Baricevic',
-        title: 'Software Engineer',
-        text: 'Software engineer at Interchain Foundation',
-        image: 'team/MarkoBaricevic.png',
-        socials: {
-            twitter : 'https://twitter.com/mark0baricevic',
-            discord : '',
-            github : 'https://github.com/marbar3778',
-            email : '',
-            linkedin : 'https://www.linkedin.com/in/marko-baricevic-ab0b49214/',
-        }
-    },
-    {
         id : 11,
         name : 'Josh Bowen',
         title: 'Software Engineer',
