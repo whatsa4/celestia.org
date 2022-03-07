@@ -30,7 +30,7 @@ export const resources = [
         id: 1,
     },{
         category: 'video',
-        id: 3,
+        id: 5,
     },{
         category: 'whitepaper',
         id: 0,
