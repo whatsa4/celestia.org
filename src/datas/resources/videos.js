@@ -1,5 +1,17 @@
 export const videos = [
     {
+        id: 14,
+        category: 'video',
+        title: 'Celestia: The World’s First Modular Blockchain Network',
+        image: 'resources/John-Delphi-podcast.png',
+        url: 'https://www.youtube.com/watch?v=-EYRtqsTkZ4&t=2214s',     
+    },{
+        id: 13,
+        category: 'video',
+        title: 'Breaking Down Celestia, The First Modular Blockchain Network (Aditi) | S1 E20',
+        image: 'resources/Aditi-DAOn-interview.png',
+        url: 'https://www.youtube.com/watch?v=XLldSScJ4gE',     
+    },{
         id: 12,
         category: 'video',
         title: 'Secure Off-chain Data Availability for Rollups',
