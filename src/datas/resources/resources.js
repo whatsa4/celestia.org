@@ -4,7 +4,7 @@ export const resources = [
         id: 0,
     },{
         category: 'video',
-        id: 0,
+        id: 2,
     },{
         category: 'blog',
         id: 1,
@@ -30,7 +30,7 @@ export const resources = [
         id: 1,
     },{
         category: 'video',
-        id: 3,
+        id: 5,
     },{
         category: 'whitepaper',
         id: 0,
