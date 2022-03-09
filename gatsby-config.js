@@ -24,6 +24,12 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100
+      }
+    },
+    {
       resolve: `gatsby-plugin-plausible`,
       options: {
         domain: `celestia.org`,
@@ -31,7 +37,6 @@ module.exports = {
         customDomain: `plausible.celestia.org/js/plausible.js?original=`,
       },
     },
-    "gatsby-transformer-remark",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     {
@@ -42,12 +47,10 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/src/images`,
       },
-      __key: "images",
     },
     {
       resolve: "gatsby-source-filesystem",
@@ -64,13 +67,38 @@ module.exports = {
         path: `./src/pages/resources/`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `learn`,
+        path: `${__dirname}/src/pages/learn`,
+      },
+    },
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          // ...
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 700,
+              withWebp: true,
+              showCaptions: true,
+              quality: 100,
+            },
+          },
+          {
+            resolve: `gatsby-remark-image-attributes`,
+            options: {
+              // ?Boolean=false
+              //   If true, all attributes that
+              //   aren't styleAttributes, will be
+              //   added as data-* attributes to the
+              //   image.
+              dataAttributes: false
+            }
+          },
           `gatsby-remark-autolink-headers`,
         ],
       },

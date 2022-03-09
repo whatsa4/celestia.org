@@ -1,43 +1,45 @@
 import * as React from "react"
-import 'react-multi-carousel/lib/styles.css';
-
+import { graphql } from 'gatsby'
 import {FooterBoxes} from "../datas/resources/content";
-
 import Layout from "../components/layout";
-import {Link} from "gatsby";
-class Result extends React.Component {
-    render() {
-        return (
-            <li className={'row result'}>
-                <Link to={`/glossary/${this.props.result.url}`} state={{url: this.props.result.url}}>
-                    <div className={'col-12'}>
-                        <div className={'title'}>{this.props.result.title}</div>
-                        {this.props.result.text}
-                    </div>
-                </Link>
-            </li>
-        )
-    }
-}
 
-class LearnPage extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
-            <Layout footerBoxes={FooterBoxes}>
-                <div className={'learn-page'}>
-                    <main>
-                        <div className={'container'}>
-                            <h1 className={'main'}>Learn Modular</h1>
+import PostLink from "../components/post-link"
 
-                        </div>
-                    </main>
+const LearnPage = ({
+       data: {
+           allMarkdownRemark: { edges },
+       },
+   }) => {
+    const Posts = edges
+        .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+        .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+    return <Layout footerBoxes={FooterBoxes}>
+        <div className={'learn-page'}>
+            <main>
+                <div className={'container'}>
+                    <h1 className={'main'}>Learn Modular</h1>
+                    {Posts}
                 </div>
-            </Layout>
-        )
-    }
+            </main>
+        </div>
+    </Layout>
 }
-
 export default LearnPage
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+          }
+        }
+      }
+    }
+  }
+`

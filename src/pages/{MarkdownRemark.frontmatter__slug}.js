@@ -22,17 +22,18 @@ export default function Template({
                 <div className={'container'}>
                     <div className="blog-post" id={'blog-post'}>
                         <div className={'inner small'}>
-                            <h1>{frontmatter.title}</h1>
-                            <div className={'author'}><div className={'authorImage'}><Image alt={frontmatter.author.name} filename={frontmatter.author.avatar} /></div>By <strong> {frontmatter.author.name}</strong></div>
-                            <div className={'date'}>Published on: <strong>{frontmatter.date}</strong></div>
+                            <h1 className={'h2'}>{frontmatter.title}</h1>
+                            {frontmatter.author && <div className={'author'}><div className={'authorImage'}><Image alt={frontmatter.author.name} filename={frontmatter.author.avatar} /></div>By <strong> {frontmatter.author.name}</strong></div>}
+                            {frontmatter.date && <div className={'date'}>Published on: <strong>{frontmatter.date}</strong></div>}
                             <div className={'clear'}/>
                         </div>
 
+                        {frontmatter.image &&
                         <div className={'main-image'}>
                             <Image alt={frontmatter.title} filename={frontmatter.image} />
-                        </div>
+                        </div>}
 
-                        <Sticky topOffset={-200}>
+                        <Sticky topOffset={-100}>
                             <ToC headings={headings}/>
                         </Sticky>
 
