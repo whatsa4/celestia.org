@@ -8,7 +8,7 @@ export const videos = [
     },{
         id: 13,
         category: 'video',
-        title: 'Breaking Down Celestia, The First Modular Blockchain Network (Aditi) | S1 E20',
+        title: 'Breaking Down Celestia, The First Modular Blockchain Network (Aditi)',
         image: 'resources/Aditi-DAOn-interview.png',
         url: 'https://www.youtube.com/watch?v=XLldSScJ4gE',     
     },{
