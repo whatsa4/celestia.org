@@ -308,7 +308,10 @@
   position:relative;
   padding-top:50px;
   z-index:2;
-  background:#FFF;
+
+  &.learn-modules-footer{
+    background:#FFF;
+  }
 
   &.smaller{
     .col{
