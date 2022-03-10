@@ -1,6 +1,11 @@
 ---
-slug: "/learn/test"
+path: "/learn/"
+slug: "/learn/basics-of-modular-blockchains"
+edit: "https://github.com"
+date: "2022-03-10"
+icon: "/images/basics-of-modular-blockchains.png"
 title: "Basics of modular blockchains"
+description: "Optimistic rollups (ORUs) are the most promising avenue for scaling Ethereum - and blockchains in general - today. But what are they, and why are Ethereum developers and scalability researchers so excited about them?"
 ---
 
 #### Introduction

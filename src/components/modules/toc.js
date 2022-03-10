@@ -1,7 +1,8 @@
 import React, {useEffect} from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Sticky from "react-sticky-el";
 
-const ToC = ({ headings }) => (
+const ToC = ({ headings, frontmatter }) => (
     useEffect(() => {
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
@@ -36,6 +37,10 @@ const ToC = ({ headings }) => (
                     }
                 })}
             </div>
+
+            <a href={frontmatter.edit} className={'suggest-button'} target={'_blank'} rel={'noreferrer'}>
+                <i className={'icon-edit'}></i>SUGGEST AND EDIT
+            </a>
         </div>
     )
 )
