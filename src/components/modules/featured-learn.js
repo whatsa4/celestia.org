@@ -31,7 +31,7 @@ export default function FeaturedLearn(props) {
 
             render={data => (
                 <div className={'learning-modules'}>
-                    <div className={'row pb-5 learn-modules smaller'}>
+                    <div className={'row pb-5 learn-modules learn-modules-footer smaller'}>
                         {data.allMarkdownRemark.edges.filter(function (edge) {
                             return edge.node.frontmatter.slug !== props.current;
                         }) // You can filter your posts based on some criteria
