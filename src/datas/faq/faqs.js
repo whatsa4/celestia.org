@@ -2,7 +2,7 @@ export const faqs = [
     {
         id: 1,
         question: 'What is Celestia?',
-        text: 'Celestia is a modular data availability layer built for rollups to utilize. Celestia doesn’t function like a typical layer 1 blockchain. Its only job is to order transactions and verify that the data being published is available. By taking this approach, Celestia achieves properties of scalability, flexibility and interoperability unmatched by previous blockchain designs.',
+        text: 'Celestia is the first modular blockchain network that makes it effortless to deploy a new blockchain. It allows sovereign blockchains to break free from the constraints of monolithic architectures so that they can build with flexibility and freedom on their own terms.<br><br>Celestia is a unique layer 1 blockchain whose only job is to order transactions and verify that the published data is available. This allows specialized blockchains for hosting applications to deploy on top of it. By taking this approach, Celestia achieves properties of scalability, flexibility and interoperability unmatched by previous blockchain designs.',
     },{
         id: 2,
         question: 'What stage of development is Celestia in?',
