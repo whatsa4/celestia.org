@@ -319,6 +319,9 @@
       &:nth-child(1){
         border-right:1px solid #E7E4E4;
       }
+      &:nth-child(3){
+        display:none;
+      }
 
       .learn-box{
         background:#FFF !important;

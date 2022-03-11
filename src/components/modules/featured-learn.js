@@ -10,7 +10,6 @@ export default function FeaturedLearn(props) {
         query {
     allMarkdownRemark(
     sort: { order: DESC, fields: [frontmatter___date] }
-    limit: 3
     filter: {fileAbsolutePath: {regex: "/learn/"}}
     ) {
       edges {
@@ -31,13 +30,24 @@ export default function FeaturedLearn(props) {
 
             render={data => (
                 <div className={'learning-modules'}>
-                    <div className={'row pb-5 learn-modules learn-modules-footer smaller'}>
-                        {data.allMarkdownRemark.edges.filter(function (edge) {
-                            return edge.node.frontmatter.slug !== props.current;
-                        }) // You can filter your posts based on some criteria
-                            .map(edge => <div className={'col col-12 col-md-6 pt-5'}><LearnBox key={edge.node.id} post={edge.node} /></div>)
+                        {data.allMarkdownRemark.edges
+                            .map((edge,index) => {
+                                if(edge.node.frontmatter.slug === props.current) {
+                                    const prev = index === 0 ? data.allMarkdownRemark.edges.length - 1 : index-1;
+                                    const next = index === data.allMarkdownRemark.edges.length - 1 ? 0 : index+1;
+
+                                    return (
+                                        <div className={'row pb-5 learn-modules learn-modules-footer smaller'}>
+                                            <div className={'col col-12 col-md-6 pt-5 prev'}><LearnBox
+                                                key={data.allMarkdownRemark.edges[prev].node.id}
+                                                post={data.allMarkdownRemark.edges[prev].node}/></div>
+                                            <div className={'col col-12 col-md-6 pt-5 next'}><LearnBox
+                                                key={data.allMarkdownRemark.edges[next].node.id}
+                                                post={data.allMarkdownRemark.edges[next].node}/></div>
+                                        </div>)
+                                }
+                            })
                         }
-                    </div>
                 </div>
             )}
         />
