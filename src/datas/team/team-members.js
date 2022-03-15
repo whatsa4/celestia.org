@@ -194,5 +194,20 @@ export const teamMembers = [
             email : '',
             linkedin : 'https://www.linkedin.com/in/vgonkivskyi/',
         }
+    },
+    {
+        id : 16,
+        name : 'Manav Aggarwal',
+        title: 'Software Engineer',
+        text: 'Former contributor at Nebula Protocol and Two Sigma Investments, BS & MS from Stanford',
+        image: 'team/ManavAggarwal.png',
+        socials: {
+            twitter : 'https://twitter.com/0xnavage',
+            discord : '',
+            github : 'https://github.com/Manav-Aggarwal',
+            email : '',
+            linkedin : 'https://www.linkedin.com/in/manav/',
+        }
     }
+    
 ]
