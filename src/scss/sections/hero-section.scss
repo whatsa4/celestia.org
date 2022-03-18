@@ -26,9 +26,17 @@
 
   h1{
     margin-bottom:40px;
-    max-width:870px;
-    width:70%;
+    max-width:970px;
+    width:80%;
 
+    @include media-breakpoint-down(xl) {
+      max-width:870px;
+      width:70%;
+    }
+
+    @include media-breakpoint-down(lg) {
+      max-width:670px;
+    }
     @include media-breakpoint-down(md) {
       width:100%;
       margin-bottom:20px;
