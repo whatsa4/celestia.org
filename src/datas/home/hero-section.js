@@ -1,6 +1,6 @@
 export const heroData = {
-    title: 'Effortlessly deploy your own blockchain',
-    text: 'Celestia is the first modular consensus and data network to power scalable, secure Web3 applications.',
+    title: 'The first modular blockchain network',
+    text: 'Celestia is a modular consensus and data network, built to enable anyone to easily deploy their own blockchain with minimal overhead.',
     buttons:[
             {
                 text: 'See the roadmap',
