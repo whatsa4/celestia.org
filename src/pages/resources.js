@@ -15,6 +15,7 @@ import {blogs} from "../datas/resources/blogs";
 import {videos} from "../datas/resources/videos";
 import {whitepapers} from "../datas/resources/whitepapers";
 import {podcasts} from "../datas/resources/podcasts";
+import {communityposts} from "../datas/resources/community-posts";
 import Carousel from "react-multi-carousel";
 import Layout from "../components/layout";
 
@@ -174,6 +175,20 @@ class ResourcesPage extends React.Component {
                         <PodcastSection id={'podcasts'}/>
                         <div className={'manualAnchor'} id={anchors[2].anchor}/>
                         <WhitepapersSection id={'whitepapers'}/>
+
+
+
+                        <div className={'row my-5 blog-section'}>
+                            <h2 className={'with-decor mb-5'}>Community Posts</h2>
+                            <div className={'section-inner'}>
+                                <Carousel responsive={responsive} swipable={true} draggable={true} infinite={false} containerClass={'multi-carousel'} customTransition={'1000ms all cubic-bezier(0.65, 0, 0.35, 1)'} arrows={false} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />}>
+                                    {communityposts.map((post,index) => (
+                                        <Resource key={index} type={'small'} data={post}/>
+                                    ))}
+                                </Carousel>
+
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>
