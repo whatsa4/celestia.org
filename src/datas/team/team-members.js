@@ -208,6 +208,19 @@ export const teamMembers = [
             email : '',
             linkedin : 'https://www.linkedin.com/in/manav/',
         }
-    }
-    
+    },
+    {
+        id : 17,
+        name : 'Yaz Khoury',
+        title: 'Head of Developer Relations',
+        text: 'Former DevRel engineer at Celo Foundation and former Director of DevRel at Ethereum Classic',
+        image: 'team/YazKhoury.png',
+        socials: {
+            twitter : 'https://twitter.com/Yazanator',
+            discord : '',
+            github : 'https://github.com/YazzyYaz',
+            email : '',
+            linkedin : '',
+        }
+    },
 ]
