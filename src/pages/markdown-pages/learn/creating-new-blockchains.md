@@ -24,7 +24,7 @@ Since execution layers don’t require a consensus mechanism, they need not sour
 
 Blockchains that launch as independent chains have sovereignty over their environment. This gives them the right to push upgrades without reliance on other chains. A sovereign blockchain allows its own nodes to determine the canonical chain and act on its fork choice rule. The fork choice rule dictates how nodes determine and detect forks, including agreement on which is the ‘main’ chain (canonical chain).
 
-![GATSBY_EMPTY_ALT](./images/article-2-image-1.png)
+![GATSBY_EMPTY_ALT](./images/article-4-image-1.png)
 
 If the sovereign blockchain experiences a liveness or safety failure that requires a restart or some type of fork, social consensus can be utilized to restart the chain and act on decisions independent of outside communities.
 
@@ -38,21 +38,11 @@ Deploying execution layers onto existing settlement layers allows for experiment
 
 For example, a rollup that wants to deploy on Ethereum requires that its fraud or validity proofs are verified in an EVM-compatible manner. Some rollups have implemented mechanisms that enable their VM to compile into a language that is readable using another VM that sits inside the EVM, such as Optimism compiling Go code into MIPs which runs inside the EVM. 
 
-![GATSBY_EMPTY_ALT](./images/article-2-image-2.png)
+![GATSBY_EMPTY_ALT](./images/article-4-image-2.png)
 
 Alternatively, rollups can deploy to data availability layers that don’t impose the same restrictions. This is because the data availability layer doesn’t interpret any transactions or state updates from the execution layer. Only the raw transaction data is published, which allows the rollup to implement any arbitrary VM it wants.
 
 Coupled with a data availability layer, execution layers can conduct unconstrained experimentation with its execution environment. Additionally, the ease at which new execution layers will be able to be deployed on top of data availability layers further reduces the friction in bootstrapping. This will result in compounding innovation in the execution environment because there are no barriers to experimentation with competition facilitating rapid innovation.
-
-#### Execution & data availability
-
-In the previous two modular stacks, the execution layer solely focused on execution and off-loaded the remaining functions to other layers. However, because modular blockchains are flexible in the purposes they can provide, an execution layer isn’t only limited to only posting its blocks to a settlement layer. For example, a modular stack can be created that involves no settlement layer, only an execution layer on top of a consensus and data availability layer.
-
-![GATSBY_EMPTY_ALT](./images/article-2-image-3.png)
-
-Under this modular stack, the execution layer would be sovereign such that it has the ability to fork, and for its nodes to determine which execution rules are canonical. If the execution layer is a rollup and requires fraud or validity proofs to be verified, they can be distributed through the rollup's peer-to-peer layer rather than published to a settlement layer. Validity proofs would be distributed with each block, and fraud proofs only during disputes.
-
-Since there is no settlement layer involved, only the data availability layer is responsible for providing security for transaction ordering and data availability. This enables the execution layer to receive the full scalability benefits of decoupling consensus from execution as there is no middle layer to forward the transaction data to the base layer.
 
 <div class="conclusion"> 
 
