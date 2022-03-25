@@ -5,7 +5,7 @@ edit: "https://github.com"
 date: "2022-03-09"
 icon: "/images/modular-architectures.png"
 title: "Modular architectures"
-description: "Optimistic rollups (ORUs) are the most promising avenue for scaling Ethereum - and blockchains in general - today. But what are they, and why are Ethereum developers and scalability researchers so excited about them?"
+description: "A look into the different ways in which modular blockchains can be interconnected."
 ---
 
 #### Introduction
