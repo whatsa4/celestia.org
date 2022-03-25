@@ -6,9 +6,11 @@ import Image from "../components/imageComponent";
 import {FooterBoxes} from "../datas/resources/content";
 import ToC from "../components/modules/toc";
 import Layout from "../components/layout";
+import FeaturedLearn from "../components/modules/featured-learn";
+
 
 export default function Template({
-         data, // this prop will be injected by the GraphQL query below.
+         data, props // this prop will be injected by the GraphQL query below.
      }) {
     const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, html, headings } = markdownRemark
@@ -22,24 +24,27 @@ export default function Template({
                 <div className={'container'}>
                     <div className="blog-post" id={'blog-post'}>
                         <div className={'inner small'}>
-                            <h1>{frontmatter.title}</h1>
-                            <div className={'author'}><div className={'authorImage'}><Image alt={frontmatter.author.name} filename={frontmatter.author.avatar} /></div>By <strong> {frontmatter.author.name}</strong></div>
-                            <div className={'date'}>Published on: <strong>{frontmatter.date}</strong></div>
+                            <h1 className={'h2'}>{frontmatter.title}</h1>
+                            {frontmatter.author && <div className={'author'}><div className={'authorImage'}><Image alt={frontmatter.author.name} filename={frontmatter.author.avatar} /></div>By <strong> {frontmatter.author.name}</strong></div>}
+                            {frontmatter.date && frontmatter.path === '/resources/' && <div className={'date'}>Published on: <strong>{frontmatter.date}</strong></div>}
                             <div className={'clear'}/>
                         </div>
 
+                        {frontmatter.image &&
                         <div className={'main-image'}>
                             <Image alt={frontmatter.title} filename={frontmatter.image} />
-                        </div>
+                        </div>}
 
-                        <Sticky topOffset={-200}>
-                            <ToC headings={headings}/>
+                        <Sticky topOffset={-100}>
+                            <ToC headings={headings} frontmatter={frontmatter}/>
                         </Sticky>
 
                         <div
                             className="blog-post-content"
                             dangerouslySetInnerHTML={{ __html: html }}
                         />
+
+                        <FeaturedLearn current={frontmatter.slug}/>
                     </div>
                 </div>
             </main>
@@ -58,6 +63,8 @@ export const pageQuery = graphql`
       }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        path
+        edit
         slug
         title
         image

@@ -46,6 +46,7 @@
 
   .char-bar{
     position: relative;
+    min-width:100px;
 
     .alpha-expand{
       width:100%;
@@ -82,6 +83,7 @@
 
     .alphabets{
       width:100%;
+      width:auto;
       position:absolute;
       right:0;
       overflow:hidden;
@@ -309,6 +311,10 @@
   main{
     .container{
       max-width:840px;
+
+      &.wide{
+        max-width:1440px;
+      }
     }
   }
 
@@ -348,5 +354,53 @@
       letter-spacing:inherit;
     }
   }
+}
 
+.glossary-nav{
+  border-top: 1px solid #E4E4E4;
+  margin-bottom:100px;
+
+  .col{
+    padding:50px 100px;
+    font-family: $inter;
+    font-weight:300;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 22px;
+
+    &.border-right{
+      border-right: 1px solid #E4E4E4;
+    }
+  }
+
+  .glossary{
+    .title{
+      font-family: $ruberoid;
+      font-weight:bold;
+      font-size: 20px;
+      color: #000000;
+      letter-spacing: 0;
+      transition: all 500ms ease-in-out;
+      margin-bottom:20px;
+
+      i{
+        display:inline-block;
+        float:right;
+        margin-top:3px;
+        transform:translateX(0) rotate(-90deg);
+        transition: transform 500ms ease-in-out;
+      }
+    }
+
+    &:hover{
+      .title{
+        color:$purple;
+
+        i{
+          transform:translateX(10px) rotate(-90deg);
+        }
+      }
+    }
+  }
 }

@@ -22,6 +22,7 @@
 @import "modules/perk.scss";
 @import "modules/columnWithIcon.scss";
 @import "modules/roadmapItem.scss";
+@import "modules/learn.scss";
 
 @import "pages/page-home.scss";
 @import "pages/page-resouces.scss";
@@ -82,8 +83,10 @@ body{
 }
 .anchor{
   &.before{
-    margin-top:-200px;
+    //margin-top:-200px;
     position:absolute;
+    transform:none !important;
+    top:unset !important;
   }
 }
 
@@ -100,9 +103,11 @@ h1{
   font-family: $ruberoid;
   font-weight:bold;
   font-size: 110px;
+  font-size: 100px;
   color: #000000;
   letter-spacing: 1.38px;
   line-height: 126px;
+  line-height: 116px;
   display:inline-block;
 
   &.main{
@@ -132,7 +137,7 @@ h1{
   }
 }
 
-h2{
+h2, .h2{
   font-family: $ruberoid;
   font-weight:bold;
   font-size: 70px;
