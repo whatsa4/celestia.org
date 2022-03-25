@@ -10,43 +10,39 @@ description: "Optimistic rollups (ORUs) are the most promising avenue for scalin
 
 #### Introduction
 
-A new paradigm is emerging in which modular blockchains are enabling new chains to be constructed in ways that were not previously possible. Because of this, the design possibilities are vast for both the individual blockchain and the modular stack it is a part of. Different types of modular blockchains can work synergistically, varying by purpose and architecture.
+Traditionally, creating a new blockchain had been a resource-intensive endeavor, imposing considerable time and monetary costs. Although blockchains can be implemented more efficiently now, existing hurdles are still present that cause friction in the bootstrapping process. Modular blockchains can help facilitate this process while reducing the friction caused by existing infrastructure.
 
-#### The modular blockchain stack
+#### Bootstrapping costs
 
-The four functions that modular blockchains can consist of are execution, settlement, consensus, and data availability. 
+With the rise of SDKs such as the Cosmos SDK and its corresponding consensus engine Tendermint, new blockchains can be created and innovated with significant ease compared to their predecessors. However, limitations still exist for launching new blockchains, such as sourcing a suitable validator set and ensuring a large token distribution such that the network is resilient to attacks. These are non-trivial tasks that can pose difficult problems.
 
-- Execution: The environment where applications live and state changes are executed.
-- Settlement: Provides an optional hub for execution layers to verify proofs, resolve fraud disputes, and bridge between other execution layers.
-- Consensus: Agree on the ordering of transactions.
-- Data availability: Verifies that transaction data is available.
+The next evolution of blockchain creation will be enabled by modular architectures. For example, a new blockchain will be able to be created using an SDK and will have the ability to immediately utilize existing modular blockchains. This allows blockchains to minimally launch by specializing in execution, outsourcing consensus, and data availability to an existing layer. Additionally, new blockchains can make use of settlement layers that launch on top of data availability layers, giving developers optionality for their architecture.
 
-It is typical for layers within a modular stack to provide more than one function, as in many cases it is impractical to have one without another. For example, a layer that specializes in data availability also requires consensus to order the data, otherwise the history of the data can’t be determined.
+Since execution layers don’t require a consensus mechanism, they need not source a large validator set or ensure sufficient token distribution. Because of this, new blockchains will be able to be bootstrapped effortlessly without imposing considerable time or monetary costs.
 
-#### Layer 1 & layer 2
+#### Sovereignty
 
-Naive modular stacks were initially constructed to provide scalability to a monolithic layer 1. In this stack, layer 1 provides all key functions—including execution—while layer 2 specializes only in execution.
+Blockchains that launch as independent chains have sovereignty over their environment. This gives them the right to push upgrades without reliance on other chains. A sovereign blockchain allows its own nodes to determine the canonical chain and act on its fork choice rule. The fork choice rule dictates how nodes determine and detect forks, including agreement on which is the ‘main’ chain (canonical chain).
 
 ![GATSBY_EMPTY_ALT](./images/article-2-image-1.png)
 
-Layer 2 can exist as differing designs, such as rollups, state channels, or plasma. For example, a rollup as the layer 2 provides an environment for applications to be deployed to, and for transactions to be processed that interact with those applications. Layer 1 supports the rollup by allowing it to publish its blocks, which at minimum ensures that the transaction data in the block is ordered and available. Since layer 1 also has execution capabilities, it can ensure the validity of transactions if the layer 2 requires. Additionally, the layer 1 can also act as a hub to connect layer 2s, allowing them to bridge tokens and liquidity between them.
+If the sovereign blockchain experiences a liveness or safety failure that requires a restart or some type of fork, social consensus can be utilized to restart the chain and act on decisions independent of outside communities.
 
-Essentially, the layer 1 is a monolithic chain that yields additional scale from layer 2. In most cases, the capacity of layer 2 is also dependent on layer 1s capacity. As a result, this implementation of a layer 1 & layer 2 stack is suboptimal for scalability.
+Blockchains that aren’t independent, like rollups on top of settlement layers, don’t retain sovereignty because they rely on the settlement layer to validate their transactions, which makes it the arbitrator of the rollup’s canonical chain. As a result, if the rollup experiences a liveness or safety failure that requires social consensus to enact decisions, the community of the settlement layer dictates that. 
 
-#### Execution & settlement & data availability
+Execution layers that deploy natively to a consensus and data availability layer are sovereign like independent blockchains while retaining the scalability that is provided by a modular stack.
 
-To optimize more of the benefits that a modular blockchain stack can provide, the functions can be decoupled across multiple layers such that each layer in the stack is modular.
+#### Execution envrionment
+
+Deploying execution layers onto existing settlement layers allows for experimentation with different types of execution environments. However, experimentation is slightly limited because execution layers, such as rollups, require transactions and proofs to be interpreted inside the settlement layer.
+
+For example, a rollup that wants to deploy on Ethereum requires that its fraud or validity proofs are verified in an EVM-compatible manner. Some rollups have implemented mechanisms that enable their VM to compile into a language that is readable using another VM that sits inside the EVM, such as Optimism compiling Go code into MIPs which runs inside the EVM. 
 
 ![GATSBY_EMPTY_ALT](./images/article-2-image-2.png)
 
-The execution layer sits at the top of the stack and plays the same role as layer 2 in the previous stack. Modular stacks beyond layer 1 and 2 are more flexible in their construction, requiring more specific naming that is coherent with the functionality that each layer provides.
+Alternatively, rollups can deploy to data availability layers that don’t impose the same restrictions. This is because the data availability layer doesn’t interpret any transactions or state updates from the execution layer. Only the raw transaction data is published, which allows the rollup to implement any arbitrary VM it wants.
 
-The settlement layer is unique to that of regular layer 1s that provide settlement because it decouples the settlement functionality from the rest of the functions. The result is an execution chain that can be used specifically for settlement, enabling a trust-minimized bridge between the execution and settlement layer and providing a way by which execution layers can bridge between each other.
-
-Once the execution layer has published its blocks to the settlement layer, it will build its own blocks that include transactions from the execution layer and publish only the transaction data to the base layer. This is only one of multiple ways that the settlement layer could function within the modular stack.
-
-At the bottom of this construction is the consensus and data availability layer. As the name suggests, it only provides consensus over the ordering of transactions and verifies that their data is available. Because there is no execution functionality, only transaction data is published by the settlement layer rather than the contents of the entire block. 
-
+Coupled with a data availability layer, execution layers can conduct unconstrained experimentation with its execution environment. Additionally, the ease at which new execution layers will be able to be deployed on top of data availability layers further reduces the friction in bootstrapping. This will result in compounding innovation in the execution environment because there are no barriers to experimentation with competition facilitating rapid innovation.
 
 #### Execution & data availability
 
@@ -62,10 +58,9 @@ Since there is no settlement layer involved, only the data availability layer is
 
 #### Conclusion
 
-**By decoupling functions and dividing them across specialized layers, different modular stacks can be created to serve varying goals with more optimal approaches. With the flexibility that modular blockchains provide, a wide design space is open to tackle unique challenges.**
+**Developing new blockchains was a challenging and resource-intensive task. The advent of SDKs, such as the Cosmos SDK, enabled new blockchains to be created more efficiently than before. With modular data availability layers, new blockchains can be bootstrapped without the hurdles associated with launching an existing independent chain, while simultaneously retaining many benefits.**
 
-1. A modular stack can consist of a combination of different layers. Since it is common for most layers in the stack to consist of at least two components, in many cases it is impractical to have one without another (e.g. consensus and data availability layer).
-2. Naive modular stacks were initially introduced with layer 2s, providing scalability to a monolithic layer 1 blockchain. Since the capacity of layer 2s depends on layer 1, a more modular approach is required to optimize the stack.
-3. A modular stack can be constructed that consists of three layers rather than two. The execution layer can utilize a settlement layer for all the functionality that is required (e.g. bridging and dispute resolution) but also harness the benefits of a separate consensus and data availability layer.
-4. A modular stack can also consist of an execution layer that runs natively on a consensus and data availability layer. Under this construction, execution layer nodes would verify blocks through its peer-to-peer layer rather than from a settlement layer contract. This enables sovereignty for the execution layer as it can determine its environment without permission from any underlying layers.
+1. The next evolution in creating new blockchains is SDKs that enable new execution layers to be created that can immediately utilize existing modular blockchains. This increases the efficiency at which new blockchains can be created while minimizing the cost.
+2. Execution layers can be deployed on top of data availability layers and retain the sovereignty of an independent layer 1. This enables them to push upgrades and utilize social consensus without any dependence on external communities. Execution layers deployed on settlement layers don’t have the same assurances.
+3. The execution environments that execution layers can build are limited by being deployed on a settlement layer. For an execution layer deployed on a data availability layer, there are no restraints on the type of execution environment that can be built and deployed. This facilitates experimentation and innovation in the execution environment that is unconstrained by any dependency on a data availability layer.  
 </div>
