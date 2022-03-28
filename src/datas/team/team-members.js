@@ -194,5 +194,33 @@ export const teamMembers = [
             email : '',
             linkedin : 'https://www.linkedin.com/in/vgonkivskyi/',
         }
-    }
+    },
+    {
+        id : 16,
+        name : 'Manav Aggarwal',
+        title: 'Software Engineer',
+        text: 'Former contributor at Nebula Protocol and Two Sigma Investments, BS & MS from Stanford',
+        image: 'team/ManavAggarwal.png',
+        socials: {
+            twitter : 'https://twitter.com/0xnavage',
+            discord : '',
+            github : 'https://github.com/Manav-Aggarwal',
+            email : '',
+            linkedin : 'https://www.linkedin.com/in/manav/',
+        }
+    },
+    {
+        id : 17,
+        name : 'Yaz Khoury',
+        title: 'Head of Developer Relations',
+        text: 'Former DevRel engineer at Celo Foundation and former Director of DevRel at Ethereum Classic',
+        image: 'team/YazKhoury.png',
+        socials: {
+            twitter : 'https://twitter.com/Yazanator',
+            discord : '',
+            github : 'https://github.com/YazzyYaz',
+            email : '',
+            linkedin : '',
+        }
+    },
 ]

@@ -83,6 +83,13 @@ const navigation = [
                 url: "/resources/",
                 icon: "menu/resources.svg",
                 type: 'internal'
+            },
+            {
+                text: "Read our best tweets",
+                subtext: "Twitter",
+                url: "https://typefully.com/CelestiaOrg",
+                icon: "menu/twitter.svg",
+                type: 'external'
             }
         ]
     },{
