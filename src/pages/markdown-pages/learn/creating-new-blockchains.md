@@ -38,7 +38,7 @@ Deploying execution layers onto existing settlement layers allows for experiment
 
 For example, a rollup that wants to deploy on Ethereum requires that its fraud or validity proofs are verified in an EVM-compatible manner. Some rollups have implemented mechanisms that enable their VM to compile into a language that is readable using another VM that sits inside the EVM, such as Optimism compiling Go code into MIPs which runs inside the EVM. 
 
-![GATSBY_EMPTY_ALT](./images/article-4-image-2.png)
+![GATSBY_EMPTY_ALT](./images/dsa.png)
 
 Alternatively, rollups can deploy to data availability layers that don’t impose the same restrictions. This is because the data availability layer doesn’t interpret any transactions or state updates from the execution layer. Only the raw transaction data is published, which allows the rollup to implement any arbitrary VM it wants.
 
