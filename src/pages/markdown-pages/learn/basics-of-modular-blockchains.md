@@ -5,7 +5,7 @@ edit: "https://github.com"
 date: "2022-03-10"
 icon: "/images/basics-of-modular-blockchains.png"
 title: "Basics of modular blockchains"
-description: "What exactly are modular blockchains and what makes them different to their monolithic counterparts?"
+description: "What are modular blockchains and what makes them different to their monolithic counterparts?"
 ---
 
 #### Introduction
@@ -52,15 +52,15 @@ This introduces limitations when faced with the scalability trilemma. The trilem
 
 #### Benefits of modular blockchains
 
-Sovereignty 
+##### Sovereignty 
 
 New modular blockchains can be sovereign like layer 1s despite the utilization of other layers. This allows the blockchain to respond to hacks and push upgrades without permission from any underlying layers. This would be possible for blockchains that utilize Celestia as it won’t impose any restrictions on them. Essentially, sovereign blockchains retain the ability for social consensus to make critical decisions, which is one of the most important facets of blockchains as social coordination mechanisms.
 
-Launching new blockchains
+##### Launching new blockchains
 
 Since modular blockchains don’t need to handle all functions, new blockchains can simply utilize existing modular blockchains for the components they wish to off-load. This allows new blockchains to be bootstrapped efficiently, reducing time to deployment and minimizing costs. For example, a rollup SDK like [Optimint](https://github.com/celestiaorg/optimint) will help facilitate the creation of new blockchains without needing to bootstrap a secure validator set.
 
-Scalability
+##### Scalability
 
 Modular blockchains aren’t constrained by having to handle all the functions. By splitting them into multiple layers, scaling can be accomplished without sacrificing security or decentralization. This enables sustainable blockchain scalability that is compatible with a decentralized, multi-chain landscape.
 
