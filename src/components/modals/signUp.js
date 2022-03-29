@@ -44,15 +44,17 @@ export default class SignUp extends React.Component {
         e.preventDefault();
         const listFields = {};
 
-        if(this.state.newsletter){listFields['group[24870][1]'] = 1}
-        if(this.state.developer){listFields['group[24870][2]'] = 2}
-        if(this.state.operator){listFields['group[24870][4]'] = 4}
+        if(this.state.newsletter){listFields['group[57543][1]'] = 1}
+        if(this.state.developer){listFields['group[57543][2]'] = 2}
+        if(this.state.operator){listFields['group[57543][4]'] = 4}
 
         this.setState(prevState => ({
                 listFields
         }),()=> {
             if(this.state.email){
-                if(this.state.newsletter){
+                this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=8d165e36d3')
+
+                /*if(this.state.newsletter){
                     this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=6d1ed0c45b')
                 }
                 if(this.state.developer){
@@ -61,7 +63,7 @@ export default class SignUp extends React.Component {
                 if(this.state.operator){
                     this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=9735063be9')
 
-                }
+                }*/
             }
         })
 
