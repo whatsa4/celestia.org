@@ -61,7 +61,7 @@ class Footer extends React.Component {
         this.state = {
             email : '',
             listFields : {
-                'group[24870]': '1'
+                'group[57543]': '1'
             },
             isModalOpen: false,
             popupTitle: '',
