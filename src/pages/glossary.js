@@ -49,6 +49,8 @@ function GetGlossaries(props){
     const [expand, toggleExpand] = useState(false)
     const [filteredGlossaries, setGlossaries] = useState([])
 
+    console.log(props.alpha)
+
     return (
         <div>
             <div className={search ? 'opened' : 'closed'}>
@@ -68,10 +70,10 @@ function GetGlossaries(props){
                             <div className={'alphabets float-end'}>
                                 <ul className={'list-group list-group-horizontal'}>
                                     <li className={'list-group-item expand'} role={'button'} tabIndex={0} onClick={() => toggleSearch(false)} onKeyDown={() => toggleSearch(false )}><i className={'icon-dropdown'} aria-label={'Hide search'}></i></li>
-                                    {glossaries.map(glossary => {
+                                    {glossaries.map((glossary,index) => {
                                             const alpha = String(Object.keys(glossary))
-                                            return (<li className={props.alpha == alpha && !search ? 'list-group-item flex-fill active' : 'list-group-item flex-fill'} key={alpha}>
-                                                <Link to={`/glossary#${alpha}`} state={{ alpha: alpha }}>{alpha}</Link>
+                                            return (<li className={(!search && !props.alpha && index == 0) ? 'list-group-item flex-fill active' : props.alpha === alpha && !search ? 'list-group-item flex-fill active' : 'list-group-item flex-fill'} key={alpha}>
+                                                <Link to={`/glossary#${alpha}`} state={{ alpha: alpha }} onClick={() => toggleSearch(false )}>{alpha}</Link>
                                             </li>)
                                         }
                                     )}
@@ -147,7 +149,7 @@ class GlossaryPage extends React.Component {
                         <div className={'container'}>
                             <h1 className={'main'}>Glossary</h1>
 
-                            <GetGlossaries alpha={(this.props.location.state && this.props.location.state.alpha) ? this.props.location.state.alpha : 'A'}/>
+                            <GetGlossaries alpha={(this.props.location.state && this.props.location.state.alpha) ? this.props.location.state.alpha : String(Object.keys(glossaries[0]))}/>
                         </div>
                     </main>
                 </div>
