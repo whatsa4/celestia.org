@@ -11,8 +11,8 @@ import Youtube from "./socials/youtube";
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 import ReactModal from 'react-modal'
-import Success from "./modals/success";
-import SignUp from "./modals/signUp";
+
+import ReCAPTCHA from "react-google-recaptcha";
 
 ReactModal.setAppElement('#___gatsby')
 
@@ -97,8 +97,8 @@ class Footer extends React.Component {
                         this.setState({popupTitle:'Thank you!'});
                         this.setState({msg:this.state.msg});
                     }else{
-                        this.setState({popupTitle:'Error'});
                         this.setState({isModalOpen:true});
+                        this.setState({popupTitle:'Error'});
                     }
                 }
                 //console.log(data)
@@ -122,60 +122,36 @@ class Footer extends React.Component {
         })
     }
 
-    /*_handleSubmit = e => {
-        e.preventDefault();
-        const self = this;
-        addToMailchimp(this.state.email, this.state.listFields) // listFields are optional if you are only capturing the email address.
-            .then(data => {
-                if(data.result === 'error' && !data.msg.includes("is already subscribed")){
-                    this.setState({popupTitle:'Error'})
-                    this.setState({msg:data.msg})
-                }else{
-                    if(data.msg.includes("is already subscribed")){
-                        this.setState({popupTitle:'Thank you!'})
-                        this.setState({msg:'You are already subscribed!'})
-                    }else{
-                        this.setState({popupTitle:'Thank you!'})
-                        this.setState({msg:data.msg})
-                    }
-                }
-                self.handleModalOpen();
-            })
-            .catch(() => {
-                // unnecessary because Mailchimp only ever
-                // returns a 200 status code
-                // see below for how to handle errors
-            })
-    }
-     */
 
     change = (e) => {
         e.preventDefault();
         this.setState({ email: e.target.value })
     };
 
+    onChange(value) {
+        console.log("Captcha value:", value);
+    }
+
     render() {
+        const recaptchaRef = React.createRef();
+
         return (
             <footer id={'footer'}>
                 <div className={'container'}>
 
                     <FooterBox footerBoxes={this.props.FooterBoxes}/>
 
-                    {this.state.isModalOpen ?
-                        <ReactModal
-                            isOpen={this.state.isModalOpen}
-                        >
-                            <div className={'inner'}>
-                                <Success title={'dsdsad'} text={this.state.msg}/>
-                                <button className={'close-button'} onClick={this.handleModalClose} onKeyDown={this.handleModalClose}><i className={'icon-close'} aria-label="Close"></i></button>
-                            </div>
-                        </ReactModal> : ''}
-
                     <div className={'row py-5 mt-5'}>
                         <div className={'col col-12 col-lg-4 pe-5'}>
                             <div className={'title'}>Subscribe to our Newsletter</div>
 
-                            <form onSubmit={(e) => this._handleSubmit(e)} className={'needs-validation'} noValidate>
+                            <form onSubmit={(e) => this._handleSubmit(e)} className={'needs-validation'}>
+                                <ReCAPTCHA
+                                    ref={recaptchaRef}
+                                    size="invisible"
+                                    sitekey="6LfY7yYfAAAAAC4OwBiqx9O3SD_KGd_5kvKEJZ8q"
+                                    onChange={this.onChange}
+                                />
                                 <input type="email" id={'email'} className={'form-control'} onChange={(e) => this.change(e)} required/>
                                 <button type={'submit'} className={'button button-simple mt-3'}>Subscribe</button>
                             </form>
