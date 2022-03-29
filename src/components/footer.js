@@ -11,6 +11,8 @@ import Youtube from "./socials/youtube";
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 import ReactModal from 'react-modal'
+import Success from "./modals/success";
+import SignUp from "./modals/signUp";
 
 ReactModal.setAppElement('#___gatsby')
 
@@ -78,7 +80,49 @@ class Footer extends React.Component {
         document.body.style.overflow = 'unset';
     }
 
+
+    mailchimp(url){
+        addToMailchimp(this.state.email, this.state.listFields, url) // listFields are optional if you are only capturing the email address.
+            .then(data => {
+                this.setState({msg:data.msg});
+                if(data.result === 'error' && data.msg.includes("is already subscribed")){
+                    this.setState({success:true});
+                    this.setState({isModalOpen:true});
+                    this.setState({popupTitle:'Thank you!'});
+                    this.setState({msg:'Thank you for subscribing!'});
+                }else{
+                    if(data.result === 'success'){
+                        this.setState({success:true});
+                        this.setState({isModalOpen:true});
+                        this.setState({popupTitle:'Thank you!'});
+                        this.setState({msg:this.state.msg});
+                    }else{
+                        this.setState({popupTitle:'Error'});
+                        this.setState({isModalOpen:true});
+                    }
+                }
+                //console.log(data)
+            })
+            .catch(() => {
+            })
+    }
+
     _handleSubmit = e => {
+        e.preventDefault();
+        const listFields = {};
+
+        listFields['group[57543][1]'] = 1
+
+        this.setState(prevState => ({
+            listFields
+        }),()=> {
+            if(this.state.email){
+                this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=8d165e36d3')
+            }
+        })
+    }
+
+    /*_handleSubmit = e => {
         e.preventDefault();
         const self = this;
         addToMailchimp(this.state.email, this.state.listFields) // listFields are optional if you are only capturing the email address.
@@ -103,6 +147,8 @@ class Footer extends React.Component {
                 // see below for how to handle errors
             })
     }
+     */
+
     change = (e) => {
         e.preventDefault();
         this.setState({ email: e.target.value })
@@ -114,6 +160,16 @@ class Footer extends React.Component {
                 <div className={'container'}>
 
                     <FooterBox footerBoxes={this.props.FooterBoxes}/>
+
+                    {this.state.isModalOpen ?
+                        <ReactModal
+                            isOpen={this.state.isModalOpen}
+                        >
+                            <div className={'inner'}>
+                                <Success title={'dsdsad'} text={this.state.msg}/>
+                                <button className={'close-button'} onClick={this.handleModalClose} onKeyDown={this.handleModalClose}><i className={'icon-close'} aria-label="Close"></i></button>
+                            </div>
+                        </ReactModal> : ''}
 
                     <div className={'row py-5 mt-5'}>
                         <div className={'col col-12 col-lg-4 pe-5'}>

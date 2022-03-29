@@ -29,7 +29,7 @@ export default class SignUp extends React.Component {
                     if(data.result === 'success'){
                         this.setState({success:true});
                         this.setState({popupTitle:'Thank you!'});
-                        this.setState({msg:'Thank you for subscribing!'});
+                        this.setState({msg:this.state.msg});
                     }else{
                         this.setState({popupTitle:'Error'});
                     }
@@ -53,17 +53,6 @@ export default class SignUp extends React.Component {
         }),()=> {
             if(this.state.email){
                 this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=8d165e36d3')
-
-                /*if(this.state.newsletter){
-                    this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=6d1ed0c45b')
-                }
-                if(this.state.developer){
-                    this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=bb230bef69')
-                }
-                if(this.state.operator){
-                    this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=9735063be9')
-
-                }*/
             }
         })
 
