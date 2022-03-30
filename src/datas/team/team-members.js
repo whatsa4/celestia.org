@@ -222,5 +222,18 @@ export const teamMembers = [
             email : '',
             linkedin : '',
         }
+    },{
+        id : 18,
+        name : 'Ekram Ahmed',
+        title: 'Head of Marketing and Communications',
+        text: 'Former positioning and strategy consultant for Facebook and Google',
+        image: 'team/EkramAhmed.png',
+        socials: {
+            twitter : 'https://twitter.com/ekrahm',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : '',
+        }
     },
 ]
