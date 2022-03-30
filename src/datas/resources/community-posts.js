@@ -26,7 +26,7 @@ export const communityposts = [
     {
         id: 4,
         category: 'communitypost',
-        image: 'resources/John-Delphi-podcast.png',
+        image: 'resources/arnold-toh-the-block.png',
         title: 'Celestia: A technical overview',
         subtitle: '',
         url: 'https://www.theblockresearch.com/celestia-a-technical-overview-132331',
