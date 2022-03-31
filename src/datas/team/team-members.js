@@ -234,6 +234,18 @@ export const teamMembers = [
             github : '',
             email : '',
             linkedin : '',
+        },{
+        id : 19,
+        name : 'Tejinder Nijjer',
+        title: 'Operations Associate',
+        text: 'Former project manager at Xerox and Elekta',
+        image: 'team/TejinderNijjer.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : '',
         }
     },
 ]
