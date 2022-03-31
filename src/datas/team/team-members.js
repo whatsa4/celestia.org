@@ -234,7 +234,8 @@ export const teamMembers = [
             github : '',
             email : '',
             linkedin : '',
-        },{
+        }
+    },{
         id : 19,
         name : 'Tejinder Nijjer',
         title: 'Operations Associate',
@@ -247,5 +248,5 @@ export const teamMembers = [
             email : '',
             linkedin : '',
         }
-    },
+    }
 ]
