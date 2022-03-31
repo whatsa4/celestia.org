@@ -164,6 +164,8 @@ class Footer extends React.Component {
                             <p>Website designed with <i className={'icon-heart'}/> by <a href="https://designatives.com">Designatives</a></p>
                         </div>
                     </div>
+
+
                 </div>
                 <ReactModal
                     isOpen={this.state.isModalOpen}
