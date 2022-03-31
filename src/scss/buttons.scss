@@ -18,6 +18,13 @@
   text-decoration: none;
   border:none;
 
+  &.sm{
+    padding:10px;
+    font-size: 12px;
+    letter-spacing: 0.15px;
+    line-height: 18px;
+  }
+
   &:hover{
     background:lighten(#000,20%);
     color:#fff;

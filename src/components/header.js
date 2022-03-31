@@ -138,6 +138,7 @@ class Header extends React.Component {
 
     render() {
         return (
+            <>
             <header id={'header'}>
                 <Helmet>
                     <title>Celestia</title>
@@ -204,6 +205,7 @@ class Header extends React.Component {
                     <div className={'clear'}/>
                 </div>
             </header>
+                </>
         );
     }
 }
