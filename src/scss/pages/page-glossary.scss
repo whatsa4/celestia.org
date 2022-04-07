@@ -22,6 +22,10 @@
         letter-spacing: 0;
         padding:0 1em;
 
+        a{
+          color: #000000;
+        }
+
         &.expand{
           width:0 !important;
           overflow:hidden;
@@ -167,6 +171,10 @@
           &.active{
             background:inherit;
             color:$purple;
+
+            a{
+              color:$purple;
+            }
           }
         }
       }
