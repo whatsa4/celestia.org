@@ -18,8 +18,7 @@ class GlossaryContent extends React.Component {
                 <p>In traditional blockchains, data availability is verified by requiring full nodes to download all the block data. This approach does not scale, hence the need for specialized schemes such as data availability sampling which allow nodes to verify data availability without downloading the entire block.
                 </p>
 
-                // Add link to the data availability problem word page
-                <p>See the <a href="https://www.celestia.org/">data availability problem</a>.
+                <p>See the <a href="https://www.celestia.org/glossary/the-data-availability-problem">data availability problem</a>.
                 </p>
                 
                 <p> Read more about <a href="https://coinmarketcap.com/alexandria/article/what-is-data-availability">data availability</a>.
