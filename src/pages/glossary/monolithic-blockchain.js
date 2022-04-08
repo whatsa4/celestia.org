@@ -15,8 +15,7 @@ class GlossaryContent extends React.Component {
                 <p>A type of blockchain that performs all four functions at once, which are execution, settlement, consensus, and data availability. Where a modular stack splits up all components across multiple layers, monolithic blockchains do so on a single layer.
                 </p>
 
-                // add link to learn modular article 1
-                <p>Read more about monolithic blockchains here
+                <p>Read more about <a href="https://celestia.org/learn/basics-of-modular-blockchains">monolithic blockchains</a>
                 </p>
 
             </div>
