@@ -1,6 +1,7 @@
 import * as React from "react"
 import addToMailchimp from "gatsby-plugin-mailchimp";
 import Success from "./success";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default class SignUp extends React.Component {
     constructor(props) {
@@ -29,7 +30,7 @@ export default class SignUp extends React.Component {
                     if(data.result === 'success'){
                         this.setState({success:true});
                         this.setState({popupTitle:'Thank you!'});
-                        this.setState({msg:'Thank you for subscribing!'});
+                        this.setState({msg:this.state.msg});
                     }else{
                         this.setState({popupTitle:'Error'});
                     }
@@ -44,24 +45,15 @@ export default class SignUp extends React.Component {
         e.preventDefault();
         const listFields = {};
 
-        if(this.state.newsletter){listFields['group[24870][1]'] = 1}
-        if(this.state.developer){listFields['group[24870][2]'] = 2}
-        if(this.state.operator){listFields['group[24870][4]'] = 4}
+        if(this.state.newsletter){listFields['group[57543][1]'] = 1}
+        if(this.state.developer){listFields['group[57543][2]'] = 2}
+        if(this.state.operator){listFields['group[57543][4]'] = 4}
 
         this.setState(prevState => ({
                 listFields
         }),()=> {
             if(this.state.email){
-                if(this.state.newsletter){
-                    this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=6d1ed0c45b')
-                }
-                if(this.state.developer){
-                    this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=bb230bef69')
-                }
-                if(this.state.operator){
-                    this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=9735063be9')
-
-                }
+                this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=8d165e36d3')
             }
         })
 
@@ -75,12 +67,20 @@ export default class SignUp extends React.Component {
         this.setState({ [e.target.id] : e.target.checked})
     };
     render() {
+        const recaptchaRef = React.createRef();
+
         return <div className={'modal-content-inner'}>
             {this.state.msg ? <Success title={this.state.popupTitle} text={this.state.msg}/> :
                 <div className={'row'}>
                     <div className={'col-12'}>
                         <h3>Sign up to be the first to try our limited-access developer beta or validate on our testnet.</h3>
                         <form onSubmit={(e) => this._handleSubmit(e)}>
+                            <ReCAPTCHA
+                                ref={recaptchaRef}
+                                size="invisible"
+                                sitekey="6LfY7yYfAAAAAC4OwBiqx9O3SD_KGd_5kvKEJZ8q"
+                                onChange={this.onChange}
+                            />
                             <div className={'form-group'}>
                                 <label htmlFor="email">Email</label>
                                 <input type="text" id={'email'} name={'email'} required onChange={(e) => this.change(e)}/>
