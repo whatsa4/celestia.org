@@ -12,7 +12,6 @@ import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 import ReactModal from 'react-modal'
 
-import ReCAPTCHA from "react-google-recaptcha";
 
 ReactModal.setAppElement('#___gatsby')
 
@@ -133,8 +132,6 @@ class Footer extends React.Component {
     }
 
     render() {
-        const recaptchaRef = React.createRef();
-
         return (
             <footer id={'footer'}>
                 <div className={'container'}>
@@ -146,12 +143,6 @@ class Footer extends React.Component {
                             <div className={'title'}>Subscribe to our Newsletter</div>
 
                             <form onSubmit={(e) => this._handleSubmit(e)} className={'needs-validation'}>
-                                <ReCAPTCHA
-                                    ref={recaptchaRef}
-                                    size="invisible"
-                                    sitekey="6LfY7yYfAAAAAC4OwBiqx9O3SD_KGd_5kvKEJZ8q"
-                                    onChange={this.onChange}
-                                />
                                 <input type="email" id={'email'} className={'form-control'} onChange={(e) => this.change(e)} required/>
                                 <button type={'submit'} className={'button button-simple mt-3'}>Subscribe</button>
                             </form>

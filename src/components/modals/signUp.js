@@ -1,7 +1,6 @@
 import * as React from "react"
 import addToMailchimp from "gatsby-plugin-mailchimp";
 import Success from "./success";
-import ReCAPTCHA from "react-google-recaptcha";
 
 export default class SignUp extends React.Component {
     constructor(props) {
@@ -67,7 +66,6 @@ export default class SignUp extends React.Component {
         this.setState({ [e.target.id] : e.target.checked})
     };
     render() {
-        const recaptchaRef = React.createRef();
 
         return <div className={'modal-content-inner'}>
             {this.state.msg ? <Success title={this.state.popupTitle} text={this.state.msg}/> :
@@ -75,12 +73,6 @@ export default class SignUp extends React.Component {
                     <div className={'col-12'}>
                         <h3>Sign up to be the first to try our limited-access developer beta or validate on our testnet.</h3>
                         <form onSubmit={(e) => this._handleSubmit(e)}>
-                            <ReCAPTCHA
-                                ref={recaptchaRef}
-                                size="invisible"
-                                sitekey="6LfY7yYfAAAAAC4OwBiqx9O3SD_KGd_5kvKEJZ8q"
-                                onChange={this.onChange}
-                            />
                             <div className={'form-group'}>
                                 <label htmlFor="email">Email</label>
                                 <input type="text" id={'email'} name={'email'} required onChange={(e) => this.change(e)}/>
