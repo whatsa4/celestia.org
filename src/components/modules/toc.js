@@ -6,10 +6,12 @@ const ToC = ({ headings, frontmatter }) => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 const id = entry.target.getAttribute('id');
-                if (entry.intersectionRatio > 0 && document.querySelector(`.toc`)) {
-                    document.querySelector(`.toc a[href*="#${id}"]`).parentElement.classList.add('selected');
-                } else {
-                    document.querySelector(`.toc a[href*="#${id}"]`).parentElement.classList.remove('selected');
+                if (document.querySelector(`.toc`)) {
+                    if (entry.intersectionRatio > 0 ) {
+                        document.querySelector(`.toc a[href*="#${id}"]`).parentElement.classList.add('selected');
+                    } else {
+                        document.querySelector(`.toc a[href*="#${id}"]`).parentElement.classList.remove('selected');
+                    }
                 }
             });
         });
@@ -41,7 +43,7 @@ const ToC = ({ headings, frontmatter }) => {
             </div>
 
             <a href={frontmatter.edit} className={'suggest-button'} target={'_blank'} rel={'noreferrer'}>
-                <i className={'icon-edit'}></i>SUGGEST AND EDIT
+                <i className={'icon-edit'}></i>SUGGEST AN EDIT
             </a>
         </div>
     );
