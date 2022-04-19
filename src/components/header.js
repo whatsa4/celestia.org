@@ -76,6 +76,19 @@ const navigation = [
                 url: "/faq/",
                 icon: "menu/faq.svg",
                 type: 'internal'
+            },{
+                text: "Learn Modular",
+                subtext: "Learn",
+                url: "/learn/",
+                icon: "menu/devnet.svg",
+                type: 'internal'
+            },
+            {
+                text: "Glossary",
+                subtext: "Explore",
+                url: "/glossary/",
+                icon: "menu/research.svg",
+                type: 'internal'
             },
             {
                 text: "Videos, Podcasts, Whitepapers",
