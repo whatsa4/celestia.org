@@ -76,6 +76,12 @@ const navigation = [
                 url: "/faq/",
                 icon: "menu/faq.svg",
                 type: 'internal'
+            },{
+                text: "Learn Modular",
+                subtext: "Learn",
+                url: "/learn/",
+                icon: "menu/devnet.svg",
+                type: 'internal'
             },
             {
                 text: "Glossary",
@@ -99,10 +105,6 @@ const navigation = [
                 type: 'external'
             }
         ]
-    },{
-        text: "Learn",
-        url: "/learn/",
-        type: 'internal',
     },{
         text: "Technology",
         url: "/technology/",
