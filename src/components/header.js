@@ -78,6 +78,13 @@ const navigation = [
                 type: 'internal'
             },
             {
+                text: "Glossary",
+                subtext: "Explore",
+                url: "/glossary/",
+                icon: "menu/paper.svg",
+                type: 'internal'
+            },
+            {
                 text: "Videos, Podcasts, Whitepapers",
                 subtext: "Resources",
                 url: "/resources/",
@@ -92,6 +99,10 @@ const navigation = [
                 type: 'external'
             }
         ]
+    },{
+        text: "Learn",
+        url: "/learn/",
+        type: 'internal',
     },{
         text: "Technology",
         url: "/technology/",
