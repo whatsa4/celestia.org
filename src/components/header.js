@@ -81,7 +81,7 @@ const navigation = [
                 text: "Glossary",
                 subtext: "Explore",
                 url: "/glossary/",
-                icon: "menu/paper.svg",
+                icon: "menu/research.svg",
                 type: 'internal'
             },
             {
