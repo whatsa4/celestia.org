@@ -1,4 +1,5 @@
 ---
+path: "/resources/"
 slug: "/resources/test"
 date: "2020-11-11"
 title: "Optimistic Rollups for the Rest of Us"
