@@ -1,7 +1,7 @@
 ---
 path: "/learn/"
 slug: "/learn/creating-new-blockchains"
-edit: "https://github.com"
+edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn/creating-new-blockchains.md"
 date: "2022-03-07"
 icon: "/images/creating-new-blockchains.png"
 title: "Creating new blockchains"
