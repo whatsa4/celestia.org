@@ -127,10 +127,6 @@ class Footer extends React.Component {
         this.setState({ email: e.target.value })
     };
 
-    onChange(value) {
-        console.log("Captcha value:", value);
-    }
-
     render() {
         return (
             <footer id={'footer'}>
