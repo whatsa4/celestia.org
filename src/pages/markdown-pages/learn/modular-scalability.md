@@ -21,7 +21,7 @@ Rollups are a type of blockchain that post their blocks to a parent chain to ens
 
 Optimistic rollups post their blocks to a parent chain, which receives the block with the corresponding signatures and optimistically assumes the transactions are correct. To allow for the rollup blocks to be challenged in the event the block is suspected to be invalid, a dispute window is provided for challenges to be made. If a block is challenged, a fraud proof will be used to verify whether it is invalid. Once the dispute window has closed, challenges can’t be made against the block and it is considered final.
 
-![GATSBY_EMPTY_ALT](./images/article-3-image-1.png)
+![GATSBY_EMPTY_ALT](./images/article-3-image-2.png)
 
 One primary scalability improvement that optimistic rollups provide is moving execution away from the parent chain. By executing transactions on a rollup it alleviates the execution bottleneck of the parent chain. Optimizations made for execution, such as parallelization, can be implemented without requiring the same tradeoffs that would be present on a monolithic chain that has to contend with balancing all of its bottlenecks.
 
@@ -31,7 +31,7 @@ A second scalability improvement is the alleviation of state growth from its par
 
 Unlike optimistic rollups, zk-rollups don’t assume that their transactions are correct. With every block that is posted to the parent chain a validity proof is provided that attests to the correctness of the block. Since transactions are considered final once the validity proof is verified, a dispute window is not required to challenge the rollup block’s validity.
 
-![GATSBY_EMPTY_ALT](./images/article-3-image-2.png)
+![GATSBY_EMPTY_ALT](./images/article-3-image-3.png)
 
 zk-rollups provide similar scalability benefits to that of Optimistic rollups by alleviating the execution bottleneck and state growth from its parent chain. Additionally, zk-rollups also provide scalability for compute verification through the use of validity proofs.
 
@@ -45,7 +45,7 @@ By separating consensus and execution, data availability layers can make scalabi
 
 One of the primary scalability improvements that data availability layers provide is block verification. Since consensus isn't concerned with transaction validity, block verification is reduced to only data availability verification. A key component of this is data availability sampling, which allows nodes to verify availability without having to download the entire block. This is done by completing multiple rounds of sampling small random chunks. 
 
-![GATSBY_EMPTY_ALT](./images/article-3-image-3.png)
+![GATSBY_EMPTY_ALT](./images/article-3-image-1.png)
 
 The implication of data availability sampling on light nodes’ resource requirements is that the number of sampling rounds and size of the chunks remains fixed regardless of the block size, only the header size increases. For example, given a block size of 250kb the overhead would be approximately 2kb, and for a 1000kb block it would be approximately 4kb.
 
