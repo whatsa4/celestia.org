@@ -38,6 +38,15 @@ export default class Resource extends React.Component {
                     }
 
                     break;
+                case 'communitypost':
+                    category = 'Community post';
+                    if(this.props.data && this.props.data.image){
+                        image = <div className={'image-container'}><Image alt={''} filename={this.getImage()} /></div>;
+                    }else{
+                        image = <div className={'image-container'}><Image alt={''} filename={'resources/placeholders/blog.png'} /></div>;
+                    }
+
+                    break;
                 case 'podcast':
                     category = 'Podcast';
                     image = <div className={'image-container icon'}><Image alt={''} filename={'resources/placeholders/podcast.png'} /></div>;

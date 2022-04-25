@@ -12,6 +12,7 @@ import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 import ReactModal from 'react-modal'
 
+
 ReactModal.setAppElement('#___gatsby')
 
 const navigation = [
@@ -61,7 +62,7 @@ class Footer extends React.Component {
         this.state = {
             email : '',
             listFields : {
-                'group[24870]': '1'
+                'group[57543]': '1'
             },
             isModalOpen: false,
             popupTitle: '',
@@ -78,31 +79,49 @@ class Footer extends React.Component {
         document.body.style.overflow = 'unset';
     }
 
-    _handleSubmit = e => {
-        e.preventDefault();
-        const self = this;
-        addToMailchimp(this.state.email, this.state.listFields) // listFields are optional if you are only capturing the email address.
+
+    mailchimp(url){
+        addToMailchimp(this.state.email, this.state.listFields, url) // listFields are optional if you are only capturing the email address.
             .then(data => {
-                if(data.result === 'error' && !data.msg.includes("is already subscribed")){
-                    this.setState({popupTitle:'Error'})
-                    this.setState({msg:data.msg})
+                this.setState({msg:data.msg});
+                if(data.result === 'error' && data.msg.includes("is already subscribed")){
+                    this.setState({success:true});
+                    this.setState({isModalOpen:true});
+                    this.setState({popupTitle:'Thank you!'});
+                    this.setState({msg:'Thank you for subscribing!'});
                 }else{
-                    if(data.msg.includes("is already subscribed")){
-                        this.setState({popupTitle:'Thank you!'})
-                        this.setState({msg:'You are already subscribed!'})
+                    if(data.result === 'success'){
+                        this.setState({success:true});
+                        this.setState({isModalOpen:true});
+                        this.setState({popupTitle:'Thank you!'});
+                        this.setState({msg:this.state.msg});
                     }else{
-                        this.setState({popupTitle:'Thank you!'})
-                        this.setState({msg:data.msg})
+                        this.setState({isModalOpen:true});
+                        this.setState({popupTitle:'Error'});
                     }
                 }
-                self.handleModalOpen();
+                //console.log(data)
             })
             .catch(() => {
-                // unnecessary because Mailchimp only ever
-                // returns a 200 status code
-                // see below for how to handle errors
             })
     }
+
+    _handleSubmit = e => {
+        e.preventDefault();
+        const listFields = {};
+
+        listFields['group[57543][1]'] = 1
+
+        this.setState(prevState => ({
+            listFields
+        }),()=> {
+            if(this.state.email){
+                this.mailchimp('https://celestia.us6.list-manage.com/subscribe/post?u=cde2461ba84f5279fff352829&amp;id=8d165e36d3')
+            }
+        })
+    }
+
+
     change = (e) => {
         e.preventDefault();
         this.setState({ email: e.target.value })
@@ -119,7 +138,7 @@ class Footer extends React.Component {
                         <div className={'col col-12 col-lg-4 pe-5'}>
                             <div className={'title'}>Subscribe to our Newsletter</div>
 
-                            <form onSubmit={(e) => this._handleSubmit(e)} className={'needs-validation'} noValidate>
+                            <form onSubmit={(e) => this._handleSubmit(e)} className={'needs-validation'}>
                                 <input type="email" id={'email'} className={'form-control'} onChange={(e) => this.change(e)} required/>
                                 <button type={'submit'} className={'button button-simple mt-3'}>Subscribe</button>
                             </form>
