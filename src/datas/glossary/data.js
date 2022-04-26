@@ -48,7 +48,7 @@ export const glossaries = [
             {
                 url: 'full-node',
                 title: 'Full node',
-                text: 'A type of node that fully validates a blockchain by downloading each block and executing transactions to verify its validity.',
+                text: 'A type of node that fully verifies a blockchain.',
             }
         ]
     },{
