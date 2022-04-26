@@ -48,7 +48,7 @@ export const glossaries = [
             {
                 url: 'full-node',
                 title: 'Full node',
-                text: 'A type of node that fully validates a blockchain by downloading each block and executing transactions to verify its validity.',
+                text: 'A type of node that fully verifies a blockchain.',
             }
         ]
     },{
@@ -148,7 +148,7 @@ export const glossaries = [
             },{
                 url: 'trusted-bridge',
                 title: 'Trusted bridge',
-                text: 'A bridge between two blockchains that doesn’t require an intermediary, a committee, or an honest majority assumption to ensure that funds can’t be stolen.',
+                text: 'A bridge between two blockchains that requires either a trusted intermediary, committee, or an honest majority assumption to ensure that funds can’t be stolen.',
             }
         ]
     },{
