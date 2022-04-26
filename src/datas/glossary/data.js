@@ -148,7 +148,7 @@ export const glossaries = [
             },{
                 url: 'trusted-bridge',
                 title: 'Trusted bridge',
-                text: 'A bridge between two blockchains that doesn’t require an intermediary, a committee, or an honest majority assumption to ensure that funds can’t be stolen.',
+                text: 'A bridge between two blockchains that requires either a trusted intermediary, committee, or an honest majority assumption to ensure that funds can’t be stolen.',
             }
         ]
     },{
