@@ -251,7 +251,7 @@ export const teamMembers = [
      },{
         id : 20,
         name : 'Jeremy Sklaroff',
-        title: 'General Counsel',
+        title: 'General Counsel, Celestia Labs',
         text: 'Former general counsel of Edge & Node/The Graph and financial regulatory attorney at Davis Polk',
         image: 'team/JeremySklaroff.png',
         socials: {
