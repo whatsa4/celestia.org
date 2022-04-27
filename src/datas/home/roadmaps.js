@@ -16,7 +16,7 @@ export const roadmaps = [
         status: 'active',
     },{
         id: 4,
-        title: '2022',
+        title: '2023',
         text: 'Mainnet Launch',
         status: 'active',
     },
