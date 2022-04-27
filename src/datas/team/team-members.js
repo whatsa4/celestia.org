@@ -247,6 +247,18 @@ export const teamMembers = [
             github : '',
             email : '',
             linkedin : '',
+        },{
+        id : 20,
+        name : 'Jeremy Sklaroff',
+        title: 'General Counsel',
+        text: 'Former general counsel of Edge & Node/The Graph and financial regulatory attorney at Davis Polk',
+        image: 'team/JeremySklaroff.png',
+        socials: {
+            twitter : 'https://twitter.com/jeremysklaroff',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : '',
         }
     }
 ]
