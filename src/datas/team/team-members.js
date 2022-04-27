@@ -247,7 +247,8 @@ export const teamMembers = [
             github : '',
             email : '',
             linkedin : '',
-        },{
+         }
+     },{
         id : 20,
         name : 'Jeremy Sklaroff',
         title: 'General Counsel',
