@@ -63,6 +63,13 @@ const navigation = [
                 url: "https://forum.celestia.org",
                 icon: "menu/forum.svg",
                 type: 'external'
+            },
+            {
+                text: "Watch our YouTube videos",
+                subtext: "YouTube",
+                url: "https://www.youtube.com/channel/UCLlvAEzXBFZ-P3zS6BF2Bjg",
+                icon: "menu/resources.svg",
+                type: 'external'
             }
         ]
     },{
