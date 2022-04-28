@@ -1,5 +1,19 @@
 export const podcasts = [
     {
+        id: 8,
+        category: 'podcast',
+        title: 'The power of forking',
+        subtitle: 'Aditi talks about Celestia, forking as an evolutionary force, moats in web3, and emergent order.',
+        url: 'https://www.othersidepod.xyz/episode/38',
+    },
+    {
+        id: 7,
+        category: 'podcast',
+        title: 'Nick while on building the first modular blockchain network',
+        subtitle: 'Celestia implements a novel design to unlock key properties such as scalability and sovereignty.',
+        url: 'https://open.spotify.com/episode/2VvcOyrm65vuuY3WTFlo4L?si=niMcdCwQRzCUgC8-QJektw&nd=1',
+    },
+    {
         id: 6,
         category: 'podcast',
         title: 'Is Celestia the monolithic chain killer? The future of modular blockchains - Nick white, COO of Celestia, Ep. 184',
