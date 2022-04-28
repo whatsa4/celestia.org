@@ -29,8 +29,8 @@ export const resources = [
         category: 'podcast',
         id: 1,
     },{
-        category: 'video',
-        id: 5,
+        category: 'podcast',
+        id: 8,
     },{
         category: 'whitepaper',
         id: 0,
