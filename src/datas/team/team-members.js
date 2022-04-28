@@ -251,7 +251,7 @@ export const teamMembers = [
      },{
         id : 20,
         name : 'Jeremy Sklaroff',
-        title: 'General Counsel, Celestia Labs',
+        title: 'General Counsel',
         text: 'Former general counsel of Edge & Node/The Graph and financial regulatory attorney at Davis Polk',
         image: 'team/JeremySklaroff.png',
         socials: {
@@ -259,7 +259,7 @@ export const teamMembers = [
             discord : '',
             github : '',
             email : '',
-            linkedin : '',
+            linkedin : 'https://www.linkedin.com/in/jeremysklaroff/',
         }
     }
 ]
