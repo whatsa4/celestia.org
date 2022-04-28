@@ -2,15 +2,15 @@ export const podcasts = [
     {
         id: 8,
         category: 'podcast',
-        title: 'The power of forking',
-        subtitle: 'Aditi talks about Celestia, forking as an evolutionary force, moats in web3, and emergent order.',
+        title: 'The power of forking with Aditi Sriram',
+        subtitle: 'Aditi works on product strategy at Celestia, a modular consensus and data network aiming to scale web3. Aditi talks about Celestia, forking as an evolutionary force, moats in web3, and emergent order.',
         url: 'https://www.othersidepod.xyz/episode/38',
     },
     {
         id: 7,
         category: 'podcast',
-        title: 'Nick while on building the first modular blockchain network',
-        subtitle: 'Celestia implements a novel design to unlock key properties such as scalability and sovereignty.',
+        title: 'Nick White on building the first modular blockchain network',
+        subtitle: 'Celestia implements a novel design to unlock key properties such as scalability, interoperability, and sovereignty while preserving decentralization.',
         url: 'https://open.spotify.com/episode/2VvcOyrm65vuuY3WTFlo4L?si=niMcdCwQRzCUgC8-QJektw&nd=1',
     },
     {
