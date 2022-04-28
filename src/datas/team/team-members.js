@@ -140,20 +140,6 @@ export const teamMembers = [
         }
     },
     {
-        id : 12,
-        name : 'Alexandru Popescu',
-        title: 'VP Marketing, Celestia Labs',
-        text: 'Former Digital Marketing Wizard at Mindvalley Labs',
-        image: 'team/AlexandruPopescu.png',
-        socials: {
-            twitter : 'https://twitter.com/AlexPopescu082',
-            discord : '',
-            github : '',
-            email : '',
-            linkedin : '',
-        }
-    },
-    {
         id : 13,
         name : 'Rachid Chami',
         title: 'Software Engineer',
