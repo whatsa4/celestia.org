@@ -8,7 +8,7 @@ export const glossaries = [
             },{
                 url: 'block-header',
                 title: 'Block header',
-                text: 'The header of a block contains a list of relevant metadata.',
+                text: 'The header of a block that contains a list of relevant metadata.',
             },{
                 url: 'block-producer',
                 title: 'Block producer',
@@ -60,7 +60,7 @@ export const glossaries = [
             {
                 url: 'fee-market',
                 title: 'Fee market',
-                text: '>A type of market that blockchains implement to prevent malicious actors from spamming the network.',
+                text: 'A type of market that blockchains implement to prevent malicious actors from spamming the network.',
             },{
                 url: 'full-node',
                 title: 'Full node',
@@ -140,7 +140,7 @@ export const glossaries = [
             },{
                 url: 'slashing',
                 title: 'Slashing',
-                text: 'A mechanism employed in PoS blockchains that is used to deter and punish malicious behavior.',
+                text: 'A mechanism employed in PoS blockchains to deter and punish malicious behavior.',
             },{
                 url: 'social-consensus',
                 title: 'Social consensus',
@@ -168,7 +168,7 @@ export const glossaries = [
             {
                 url: 'throughput',
                 title: 'Throughput',
-                text: ' measurement of the computational capacity of a blockchain, commonly calculated by the number of transactions that can be processed per second (TPS).',
+                text: 'A measurement of the computational capacity of a blockchain, commonly calculated by the number of transactions that can be processed per second (TPS).',
             },{
                 url: 'the-data-availability-problem',
                 title: 'The data availability problem',
