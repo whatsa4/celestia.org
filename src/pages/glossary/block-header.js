@@ -6,13 +6,13 @@ import BreadCrumb from "../../components/breadcrumb";
 import SocialShare from "../../components/socialShare";
 import GlossaryNav from "../../components/glossary-nav";
 
-const title = 'Blockchain cluster';
+const title = 'Block header';
 
 class GlossaryContent extends React.Component {
     render() {
         return (
             <div className={'glossary-content'}>
-                <p>The header of a block contains a list of relevant metadata. This typically includes a Merkle root of the transactions in the block body, the hash of the previous block, the block height, and the timestamp, among others. The contents of the block header will also vary by sybil mechanism (PoW or PoS) and by the specifications of the individual blockchain.
+                <p>The header of a block that contains a list of relevant metadata. This typically includes a Merkle root of the transactions in the block body, the hash of the previous block, the block height, and the timestamp, among others. The contents of the block header will also vary by sybil mechanism (PoW or PoS) and by the specifications of the individual blockchain.
                 </p>
 
             </div>

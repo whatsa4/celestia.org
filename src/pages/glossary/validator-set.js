@@ -6,7 +6,7 @@ import BreadCrumb from "../../components/breadcrumb";
 import SocialShare from "../../components/socialShare";
 import GlossaryNav from "../../components/glossary-nav";
 
-const title = 'Blockchain cluster';
+const title = 'Validator set';
 
 class GlossaryContent extends React.Component {
     render() {
