@@ -4,7 +4,7 @@ export const resources = [
         id: 0,
     },{
         category: 'video',
-        id: 2,
+        id: 4,
     },{
         category: 'blog',
         id: 1,
@@ -24,13 +24,13 @@ export const resources = [
         url: 'https://coinmarketcap.com/alexandria/article/what-is-data-availability'
     },{
         category: 'podcast',
-        id: 0,
+        id: 2,
     },{
         category: 'podcast',
         id: 1,
     },{
-        category: 'video',
-        id: 5,
+        category: 'podcast',
+        id: 0,
     },{
         category: 'whitepaper',
         id: 0,
