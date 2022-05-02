@@ -11,6 +11,13 @@ const navigation = [
         url: "",
         submenus: [
             {
+                text: "Check out our Documentation Page",
+                subtext: "Celestia Docs",
+                url: "https://docs.celestia.org/",
+                icon: "menu/documentation.svg",
+                type: 'external'                
+            },
+            {
                 text: "View our GitHub repos",
                 subtext: "GitHub repositories",
                 url: "https://github.com/celestiaorg",
