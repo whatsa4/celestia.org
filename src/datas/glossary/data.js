@@ -5,6 +5,18 @@ export const glossaries = [
                 url: 'blockchain-cluster',
                 title: 'Blockchain cluster',
                 text: 'A group of blockchains that can communicate with each other in a trust-minimized way.',
+            },{
+                url: 'block-header',
+                title: 'Block header',
+                text: 'The header of a block contains a list of relevant metadata.',
+            },{
+                url: 'block-producer',
+                title: 'Block producer',
+                text: 'A full node that is responsible for producing blocks.',
+            },{
+                url: 'block-space',
+                title: 'Block space',
+                text: 'The capacity of each block.',
             }
         ]
     },{
@@ -30,6 +42,10 @@ export const glossaries = [
                 title: 'Data availability',
                 text: 'The condition of whether or not transaction data was made available for nodes to download, when a block was proposed.',
             },{
+                url: 'data-throughput',
+                title: 'Data throughput',
+                text: 'A measurement of the data capacity of a blockchain. Data throughput is calculated by the amount of data that a blockchain can process, measured in kb/s or mb/s.',
+            },{
                 url: 'data-withholding-attack',
                 title: 'Data withholding attack',
                 text: 'A type of attack that occurs when a block producer proposes a new block but does not share the underlying transaction data that was used to create the block.',
@@ -46,6 +62,10 @@ export const glossaries = [
     },{
         'F':[
             {
+                url: 'fee-market',
+                title: 'Fee market',
+                text: '>A type of market that blockchains implement to prevent malicious actors from spamming the network.',
+            },{
                 url: 'full-node',
                 title: 'Full node',
                 text: 'A type of node that fully verifies a blockchain.',
@@ -92,7 +112,15 @@ export const glossaries = [
             {
                 url: 'optimistic-rollup',
                 title: 'Optimistic rollup',
-                text: 'A type of rollup that posts its blocks to a parent chain without any cryptographic proofs that attest to their validity.',
+                text: 'A type of rollup that posts its blocks to a separate chain without any cryptographic proofs that attest to their validity.',
+            }
+        ]
+    },{
+        'P':[
+            {
+                url: 'peer-to-peer-network',
+                title: 'Peer to peer network',
+                text: 'A network in which nodes are connected and can communicate directly with each other without reliance on a third party to facilitate communication.',
             }
         ]
     },{
@@ -100,7 +128,7 @@ export const glossaries = [
             {
                 url: 'rollup',
                 title: 'Rollup',
-                text: 'A type of blockchain that posts their blocks to a parent chain to receive consensus and ensure data availability.',
+                text: 'A type of blockchain that posts their blocks to a separate chain to receive consensus and ensure data availability.',
             }
         ]
     },{
@@ -113,6 +141,10 @@ export const glossaries = [
                 url: 'shared-security',
                 title: 'Shared security',
                 text: 'Security that a blockchain inherits from an external source.',
+            },{
+                url: 'slashing',
+                title: 'Slashing',
+                text: 'A mechanism employed in PoS blockchains that is used to deter and punish malicious behavior.',
             },{
                 url: 'social-consensus',
                 title: 'Social consensus',
@@ -138,9 +170,17 @@ export const glossaries = [
     },{
         'T':[
             {
+                url: 'throughput',
+                title: 'Throughput',
+                text: 'A measurement of the capacity of a blockchain. Throughput primarily measures two elements: data throughput and transaction throughput.',
+            },{
                 url: 'the-data-availability-problem',
                 title: 'The data availability problem',
                 text: 'A problem that is concerned with whether the data in the proposed block can be verified that it is available.',
+            },{
+                url: 'transaction-throughput',
+                title: 'Transaction throughput',
+                text: 'The computational capacity of a blockchain. Transaction throughput is commonly calculated by the number of transactions that can be processed per second (TPS).',
             },{
                 url: 'trust-minimized-bridge',
                 title: 'Trust minimized bridge',
@@ -154,6 +194,14 @@ export const glossaries = [
     },{
         'V':[
             {
+                url: 'validator',
+                title: 'Validator',
+                text: 'A full node that is part of the validator set in a PoS blockchain.',
+            },{
+                url: 'validator-set',
+                title: 'Validator set',
+                text: 'A group of validators that are responsible for directly participating in the consensus of a blockchain through either voting, producing, or proposing blocks.',
+            },{
                 url: 'validity-proof',
                 title: 'Validity proof',
                 text: 'A problem that is concerned with whether the data in the proposed block can be verified that it is available.',
@@ -168,7 +216,7 @@ export const glossaries = [
             },{
                 url: 'zk-rollup',
                 title: 'zk-Rollup',
-                text: 'A type of rollup that posts its blocks to a parent chain with a validity proof that attests to the correctness of the block.',
+                text: 'A type of rollup that posts its blocks to a separate chain with a validity proof that attests to the correctness of the block.',
             }
         ]
     }
