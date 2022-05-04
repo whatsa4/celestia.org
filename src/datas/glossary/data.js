@@ -8,7 +8,7 @@ export const glossaries = [
             },{
                 url: 'block-header',
                 title: 'Block header',
-                text: 'The header of a block that contains a list of relevant metadata.',
+                text: 'The header of a block contains a list of relevant metadata.',
             },{
                 url: 'block-producer',
                 title: 'Block producer',
@@ -42,6 +42,10 @@ export const glossaries = [
                 title: 'Data availability',
                 text: 'The condition of whether or not transaction data was made available for nodes to download, when a block was proposed.',
             },{
+                url: 'data-throughput',
+                title: 'Data throughput',
+                text: '>A measurement of the data capacity of a blockchain. Data throughput is calculated by the amount of data that a blockchain can process, measured in kb/s or mb/s.',
+            },{
                 url: 'data-withholding-attack',
                 title: 'Data withholding attack',
                 text: 'A type of attack that occurs when a block producer proposes a new block but does not share the underlying transaction data that was used to create the block.',
@@ -60,7 +64,7 @@ export const glossaries = [
             {
                 url: 'fee-market',
                 title: 'Fee market',
-                text: 'A type of market that blockchains implement to prevent malicious actors from spamming the network.',
+                text: '>A type of market that blockchains implement to prevent malicious actors from spamming the network.',
             },{
                 url: 'full-node',
                 title: 'Full node',
@@ -140,7 +144,7 @@ export const glossaries = [
             },{
                 url: 'slashing',
                 title: 'Slashing',
-                text: 'A mechanism employed in PoS blockchains to deter and punish malicious behavior.',
+                text: 'A mechanism employed in PoS blockchains that is used to deter and punish malicious behavior.',
             },{
                 url: 'social-consensus',
                 title: 'Social consensus',
@@ -168,11 +172,15 @@ export const glossaries = [
             {
                 url: 'throughput',
                 title: 'Throughput',
-                text: 'A measurement of the computational capacity of a blockchain, commonly calculated by the number of transactions that can be processed per second (TPS).',
+                text: 'A measurement of the capacity of a blockchain. Throughput primarily measures two elements: data throughput and transaction throughput.',
             },{
                 url: 'the-data-availability-problem',
                 title: 'The data availability problem',
                 text: 'A problem that is concerned with whether the data in the proposed block can be verified that it is available.',
+            },{
+                url: 'transaction-throughput',
+                title: 'Transaction throughput',
+                text: 'The computational capacity of a blockchain. Transaction throughput is commonly calculated by the number of transactions that can be processed per second (TPS).',
             },{
                 url: 'trust-minimized-bridge',
                 title: 'Trust minimized bridge',
