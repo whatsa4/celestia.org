@@ -11,6 +11,13 @@ const navigation = [
         url: "",
         submenus: [
             {
+                text: "Read our docs",
+                subtext: "Celestia Docs",
+                url: "https://docs.celestia.org/",
+                icon: "menu/documentation.svg",
+                type: 'external'                
+            },
+            {
                 text: "View our GitHub repos",
                 subtext: "GitHub repositories",
                 url: "https://github.com/celestiaorg",
@@ -62,6 +69,13 @@ const navigation = [
                 subtext: "Forum",
                 url: "https://forum.celestia.org",
                 icon: "menu/forum.svg",
+                type: 'external'
+            },
+            {
+                text: "Watch our YouTube videos",
+                subtext: "YouTube",
+                url: "https://www.youtube.com/channel/UCLlvAEzXBFZ-P3zS6BF2Bjg",
+                icon: "menu/resources.svg",
                 type: 'external'
             }
         ]

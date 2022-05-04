@@ -1,8 +1,22 @@
 export const podcasts = [
     {
+        id: 8,
+        category: 'podcast',
+        title: 'The power of forking with Aditi Sriram',
+        subtitle: 'Aditi works on product strategy at Celestia, a modular consensus and data network aiming to scale web3. Aditi talks about Celestia, forking as an evolutionary force, moats in web3, and emergent order.',
+        url: 'https://www.othersidepod.xyz/episode/38',
+    },
+    {
+        id: 7,
+        category: 'podcast',
+        title: 'Nick White on building the first modular blockchain network',
+        subtitle: 'Celestia implements a novel design to unlock key properties such as scalability, interoperability, and sovereignty while preserving decentralization.',
+        url: 'https://open.spotify.com/episode/2VvcOyrm65vuuY3WTFlo4L?si=niMcdCwQRzCUgC8-QJektw&nd=1',
+    },
+    {
         id: 6,
         category: 'podcast',
-        title: 'Is Celestia the monolithic chain killer? The future of modular blockchains - Nick white, COO of Celestia, Ep. 184',
+        title: 'Is Celestia the monolithic chain killer? The future of modular blockchains',
         subtitle: 'After Layer 1s and 2s, a new primitive is capturing the attention of the crypto community: the modular blockchain.',
         url: 'https://podcasts.apple.com/us/podcast/is-celestia-the-monolithic-chain-killer-the/id1350649166?i=1000550438055',
     },
