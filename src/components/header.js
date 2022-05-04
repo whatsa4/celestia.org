@@ -11,7 +11,7 @@ const navigation = [
         url: "",
         submenus: [
             {
-                text: "Check out our Docs",
+                text: "Read our docs",
                 subtext: "Celestia Docs",
                 url: "https://docs.celestia.org/",
                 icon: "menu/documentation.svg",
