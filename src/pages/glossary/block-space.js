@@ -12,7 +12,7 @@ class GlossaryContent extends React.Component {
     render() {
         return (
             <div className={'glossary-content'}>
-                <p>The capacity of each block. The amount of block space a blockchain has determines its throughput - how many transactions it can process at a given time. Blockchains that suffer from high fees occur because demand for block space exceeds supply.
+                <p>The capacity of each block. The amount of block space a blockchain has determines its throughput. Blockchains that suffer from high fees occur because demand for block space exceeds supply.
                 </p>
 
             </div>

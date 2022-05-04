@@ -6,17 +6,15 @@ import BreadCrumb from "../../components/breadcrumb";
 import SocialShare from "../../components/socialShare";
 import GlossaryNav from "../../components/glossary-nav";
 
-const title = 'Throughput';
+const title = 'Data throughput';
 
 class GlossaryContent extends React.Component {
     render() {
         return (
             <div className={'glossary-content'}>
-                <p>A measurement of the capacity of a blockchain. Throughput primarily measures two elements: data throughput and transaction throughput. Data throughput determines a blockchain’s data capacity, which is measured in kb/s or mb/s. Data throughput is most relevant to data availability layers because their primary job is to provide a high capacity for data.
-                 </p>
+                <p>A measurement of the data capacity of a blockchain. Data throughput is calculated by the amount of data that a blockchain can process, measured in kb/s or mb/s. For example, consider a blockchain that has a block size of 10MB and a block time of 20 seconds. The data throughput of the blockchain would be 0.5MB/s. Data throughput is most relevant to data availability layers because their primary job is to provide a high capacity for data.
+                </p>
 
-                <p>Transaction throughput measures the computational capacity of a blockchain, which is commonly calculated by the number of transactions that can be processed per second (TPS). However, TPS is a subjective measure of throughput as transactions can vary in size. An objective measurement of throughput is the number of computational units that can be performed per second.
-               </p>
 
             </div>
         )
