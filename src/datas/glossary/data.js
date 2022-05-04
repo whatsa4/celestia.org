@@ -44,7 +44,7 @@ export const glossaries = [
             },{
                 url: 'data-throughput',
                 title: 'Data throughput',
-                text: '>A measurement of the data capacity of a blockchain. Data throughput is calculated by the amount of data that a blockchain can process, measured in kb/s or mb/s.',
+                text: 'A measurement of the data capacity of a blockchain. Data throughput is calculated by the amount of data that a blockchain can process, measured in kb/s or mb/s.',
             },{
                 url: 'data-withholding-attack',
                 title: 'Data withholding attack',
