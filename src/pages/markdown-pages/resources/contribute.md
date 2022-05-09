@@ -5,7 +5,7 @@ edit: "https://github.com/alexbeckettt/celestia.org/blob/contribute-markdown-tes
 title: "Contribute"
 ---
 
-"The Celestia community is made up of many individuals with a wide range of skillsets. If you’re interested in getting involved with Celestia, here’s a list of suggestions to help you get started." <br>
+The Celestia community is made up of many individuals with a wide range of skillsets. If you’re interested in getting involved with Celestia, here’s a list of suggestions to help you get started. <br>
 
 #### Developer
 - View the Celestia github <a href="https://github.com/celestiaorg" style="color:#7B2BF9;">repos</a>
