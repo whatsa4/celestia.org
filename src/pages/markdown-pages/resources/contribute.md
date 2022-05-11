@@ -7,15 +7,15 @@ title: "Contribute"
 
 The Celestia community is made up of many individuals with a wide range of skillsets. If you’re interested in getting involved with Celestia, here’s a list of suggestions to help you get started. <br>
 
-#### Developer
-- View the Celestia github <a href="https://github.com/celestiaorg" style="color:#7B2BF9;">repos</a>
+#### Builders
+- Tackle a good first issue on one of Celeista's <a href="https://github.com/celestiaorg" style="color:#7B2BF9;">repos</a>
 - Experiment with the <a href="https://github.com/celestiaorg/networks" style="color:#7B2BF9;">devnet</a>
-- stay up to date with development <a href="https://github.com/celestiaorg/community-calls" style="color:#7B2BF9;">progress</a>
+- Stay up to date with development <a href="https://github.com/celestiaorg/community-calls" style="color:#7B2BF9;">progress</a>
 
-#### Research
+#### Researchers
 - Contribute research or give feedback on current research in the <a href="https://forum.celestia.org/c/research/5" style="color:#7B2BF9;">forum</a>
 
-#### Non-technical
+#### Non-technical Community
 
 ##### Write content about Celestia
 -  Write and publish content to  your own and publish to own channels
