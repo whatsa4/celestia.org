@@ -5,7 +5,39 @@ edit: "https://github.com/alexbeckettt/celestia.org/blob/contribute-markdown-tes
 title: "Contribute"
 ---
 
+<style>
+p.small {
+  line-height: 1.3;
+}
+
+p.big {
+  line-height: 1.8;
+}
+</style>
+
 The Celestia community is made up of many individuals with a wide range of skillsets. If you’re interested in getting involved with Celestia, here’s a list of suggestions to help you get started. <br>
+
+#### builders
+<p style="line-height:200%">
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+</p>
+
+<p class="small">
+This is a paragraph with a smaller line-height.<br>
+This is a paragraph with a smaller line-height.<br>
+</p>
+
+<p class="small">
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+</p>
 
 #### Builders
 - Tackle a good first issue on one of Celeista's <a href="https://github.com/celestiaorg" style="color:#7B2BF9;">repos</a>
