@@ -19,23 +19,18 @@ The Celestia community is made up of many individuals with a wide range of skill
 
 #### builders
 <p>
-    <ul style="line-height:120%">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
+    <ul style="line-height:50%">
+      <li>Tackle a good first issue on one of Celeista's</li>
+      <li>Experiment with the devnet</li>
+      <li>Stay up to date with development progress</li>
     </ul>
 </p>
 
 <p class="small">
-This is a paragraph with a smaller line-height.<br>
-This is a paragraph with a smaller line-height.<br>
-</p>
-
-<p class="small">
     <ul>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
+      <li>Tackle a good first issue on one of Celeista's</li>
+      <li>Experiment with the devnet</li>
+      <li>Stay up to date with development progress</li>
     </ul>
 </p>
 
