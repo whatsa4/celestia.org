@@ -52,7 +52,7 @@ The Celestia community is made up of many individuals with a wide range of skill
 
 ##### Translate content
 <p>
-    <ul style="line-height:70%">
+    <ul style="line-height:100%">
         <li>Translate existing content about Celestia into your native language or from your native language to English</li>
     </ul>
 </p>
