@@ -5,46 +5,54 @@ edit: "https://github.com/alexbeckettt/celestia.org/blob/contribute-markdown-tes
 title: "Contribute"
 ---
 
-<style>
-p.small {
-  line-height: 1.3;
-}
-
-p.big {
-  line-height: 1.8;
-}
-</style>
-
 The Celestia community is made up of many individuals with a wide range of skillsets. If you’re interested in getting involved with Celestia, here’s a list of suggestions to help you get started. <br>
 
-#### builders
+#### Builders
 <p>
     <ul style="line-height:70%">
-      <li>Tackle a good first issue on one of Celeista's</li>
-      <li>Experiment with the devnet</li>
-      <li>Stay up to date with development progress</li>
+      <li>Tackle a good first issue on one of Celestia's <a href="https://github.com/celestiaorg" style="color:#7B2BF9;">repos</a></li>
+      <li>Experiment with the <a href="https://github.com/celestiaorg/networks" style="color:#7B2BF9;">devnet</a></li>
+      <li>Stay up to date with development <a href="https://github.com/celestiaorg/community-calls" style="color:#7B2BF9;">progress</a></li>
     </ul>
 </p>
 
-#### Builders
-- Tackle a good first issue on one of Celeista's <a href="https://github.com/celestiaorg" style="color:#7B2BF9;">repos</a>
-- Experiment with the <a href="https://github.com/celestiaorg/networks" style="color:#7B2BF9;">devnet</a>
-- Stay up to date with development <a href="https://github.com/celestiaorg/community-calls" style="color:#7B2BF9;">progress</a>
-
 #### Researchers
-- Contribute research or give feedback on current research in the <a href="https://forum.celestia.org/c/research/5" style="color:#7B2BF9;">forum</a>
+<p>
+    <ul style="line-height:70%">
+        <li>Contribute research or give feedback on current research in the <a href="https://forum.celestia.org/c/research/5" style="color:#7B2BF9;">forum</a></li>
+    </ul>
+</p>
 
 #### Non-technical Community
 
 ##### Write content about Celestia
--  Write and publish content to  your own and publish to own channels
--  Make contributions to existing content on <a href="https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn" style="color:#7B2BF9;">Celestia.org</a>
+<p>
+    <ul style="line-height:70%">
+        <li>Write and publish content to  your own and publish to own channels</li>
+        <li>Make contributions to existing content on <a href="https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn" style="color:#7B2BF9;">Celestia.org</a></li>
+    </ul>
+</p>
+
 
 ##### Participate in community calls
-- Watch or particpate in the community <a href="https://github.com/celestiaorg/community-calls" style="color:#7B2BF9;">calls</a>
+<p>
+    <ul style="line-height:70%">
+        <li>Watch or particpate in the community <a href="https://github.com/celestiaorg/community-calls" style="color:#7B2BF9;">calls</a></li>
+    </ul>
+</p>
+
 
 ##### Run a node on the devnet
-- Experiment and practice running a node on devnet in preparation for <a href="https://docs.celestia.org/nodes/overview" style="color:#7B2BF9;">mainnet</a>
+<p>
+    <ul style="line-height:70%">
+        <li>Experiment and practice running a node on devnet in preparation for <a href="https://docs.celestia.org/nodes/overview" style="color:#7B2BF9;">mainnet</a></li>
+    </ul>
+</p>
+
 
 ##### Translate content
-- Translate existing content about Celestia into your native language or from your native language to English
+<p>
+    <ul style="line-height:70%">
+        <li>Translate existing content about Celestia into your native language or from your native language to English</li>
+    </ul>
+</p>
