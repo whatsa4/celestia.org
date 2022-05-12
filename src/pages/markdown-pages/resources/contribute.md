@@ -19,15 +19,7 @@ The Celestia community is made up of many individuals with a wide range of skill
 
 #### builders
 <p>
-    <ul style="line-height:50%">
-      <li>Tackle a good first issue on one of Celeista's</li>
-      <li>Experiment with the devnet</li>
-      <li>Stay up to date with development progress</li>
-    </ul>
-</p>
-
-<p class="small">
-    <ul>
+    <ul style="line-height:70%">
       <li>Tackle a good first issue on one of Celeista's</li>
       <li>Experiment with the devnet</li>
       <li>Stay up to date with development progress</li>
