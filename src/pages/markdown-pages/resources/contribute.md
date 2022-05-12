@@ -18,8 +18,8 @@ p.big {
 The Celestia community is made up of many individuals with a wide range of skillsets. If you’re interested in getting involved with Celestia, here’s a list of suggestions to help you get started. <br>
 
 #### builders
-<p style="line-height:200%">
-    <ul>
+<p>
+    <ul style="line-height:120%">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
