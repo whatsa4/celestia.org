@@ -28,7 +28,7 @@ The Celestia community is made up of many individuals with a wide range of skill
 ##### Write content about Celestia
 <p>
     <ul style="line-height:140%">
-        <li>Write and publish content to  your own and publish to own channels</li>
+        <li>Write and publish content to your own channels</li>
         <li>Make contributions to existing content on <a href="https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn" style="color:#7B2BF9;">Celestia.org</a></li>
     </ul>
 </p>
