@@ -25,6 +25,13 @@ const navigation = [
                 type: 'external'
             },
             {
+                text: "Read the contributors guide",
+                subtext: "Contribute",
+                url: "/resources/contribute/",
+                icon: "menu/briefcase.svg",
+                type: 'internal'
+            },
+            {
                 text: "Experiment with devnet",
                 subtext: "Devnet",
                 url: "https://github.com/celestiaorg/networks",
