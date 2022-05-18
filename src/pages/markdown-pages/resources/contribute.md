@@ -1,7 +1,7 @@
 ---
 path: "/resources/"
 slug: "/resources/contribute"
-edit: "https://github.com/alexbeckettt/celestia.org/blob/contribute-markdown-test/src/pages/markdown-pages/resources/website-markdown-test.md"
+edit: "https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/resources/contribute.md"
 title: "Contribute"
 ---
 
