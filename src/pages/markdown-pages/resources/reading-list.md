@@ -28,7 +28,7 @@ title: "The Celestia reading list"
 #### Advanced
 
 1. <a href="https://www.youtube.com/watch?v=-EYRtqsTkZ4&t=2214s" style="color:#7B2BF9;">Celestia: The world’s first modular blockchain network</a>
-2. <a href="https://medium.com/@adlerjohn/the-why-s-of-optimistic-rollup-7c6a22cbb61a" style="color:#7B2BF9;">The 'Why’s' of optimistic rollups</a>
+2. <a href="https://medium.com/@adlerjohn/the-why-s-of-optimistic-rollup-7c6a22cbb61a" style="color:#7B2BF9;">The "Why’s" of optimistic rollups</a>
 3. <a href="https://blog.celestia.org/celestiums/" style="color:#7B2BF9;">Quantum Gravity Bridge: Secure Off-Chain Data Availability for Ethereum L2s with Celestia</a>
 4. <a href="https://blog.celestia.org/ethereum-off-chain-data-availability-landscape/" style="color:#7B2BF9;">The off-chain data availability landscape</a>
 5. <a href="https://blog.celestia.org/clusters/" style="color:#7B2BF9;">Clusters: how trusted & trust-minimized bridges shape the multi-chain landscape</a>
