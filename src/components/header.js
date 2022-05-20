@@ -129,7 +129,7 @@ const navigation = [
                 text: "Read articles on Celestia",
                 subtext: "Reading list",
                 url: "/resources/reading-list/",
-                icon: "menu/bookmark.svg",
+                icon: "menu/book.svg",
                 type: 'internal'
             }
         ]
