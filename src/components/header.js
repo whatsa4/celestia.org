@@ -124,6 +124,13 @@ const navigation = [
                 url: "https://typefully.com/CelestiaOrg",
                 icon: "menu/twitter.svg",
                 type: 'external'
+            },
+            {
+                text: "[insert text here]",
+                subtext: "Readin list",
+                url: "/resources/reading-list/",
+                icon: "menu/book.svg",
+                type: 'internal'
             }
         ]
     },{
