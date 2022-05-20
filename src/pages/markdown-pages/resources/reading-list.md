@@ -1,8 +1,8 @@
 ---
 path: "/resources/"
 slug: "/resources/reading-list"
-edit: "https://github.com/alexbeckettt/celestia.org/blob/contribute-markdown-test/src/pages/markdown-pages/resources/website-markdown-test.md"
-title: "The Celestia skill tree"
+edit: "https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/resources/reading-list.md"
+title: "The Celestia reading list"
 ---
 
 
