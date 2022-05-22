@@ -119,11 +119,18 @@ const navigation = [
                 type: 'internal'
             },
             {
-                text: "Read our best tweets",
+                text: "View our best tweets",
                 subtext: "Twitter",
                 url: "https://typefully.com/CelestiaOrg",
                 icon: "menu/twitter.svg",
                 type: 'external'
+            },
+            {
+                text: "Read articles on Celestia",
+                subtext: "Reading list",
+                url: "/resources/reading-list/",
+                icon: "menu/book.svg",
+                type: 'internal'
             }
         ]
     },{
