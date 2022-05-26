@@ -23,9 +23,9 @@ Optimistic rollups post their blocks to a parent chain, which receives the block
 
 ![GATSBY_EMPTY_ALT](./images/article-3-image-2.png)
 
-One primary scalability improvement that optimistic rollups provide is moving execution away from the parent chain. By executing transactions on a rollup it alleviates the execution bottleneck of the parent chain. Optimizations made for execution, such as parallelization, can be implemented without requiring the same tradeoffs that would be present on a monolithic chain that has to contend with balancing all of its bottlenecks.
+One primary scalability improvement that optimistic rollups provide is moving execution away from the parent chain. Once transactions get executed on an optimistc rollup, the parent chain need not re-execute them because they automatically are assumed correct. Therefore, the burden of execution is alleviated from the parent chain.
 
-A second scalability improvement is the alleviation of state growth from its parent chain. By moving applications and transactions to a different chain, the parent chain can reduce the rate at which its state grows. This is particularly important as the state can’t be pruned by block producers, so reducing growth is key for sustainable long-term scaling.
+The second scalability improvement is alleviating state growth from the parent chain. By moving applications and transactions to a different chain, the parent chain can reduce the rate at which its state grows. Reducting growth is particularly important as a large state increases hardware requirements for nodes which can negatively affect decentralization. Therefore, reducing state growth is key for sustainable scaling.
 
 ##### zk-Rollups
 
