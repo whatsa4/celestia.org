@@ -70,3 +70,9 @@ Since there is no settlement layer involved, only the data availability layer is
 4. A modular stack can also consist of an execution layer that runs natively on a consensus and data availability layer. Under this construction, execution layer nodes would verify blocks through its peer-to-peer layer rather than from a settlement layer contract. This enables sovereignty for the execution layer as it can determine its environment without permission from any underlying layers.
 </div>
 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CelestiaOrg">
+<meta name="twitter:creator" content="@likebeckett">
+<meta name="twitter:title" content="Modular Scalability">
+<meta name="twitter:description" content="A new paradigm is emerging in which modular blockchains are enabling new chains to be constructed in ways that were not previously possible.">
+<meta name="twitter:image" content="https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
