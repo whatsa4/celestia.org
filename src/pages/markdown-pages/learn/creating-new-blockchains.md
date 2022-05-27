@@ -54,3 +54,10 @@ Coupled with a data availability layer, execution layers can conduct unconstrain
 2. Execution layers can be deployed on top of data availability layers and retain the sovereignty of an independent layer 1. This enables them to push upgrades and utilize social consensus without any dependence on external communities. Execution layers deployed on settlement layers don’t have the same assurances.
 3. The execution environments that execution layers can build are limited by being deployed on a settlement layer. For an execution layer deployed on a data availability layer, there are no restraints on the type of execution environment that can be built and deployed. This facilitates experimentation and innovation in the execution environment that is unconstrained by any dependency on a data availability layer.  
 </div>
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CelestiaOrg">
+<meta name="twitter:creator" content="@likebeckett">
+<meta name="twitter:title" content="Modular Scalability">
+<meta name="twitter:description" content="Traditionally, creating a new blockchain had been a resource-intensive endeavor, imposing considerable time and monetary costs. Although blockchains can be implemented more efficiently now, existing hurdles are still present that cause friction in the bootstrapping process.">
+<meta name="twitter:image" content="https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
