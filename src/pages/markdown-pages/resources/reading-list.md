@@ -8,7 +8,7 @@ title: "The Celestia reading list"
 
 #### Basic
 
-1. <a href="https://twitter.com/cryptoPothu/status/1509612095922311209" style="color:#7B2BF9;">Celestia in 5 tweets</a>
+1. <a href="https://twitter.com/cryptoPothu/status/1509612095922311209" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">Celestia in 5 tweets</a>
 2. <a href="https://twitter.com/cryptoPothu/status/1506575358140641282" style="color:#7B2BF9;">Celestia: The minimalist king</a>
 3. <a href="https://twitter.com/Cov_duk/status/1502058773392801797" style="color:#7B2BF9;">Celestia: Cloud computing for web3</a>
 4. <a href="https://twitter.com/CelestiaOrg/status/1512460269821169664?s=20&t=PTGMwQyv4H_eTairko6Z-Q" style="color:#7B2BF9;">The best threads on modular blockchains</a>
