@@ -75,3 +75,10 @@ Modular blockchains aren’t constrained by having to handle all the functions. 
 2. Monolithic blockchains are limited by handling all functions on a single layer. To increase throughput, security or decentralization must be sacrificed.
 3. Modular blockchains provide many benefits over their monolithic counterparts, some of which include efficiently creating new blockchains, sovereignty, and scalability.
 </div>
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CelestiaOrg">
+<meta name="twitter:creator" content="@likebeckett">
+<meta name="twitter:title" content="Modular Scalability">
+<meta name="twitter:description" content="Blockchain researchers have long grappled with the challenge of creating the optimal system. Many architectures have been tried whose goal was to accommodate all users on a single chain or a tightly coupled group of chains that live under a single network.">
+<meta name="twitter:image" content="https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
