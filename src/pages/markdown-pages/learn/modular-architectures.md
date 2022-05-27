@@ -41,7 +41,7 @@ To optimize more of the benefits that a modular blockchain stack can provide, th
 
 The execution layer sits at the top of the stack and plays the same role as layer 2 in the previous stack. Modular stacks beyond layer 1 and 2 are more flexible in their construction, requiring more specific naming that is coherent with the functionality that each layer provides.
 
-The settlement layer is unique to that of regular layer 1s that provide settlement because it decouples the settlement functionality from the rest of the functions. The result is an execution chain that can be used specifically for settlement, enabling a trust-minimized bridge between the execution and settlement layer and providing a way by which execution layers can bridge between each other.
+The settlement layer is unique to that of regular layer 1s that provide settlement because it decouples the settlement functionality from the rest of the functions. The result is an execution chain that can be used specifically for settlement, enabling a <a href="https://celestia.org/glossary/trust-minimized-bridge" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">trust-minimized bridge</a> between the execution and settlement layer and providing a way by which execution layers can bridge between each other.
 
 Once the execution layer has published its blocks to the settlement layer, it will build its own blocks that include transactions from the execution layer and publish only the transaction data to the base layer. This is only one of multiple ways that the settlement layer could function within the modular stack.
 
