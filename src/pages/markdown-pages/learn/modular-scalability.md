@@ -8,6 +8,15 @@ title: "Modular scalability"
 description: "The scalability properties of different types of modular blockchains."
 ---
 
+<head>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CelestiaOrg">
+  <meta name="twitter:creator" content="@likebeckett">
+  <meta name="twitter:title" content="Modular Scalability">
+  <meta name="twitter:description" content="Monolithic blockchains have pursued varying scalability techniques over time, many of which have proven unsuccessful. Modular blockchains present a way for a monolithic blockchain to be split up among multiple specialized layers.">
+  <meta name="twitter:image" content="https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
+<head/>
+
 #### Introduction
 
 Monolithic blockchains have pursued varying scalability techniques over time, many of which have proven unsuccessful. Modular blockchains present a way for a monolithic blockchain to be split up among multiple specialized layers. As a result, each layer can implement mechanics for scalability that may have required many tradeoffs in a monolithic architecture.
@@ -71,11 +80,3 @@ The vast majority of the settlement layers transaction activity should consist o
 2. Data availability layers scale block verification and minimize bandwidth costs for light nodes. This is possible with data availability sampling, which allows light nodes to verify data availability by only downloading small random samples of a block.
 3. Settlement layers can scale using the same techniques from execution and data availability layers. In their current form, settlement layers are unideal. A more optimal approach would be to create an environment that limits smart contracts to favor interactions with execution layers.
 </div>
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@CelestiaOrg">
-<meta name="twitter:creator" content="@likebeckett">
-<meta name="twitter:title" content="Modular Scalability">
-<meta name="twitter:description" content="Monolithic blockchains have pursued varying scalability techniques over time, many of which have proven unsuccessful. Modular blockchains present a way for a monolithic blockchain to be split up among multiple specialized layers.">
-<meta name="twitter:image" content="https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
-
