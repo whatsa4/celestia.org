@@ -14,7 +14,7 @@ description: "What are modular blockchains and what makes them different to thei
   <meta name="twitter:creator" content="@likebeckett">
   <meta name="twitter:title" content="Modular Scalability">
   <meta name="twitter:description" content="Blockchain researchers have long grappled with the challenge of creating the optimal system. Many architectures have been tried whose goal was to accommodate all users on a single chain or a tightly coupled group of chains that live under a single network.">
-  <meta name="twitter:image" content="https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/celestiaorg/celestia.org/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
 <head/>
 
 #### Introduction
