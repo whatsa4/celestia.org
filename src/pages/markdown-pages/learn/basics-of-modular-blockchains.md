@@ -8,9 +8,18 @@ title: "Basics of modular blockchains"
 description: "What are modular blockchains and what makes them different to their monolithic counterparts?"
 ---
 
+<head>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CelestiaOrg">
+  <meta name="twitter:creator" content="@likebeckett">
+  <meta name="twitter:title" content="Modular Scalability">
+  <meta name="twitter:description" content="Blockchain researchers have long grappled with the challenge of creating the optimal system. Many architectures have been tried whose goal was to accommodate all users on a single chain or a tightly coupled group of chains that live under a single network.">
+  <meta name="twitter:image" content="https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
+<head/>
+
 #### Introduction
 
-Blockchain researchers have long grappled with the challenge of creating the optimal system. Many architectures have been tried whose goal was to accommodate all users on a single chain or a tightly coupled group of chains that live under a single network. This approach has proved limited and complex in scaling a system for millions or billions of users. Solutions to this challenge progressed with sharding and [layer 2 blockchains](https://arxiv.org/abs/1904.06441) to provide additional scale to layer 1. The concept of splitting blockchains up into separate components introduced the idea that a single blockchain doesn’t need to do everything on its own. 
+Blockchain researchers have long grappled with the challenge of creating the optimal system. Many architectures have been tried whose goal was to accommodate all users on a single chain or a tightly coupled group of chains that live under a single network. This approach has proved limited and complex in scaling a system for millions or billions of users. Solutions to this challenge progressed with sharding and layer 2 blockchains to provide additional scale to layer 1. The concept of splitting blockchains up into separate components introduced the idea that a single blockchain doesn’t need to do everything on its own. 
 
 The next evolution of that concept is modular blockchains. By making the blockchain modular and splitting up its processes among multiple specialized layers, a more optimal system can be created that is sovereign, scalable, and secure.
 
@@ -29,7 +38,7 @@ A modular blockchain is a type of blockchain that specializes in only a few func
 
 While naive implementations of modular stacks were first introduced with rollups, rather than scaling monolithic chains an entirely new stack of purpose-built modular blockchains can be used to take advantage of this new paradigm.
 
-Rollups are a type of modular blockchain that specialize in execution, off-loading settlement, consensus, and data availability to separate layers. Celestia is another modular blockchain that specializes in consensus and data availability, off-loading execution to separate chains, such as rollups.
+Rollups are a type of modular blockchain that specialize in execution, off-loading settlement, consensus, and <a href="https://celestia.org/glossary/data-availability" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">data availability</a> to separate layers. Celestia is another modular blockchain that specializes in consensus and data availability, off-loading execution to separate chains, such as rollups.
 
 ![GATSBY_EMPTY_ALT](./images/article-1-image-1.png)
 
@@ -40,8 +49,6 @@ Celestia is different from previous blockchain designs, which had execution as c
 Monolithic blockchains are chains that handle all four functions. Where a modular stack splits up components across multiple layers, monolithic blockchains do everything at the same time on a single layer.
 
 ![GATSBY_EMPTY_ALT](./images/article-1-image-2.png)
-
-This introduces limitations when faced with the scalability trilemma. The trilemma states that a blockchain can only have two out of three properties: scalability, decentralization, and security. Retaining all key functions on a single monolithic blockchain creates constraints that can be minimized when they are decoupled across multiple layers.
 
 ##### Some of the constraints that monolithic blockchains face include:
 
@@ -54,11 +61,11 @@ This introduces limitations when faced with the scalability trilemma. The trilem
 
 ##### Sovereignty 
 
-New modular blockchains can be sovereign like layer 1s despite the utilization of other layers. This allows the blockchain to respond to hacks and push upgrades without permission from any underlying layers. This would be possible for blockchains that utilize Celestia as it won’t impose any restrictions on them. Essentially, sovereign blockchains retain the ability for social consensus to make critical decisions, which is one of the most important facets of blockchains as social coordination mechanisms.
+New modular blockchains can be sovereign like layer 1s despite the utilization of other layers. This allows the blockchain to respond to hacks and push upgrades without permission from any underlying layers. This would be possible for blockchains that utilize Celestia as it won’t impose any restrictions on them. Essentially, sovereign blockchains retain the ability for <a href="https://celestia.org/glossary/social-consensus" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">social consensus</a> to make critical decisions, which is one of the most important facets of blockchains as social coordination mechanisms.
 
 ##### Launching new blockchains
 
-Since modular blockchains don’t need to handle all functions, new blockchains can simply utilize existing modular blockchains for the components they wish to off-load. This allows new blockchains to be bootstrapped efficiently, reducing time to deployment and minimizing costs. For example, a rollup SDK like [Optimint](https://github.com/celestiaorg/optimint) will help facilitate the creation of new blockchains without needing to bootstrap a secure validator set.
+Since modular blockchains don’t need to handle all functions, new blockchains can simply utilize existing modular blockchains for the components they wish to off-load. This allows new blockchains to be bootstrapped efficiently, reducing time to deployment and minimizing costs. For example, a rollup "SDK" like <a href="https://github.com/celestiaorg/optimint" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">Optimint</a> combined with the Cosmos SDK will help facilitate the creation of new blockchains without needing to bootstrap a secure validator set.
 
 ##### Scalability
 
