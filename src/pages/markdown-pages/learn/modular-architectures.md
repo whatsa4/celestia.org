@@ -8,6 +8,16 @@ title: "Modular architectures"
 description: "A look into the different ways in which modular blockchains can be interconnected."
 ---
 
+<head>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CelestiaOrg">
+  <meta name="twitter:creator" content="@likebeckett">
+  <meta name="twitter:title" content="Modular Scalability">
+  <meta name="twitter:description" content="A new paradigm is emerging in which modular blockchains are enabling new chains to be constructed in ways that were not previously possible.">
+  <meta name="twitter:image" content="https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
+</head>
+
+
 #### Introduction
 
 A new paradigm is emerging in which modular blockchains are enabling new chains to be constructed in ways that were not previously possible. Because of this, the design possibilities are vast for both the individual blockchain and the modular stack it is a part of. Different types of modular blockchains can work synergistically, varying by purpose and architecture.
@@ -69,10 +79,3 @@ Since there is no settlement layer involved, only the data availability layer is
 3. A modular stack can be constructed that consists of three layers rather than two. The execution layer can utilize a settlement layer for all the functionality that is required (e.g. bridging and dispute resolution) but also harness the benefits of a separate consensus and data availability layer.
 4. A modular stack can also consist of an execution layer that runs natively on a consensus and data availability layer. Under this construction, execution layer nodes would verify blocks through its peer-to-peer layer rather than from a settlement layer contract. This enables sovereignty for the execution layer as it can determine its environment without permission from any underlying layers.
 </div>
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@CelestiaOrg">
-<meta name="twitter:creator" content="@likebeckett">
-<meta name="twitter:title" content="Modular Scalability">
-<meta name="twitter:description" content="A new paradigm is emerging in which modular blockchains are enabling new chains to be constructed in ways that were not previously possible.">
-<meta name="twitter:image" content="https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
