@@ -32,9 +32,10 @@ title: "The Celestia reading list"
 3. <a href="https://blog.celestia.org/celestiums/" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">Quantum Gravity Bridge: Secure Off-Chain Data Availability for Ethereum L2s with Celestia</a>
 4. <a href="https://blog.celestia.org/ethereum-off-chain-data-availability-landscape/" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">The off-chain data availability landscape</a>
 5. <a href="https://blog.celestia.org/clusters/" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">Clusters: how trusted & trust-minimized bridges shape the multi-chain landscape</a>
-6. <a href="https://forum.celestia.org/t/an-open-modular-stack-for-evm-based-applications-using-celestia-evmos-and-cosmos/89" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">A modular stack for EVM chains using a settlement rollup</a>
-7. <a href="https://medium.com/@Jon_Charbonneau/celestia-the-foundation-of-a-modular-blockchain-world-95900fe2cfb0" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">Celestia - The foundation of a modular blockchain world</a>
-8. <a href="https://www.youtube.com/watch?v=jM-om3AqH94&list=PLY6ZbXTv11palDOn1wMA_4DDKJ_vcxTiV&index=3&t=3189s" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">Whiteboard series with Near - Celestia</a>
+6. <a href="https://members.delphidigital.io/reports/pay-attention-to-celestia/" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">Pay Attention to Celestia</a>
+7. <a href="https://forum.celestia.org/t/an-open-modular-stack-for-evm-based-applications-using-celestia-evmos-and-cosmos/89" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">A modular stack for EVM chains using a settlement rollup</a>
+8. <a href="https://medium.com/@Jon_Charbonneau/celestia-the-foundation-of-a-modular-blockchain-world-95900fe2cfb0" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">Celestia - The foundation of a modular blockchain world</a>
+9. <a href="https://www.youtube.com/watch?v=jM-om3AqH94&list=PLY6ZbXTv11palDOn1wMA_4DDKJ_vcxTiV&index=3&t=3189s" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">Whiteboard series with Near - Celestia</a>
 
 #### Expert
 
