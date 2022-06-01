@@ -9,10 +9,10 @@ export const heroData = {
                 url: '#roadmap'
             },
             {
-                text: 'Join the community',
+                text: 'Experiment with Testnet',
                 class: 'white',
-                type: 'internal',
-                url: '#join-the-community'
+                type: 'external',
+                url: 'https://docs.celestia.org/nodes/mamaki-testnet'
             }
         ]
 }
