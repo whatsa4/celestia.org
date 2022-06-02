@@ -9,7 +9,7 @@ export const heroData = {
                 url: '#roadmap'
             },
             {
-                text: 'Experiment with Testnet',
+                text: 'Build on Testnet',
                 class: 'white',
                 type: 'external',
                 url: 'https://docs.celestia.org/nodes/mamaki-testnet'
