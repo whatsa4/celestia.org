@@ -65,23 +65,23 @@ export const Technologies = [
 
 export const FooterBoxes = [
     {
-        title: 'Join our growing community',
-        text: 'Be part of our growing community of developers and innovators who are helping build the Celestia network.',
+        title: 'Join our expanding ecosystem',
+        text: 'Be part of our growing ecosystem of developers and innovators who are helping build the Celestia network.',
         button: {
-            text: 'Help build Celestia',
-            href: '/join-our-community',
+            text: 'Get started',
+            href: 'https://3gmsuktxksk.typeform.com/ecosystem#hidden1=xxxxx',
             id: 'operator',
             type: 'simple'
         }
     },
     {
-        title: 'Build on our developer beta',
-        text: 'Build on Celestia and be the first to explore the benefits of its novel architecture.',
+        title: 'Join our growing team',
+        text: 'Join our team of leading engineers in pioneering the first modular blockchain network',
         button: {
-            text: 'Join the waitlist',
-            href: '#',
-            id: 'developer',
-            type: 'modal'
+            text: 'Current openings',
+            href: '/careers',
+            id: 'career',
+            type: 'simple'
         }
     }
 ]
