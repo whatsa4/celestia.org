@@ -11,7 +11,7 @@ export const FooterBoxes = [
         text: 'Be part of our growing ecosystem of developers and innovators who are helping build the Celestia network.',
         button: {
             text: 'Get started',
-            href: 'https://3gmsuktxksk.typeform.com/ecosystem#hidden1=xxxxx',
+            href: 'https://celestia-intake.typeform.com/ecosystem#hidden1=xxxxx',
             id: 'operator',
             type: 'simple'
         }
