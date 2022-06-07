@@ -84,6 +84,13 @@ const navigation = [
                 url: "https://www.youtube.com/channel/UCLlvAEzXBFZ-P3zS6BF2Bjg",
                 icon: "menu/resources.svg",
                 type: 'external'
+            },
+            {
+                text: "Join our subreddit",
+                subtext: "Reddit",
+                url: "https://www.reddit.com/r/CelestiaNetwork/",
+                icon: "menu/reddit.svg",
+                type: 'external'
             }
         ]
     },{
