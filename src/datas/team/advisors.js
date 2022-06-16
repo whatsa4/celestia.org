@@ -44,7 +44,7 @@ export const advisors = [
     {
         id : 4,
         name : 'James Prestwich',
-        title: 'Founder, Summa (acquired by Celo)',
+        title: 'Founder, Nomad',
         text: '',
         image: 'team/JamesPrestwich.png',
         socials: {
