@@ -40,7 +40,7 @@ Blockchains that aren’t independent, like rollups on top of settlement layers,
 
 Execution layers that deploy natively to a consensus and data availability layer are sovereign like independent blockchains while retaining the scalability that is provided by a modular stack.
 
-#### Execution envrionment
+#### Execution environment
 
 Deploying execution layers onto existing settlement layers allows for experimentation with different types of <a href="https://celestia.org/glossary/execution-environment" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">execution environments</a>. However, experimentation is slightly limited because execution layers, such as rollups, require transactions and proofs to be interpreted inside the settlement layer.
 
