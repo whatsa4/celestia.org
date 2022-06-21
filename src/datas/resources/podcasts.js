@@ -1,5 +1,12 @@
 export const podcasts = [
     {
+        id: 9,
+        category: 'podcast',
+        title: 'Modular vs. Monolithic Blockchains with Ismail Khoffi of Celestia',
+        subtitle: 'Ismail Khoffi of Celestia joins The Interop to discuss the modular blockchain design paradigm and how Celestia aims to bring more scalability to crypto.',
+        url: 'https://open.spotify.com/episode/1mu7v7CScBT5rlwBrad7Dh?si=YCCCFYzsQnupnsAd7NiU2A',
+    },
+    {
         id: 8,
         category: 'podcast',
         title: 'The power of forking with Aditi Sriram',
