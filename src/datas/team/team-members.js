@@ -247,5 +247,18 @@ export const teamMembers = [
             email : '',
             linkedin : 'https://www.linkedin.com/in/jeremysklaroff/',
         }
-    }
+    },{
+        id : 21,
+        name : 'Nader Dabit',
+        title: 'Developer Relations',
+        text: 'Former DevRel at Edge & Node and former DevRel lead at AWS',
+        image: 'team/NaderDabit.png',
+        socials: {
+            twitter : 'https://twitter.com/dabit3',
+            discord : '',
+            github : 'https://github.com/dabit3',
+            email : '',
+            linkedin : '',
+         }
+     }
 ]
