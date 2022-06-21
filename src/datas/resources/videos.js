@@ -1,5 +1,17 @@
 export const videos = [
     {
+        id: 18,
+        category: 'video',
+        title: 'Nick White || COO of Celestia Labs: Modular Blockchains',
+        image: 'resources/nick-logan-thumbnail.png',
+        url: 'https://www.youtube.com/watch?v=5rxPKG_x-lE',     
+    },{
+        id: 17,
+        category: 'video',
+        title: 'DISRUPTORS: Modular Blockchains for Sovereign Communities Mustafa Al-Bassam',
+        image: 'resources/mustafa-delphi-thumbnail.png',
+        url: 'https://www.youtube.com/watch?v=PeqtTwMDAQQ',     
+    },{
         id: 16,
         category: 'video',
         title: 'Building the Multiverse with Nick White',
