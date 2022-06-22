@@ -7,14 +7,22 @@ icon: "/images/creating-new-blockchains.png"
 title: "Creating new blockchains"
 description: "How modular blockchains can change the process of launching and deploying new blockchains."
 ---
-
+<head>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CelestiaOrg">
+  <meta name="twitter:creator" content="@likebeckett">
+  <meta name="twitter:title" content="Modular Scalability">
+  <meta name="twitter:description" content="Traditionally, creating a new blockchain had been a resource-intensive endeavor, imposing considerable time and monetary costs. Although blockchains can be implemented more efficiently now, existing hurdles are still present that cause friction in the bootstrapping process.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/celestiaorg/celestia.org/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
+</head>
+  
 #### Introduction
 
-Traditionally, creating a new blockchain had been a resource-intensive endeavor, imposing considerable time and monetary costs. Although blockchains can be implemented more efficiently now, existing hurdles are still present that cause friction in the bootstrapping process. Modular blockchains can help facilitate this process while reducing the friction caused by existing infrastructure.
+Traditionally, creating a new blockchain had been a resource-intensive endeavor, imposing considerable time and monetary costs. Although blockchains can be implemented more efficiently now, existing hurdles are still present that cause friction in the bootstrapping process. <a href="https://celestia.org/glossary/modular-blockchain" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">Modular blockchains</a> can help facilitate this process while reducing the friction caused by existing infrastructure.
 
 #### Bootstrapping costs
 
-With the rise of SDKs such as the Cosmos SDK and its corresponding consensus engine Tendermint, new blockchains can be created and innovated with significant ease compared to their predecessors. However, limitations still exist for launching new blockchains, such as sourcing a suitable validator set and ensuring a large token distribution such that the network is resilient to attacks. These are non-trivial tasks that can pose difficult problems.
+With the rise of SDKs such as the Cosmos SDK and its corresponding consensus engine Tendermint, new blockchains can be created and innovated with significant ease compared to their predecessors. However, limitations still exist for launching new blockchains, such as sourcing a secure <a href="https://celestia.org/glossary/validator-set" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">validator set</a> and ensuring a large token distribution such that the network is resilient to attacks. These are non-trivial tasks that can pose difficult problems.
 
 The next evolution of blockchain creation will be enabled by modular architectures. For example, a new blockchain will be able to be created using an SDK and will have the ability to immediately utilize existing modular blockchains. This allows blockchains to minimally launch by specializing in execution, outsourcing consensus, and data availability to an existing layer. Additionally, new blockchains can make use of settlement layers that launch on top of data availability layers, giving developers optionality for their architecture.
 
@@ -22,19 +30,19 @@ Since execution layers don’t require a consensus mechanism, they need not sour
 
 #### Sovereignty
 
-Blockchains that launch as independent chains have sovereignty over their environment. This gives them the right to push upgrades without reliance on other chains. A sovereign blockchain allows its own nodes to determine the canonical chain and act on its fork choice rule. The fork choice rule dictates how nodes determine and detect forks, including agreement on which is the ‘main’ chain (canonical chain).
+Blockchains that launch as independent chains have sovereignty over their environment. This gives them the right to push upgrades without reliance on other chains. A <a href="https://celestia.org/glossary/sovereign-blockchain" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">sovereign blockchain</a> allows its own nodes to determine the canonical chain and act on its fork choice rule. The fork choice rule dictates how nodes determine and detect forks, including agreement on which is the ‘main’ chain (canonical chain).
 
 ![GATSBY_EMPTY_ALT](./images/article-4-image-1.png)
 
-If the sovereign blockchain experiences a liveness or safety failure that requires a restart or some type of fork, social consensus can be utilized to restart the chain and act on decisions independent of outside communities.
+If the sovereign blockchain experiences a liveness or safety failure that requires a restart or some type of fork, <a href="https://celestia.org/glossary/social-consensus" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">social consensus</a> can be utilized to restart the chain and act on decisions independent of outside communities.
 
 Blockchains that aren’t independent, like rollups on top of settlement layers, don’t retain sovereignty because they rely on the settlement layer to validate their transactions, which makes it the arbitrator of the rollup’s canonical chain. As a result, if the rollup experiences a liveness or safety failure that requires social consensus to enact decisions, the community of the settlement layer dictates that. 
 
 Execution layers that deploy natively to a consensus and data availability layer are sovereign like independent blockchains while retaining the scalability that is provided by a modular stack.
 
-#### Execution envrionment
+#### Execution environment
 
-Deploying execution layers onto existing settlement layers allows for experimentation with different types of execution environments. However, experimentation is slightly limited because execution layers, such as rollups, require transactions and proofs to be interpreted inside the settlement layer.
+Deploying execution layers onto existing settlement layers allows for experimentation with different types of <a href="https://celestia.org/glossary/execution-environment" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">execution environments</a>. However, experimentation is slightly limited because execution layers, such as rollups, require transactions and proofs to be interpreted inside the settlement layer.
 
 For example, a rollup that wants to deploy on Ethereum requires that its fraud or validity proofs are verified in an EVM-compatible manner. Some rollups have implemented mechanisms that enable their VM to compile into a language that is readable using another VM that sits inside the EVM, such as Optimism compiling Go code into MIPs which runs inside the EVM. 
 

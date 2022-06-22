@@ -65,11 +65,11 @@ export const Technologies = [
 
 export const FooterBoxes = [
     {
-        title: 'Join our growing ecosystem',
+        title: 'Join our expanding ecosystem',
         text: 'Be part of our growing ecosystem of developers and innovators who are helping build the Celestia network.',
         button: {
-            text: 'Join our growing ecosystem',
-            href: 'https://3gmsuktxksk.typeform.com/ecosystem#hidden1=xxxxx',
+            text: 'Get started',
+            href: 'https://celestia-intake.typeform.com/ecosystem#hidden1=xxxxx',
             id: 'operator',
             type: 'simple'
         }

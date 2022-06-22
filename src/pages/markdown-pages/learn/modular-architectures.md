@@ -8,6 +8,16 @@ title: "Modular architectures"
 description: "A look into the different ways in which modular blockchains can be interconnected."
 ---
 
+<head>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CelestiaOrg">
+  <meta name="twitter:creator" content="@likebeckett">
+  <meta name="twitter:title" content="Modular Scalability">
+  <meta name="twitter:description" content="A new paradigm is emerging in which modular blockchains are enabling new chains to be constructed in ways that were not previously possible.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/celestiaorg/celestia.org/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
+</head>
+
+
 #### Introduction
 
 A new paradigm is emerging in which modular blockchains are enabling new chains to be constructed in ways that were not previously possible. Because of this, the design possibilities are vast for both the individual blockchain and the modular stack it is a part of. Different types of modular blockchains can work synergistically, varying by purpose and architecture.
@@ -41,7 +51,7 @@ To optimize more of the benefits that a modular blockchain stack can provide, th
 
 The execution layer sits at the top of the stack and plays the same role as layer 2 in the previous stack. Modular stacks beyond layer 1 and 2 are more flexible in their construction, requiring more specific naming that is coherent with the functionality that each layer provides.
 
-The settlement layer is unique to that of regular layer 1s that provide settlement because it decouples the settlement functionality from the rest of the functions. The result is an execution chain that can be used specifically for settlement, enabling a trust-minimized bridge between the execution and settlement layer and providing a way by which execution layers can bridge between each other.
+The settlement layer is unique to that of regular layer 1s that provide settlement because it decouples the settlement functionality from the rest of the functions. The result is an execution chain that can be used specifically for settlement, enabling a <a href="https://celestia.org/glossary/trust-minimized-bridge" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">trust-minimized bridge</a> between the execution and settlement layer and providing a way by which execution layers can bridge between each other.
 
 Once the execution layer has published its blocks to the settlement layer, it will build its own blocks that include transactions from the execution layer and publish only the transaction data to the base layer. This is only one of multiple ways that the settlement layer could function within the modular stack.
 
@@ -69,4 +79,3 @@ Since there is no settlement layer involved, only the data availability layer is
 3. A modular stack can be constructed that consists of three layers rather than two. The execution layer can utilize a settlement layer for all the functionality that is required (e.g. bridging and dispute resolution) but also harness the benefits of a separate consensus and data availability layer.
 4. A modular stack can also consist of an execution layer that runs natively on a consensus and data availability layer. Under this construction, execution layer nodes would verify blocks through its peer-to-peer layer rather than from a settlement layer contract. This enables sovereignty for the execution layer as it can determine its environment without permission from any underlying layers.
 </div>
-

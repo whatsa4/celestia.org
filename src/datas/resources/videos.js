@@ -1,5 +1,29 @@
 export const videos = [
     {
+        id: 18,
+        category: 'video',
+        title: 'Nick White || COO of Celestia Labs: Modular Blockchains',
+        image: 'resources/nick-logan-thumbnail.png',
+        url: 'https://www.youtube.com/watch?v=5rxPKG_x-lE',     
+    },{
+        id: 17,
+        category: 'video',
+        title: 'DISRUPTORS: Modular Blockchains for Sovereign Communities Mustafa Al-Bassam',
+        image: 'resources/mustafa-delphi-thumbnail.png',
+        url: 'https://www.youtube.com/watch?v=PeqtTwMDAQQ',     
+    },{
+        id: 16,
+        category: 'video',
+        title: 'Building the Multiverse with Nick White',
+        image: 'resources/nick-bankless.png',
+        url: 'https://www.youtube.com/watch?v=bmSU3cZhe3U',     
+    },{
+        id: 15,
+        category: 'video',
+        title: 'Axelar Tech Talks with Celestia',
+        image: 'resources/evan-axelar.png',
+        url: 'https://www.youtube.com/watch?v=3bxzSM02qvI',     
+    },{
         id: 14,
         category: 'video',
         title: 'Celestia: The World’s First Modular Blockchain Network',

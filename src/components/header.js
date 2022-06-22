@@ -11,6 +11,13 @@ const navigation = [
         url: "",
         submenus: [
             {
+                text: "Read our docs",
+                subtext: "Celestia Docs",
+                url: "https://docs.celestia.org/",
+                icon: "menu/documentation.svg",
+                type: 'external'                
+            },
+            {
                 text: "View our GitHub repos",
                 subtext: "GitHub repositories",
                 url: "https://github.com/celestiaorg",
@@ -18,9 +25,16 @@ const navigation = [
                 type: 'external'
             },
             {
-                text: "Experiment with devnet",
-                subtext: "Devnet",
-                url: "https://github.com/celestiaorg/networks",
+                text: "Read the contributors guide",
+                subtext: "Contribute",
+                url: "/resources/contribute/",
+                icon: "menu/briefcase.svg",
+                type: 'internal'
+            },
+            {
+                text: "Build on testnet",
+                subtext: "Testnet",
+                url: "https://docs.celestia.org/nodes/mamaki-testnet",
                 icon: "menu/devnet.svg",
                 type: 'external'
             },
@@ -63,6 +77,20 @@ const navigation = [
                 url: "https://forum.celestia.org",
                 icon: "menu/forum.svg",
                 type: 'external'
+            },
+            {
+                text: "Watch our YouTube videos",
+                subtext: "YouTube",
+                url: "https://www.youtube.com/channel/UCLlvAEzXBFZ-P3zS6BF2Bjg",
+                icon: "menu/resources.svg",
+                type: 'external'
+            },
+            {
+                text: "Join our subreddit",
+                subtext: "Reddit",
+                url: "https://www.reddit.com/r/CelestiaNetwork/",
+                icon: "menu/reddit.svg",
+                type: 'external'
             }
         ]
     },{
@@ -98,11 +126,18 @@ const navigation = [
                 type: 'internal'
             },
             {
-                text: "Read our best tweets",
+                text: "View our best tweets",
                 subtext: "Twitter",
                 url: "https://typefully.com/CelestiaOrg",
                 icon: "menu/twitter.svg",
                 type: 'external'
+            },
+            {
+                text: "Read articles on Celestia",
+                subtext: "Reading list",
+                url: "/resources/reading-list/",
+                icon: "menu/book.svg",
+                type: 'internal'
             }
         ]
     },{

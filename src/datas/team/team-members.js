@@ -140,20 +140,6 @@ export const teamMembers = [
         }
     },
     {
-        id : 12,
-        name : 'Alexandru Popescu',
-        title: 'VP Marketing, Celestia Labs',
-        text: 'Former Digital Marketing Wizard at Mindvalley Labs',
-        image: 'team/AlexandruPopescu.png',
-        socials: {
-            twitter : 'https://twitter.com/AlexPopescu082',
-            discord : '',
-            github : '',
-            email : '',
-            linkedin : '',
-        }
-    },
-    {
         id : 13,
         name : 'Rachid Chami',
         title: 'Software Engineer',
@@ -247,6 +233,32 @@ export const teamMembers = [
             github : '',
             email : '',
             linkedin : '',
+         }
+     },{
+        id : 20,
+        name : 'Jeremy Sklaroff',
+        title: 'General Counsel',
+        text: 'Former general counsel of Edge & Node/The Graph and financial regulatory attorney at Davis Polk',
+        image: 'team/JeremySklaroff.png',
+        socials: {
+            twitter : 'https://twitter.com/jeremysklaroff',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : 'https://www.linkedin.com/in/jeremysklaroff/',
         }
-    }
+    },{
+        id : 21,
+        name : 'Nader Dabit',
+        title: 'Developer Relations',
+        text: 'Former DevRel at Edge & Node and former DevRel lead at AWS',
+        image: 'team/NaderDabit.png',
+        socials: {
+            twitter : 'https://twitter.com/dabit3',
+            discord : '',
+            github : 'https://github.com/dabit3',
+            email : '',
+            linkedin : '',
+         }
+     }
 ]

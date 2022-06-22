@@ -10,7 +10,7 @@ export const content = {
     text: 'Join our team of leading engineers, researchers and entrepreneurs in pioneering the first modular blockchain design.',
     button: {
         text: 'Current openings',
-        url: 'https://angel.co/company/celestialabs/jobs'
+        url: 'https://jobs.lever.co/celestia'
     },
     perks:{
         title: 'Perks',
@@ -37,11 +37,11 @@ export const content = {
 
 export const FooterBoxes = [
     {
-        title: 'Join our growing ecosystem',
+        title: 'Join our expanding ecosystem',
         text: 'Be part of our growing ecosystem of developers and innovators who are helping build the Celestia network.',
         button: {
-            text: 'Join our growing ecosystem',
-            href: 'https://3gmsuktxksk.typeform.com/ecosystem#hidden1=xxxxx',
+            text: 'Get started',
+            href: 'https://celestia-intake.typeform.com/ecosystem#hidden1=xxxxx',
             id: 'operator',
             type: 'simple'
         }
