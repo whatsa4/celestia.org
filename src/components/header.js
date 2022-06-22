@@ -15,7 +15,7 @@ const navigation = [
                 subtext: "Celestia Docs",
                 url: "https://docs.celestia.org/",
                 icon: "menu/documentation.svg",
-                type: 'external'                
+                type: 'external'
             },
             {
                 text: "View our GitHub repos",
@@ -146,8 +146,23 @@ const navigation = [
         type: 'internal'
     },{
         text: "Team",
-        url: "/team/",
-        type: 'internal'
+        url: "",
+        submenus: [
+            {
+                text: "Meet the team",
+                subtext: "Team",
+                url: "/team/",
+                icon: "menu/team.svg",
+                type: 'internal'
+            },
+            {
+                text: "LView our job postings",
+                subtext: "Careers",
+                url: "/careers/",
+                icon: "menu/careers.svg",
+                type: 'internal'
+            }
+        ]
     },{
         text: "Blog",
         url: "https://blog.celestia.org",
