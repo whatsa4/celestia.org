@@ -105,6 +105,12 @@ const navigation = [
                 icon: "menu/faq.svg",
                 type: 'internal'
             },{
+                text: "Podcast",
+                subtext: "Listen",
+                url: "https://podcast.celestia.org/",
+                icon: "menu/microphone.svg",
+                type: 'external'
+            },{
                 text: "Learn Modular",
                 subtext: "Learn",
                 url: "/learn/",
