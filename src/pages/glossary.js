@@ -1,5 +1,6 @@
 import * as React from "react"
 import 'react-multi-carousel/lib/styles.css';
+import { Helmet } from 'react-helmet';
 
 import {FooterBoxes} from "../datas/resources/content";
 
@@ -7,6 +8,8 @@ import Layout from "../components/layout";
 import {glossaries} from "../datas/glossary/data";
 import {Link} from "gatsby";
 import {useState} from "react";
+
+import twitterCardImage from "../images/glossary-twitter-card.png";
 
 class Result extends React.Component {
     render() {
@@ -172,6 +175,13 @@ class GlossaryPage extends React.Component {
     render() {
         return (
             <Layout footerBoxes={FooterBoxes}>
+                <Helmet>
+                    <meta name="twitter:card" content="summary" />
+                    <meta name="twitter:site" content="@CelestiaOrg" />
+                    <meta property="og:url" content={this.props.location.href} />
+                    <meta property="og:title" content="Glossary" />
+                    <meta property="og:image" content={twitterCardImage} />
+                </Helmet>
                 <div className={'glossary-page'}>
                     <main>
                         <div className={'container'}>

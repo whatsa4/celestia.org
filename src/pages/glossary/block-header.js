@@ -5,6 +5,8 @@ import Layout from "../../components/layout";
 import BreadCrumb from "../../components/breadcrumb";
 import SocialShare from "../../components/socialShare";
 import GlossaryNav from "../../components/glossary-nav";
+import {Helmet} from "react-helmet";
+import twitterCardImage from "../../images/glossary-twitter-card.png";
 
 const title = 'Block header';
 
@@ -24,6 +26,13 @@ class GlossarySubpage extends React.Component {
     render() {
         return (
             <Layout footerBoxes={FooterBoxes}>
+                <Helmet>
+                    <meta name="twitter:card" content="summary" />
+                    <meta name="twitter:site" content="@CelestiaOrg" />
+                    <meta property="og:url" content={this.props.location.href} />
+                    <meta property="og:title" content="Glossary" />
+                    <meta property="og:image" content={twitterCardImage} />
+                </Helmet>
                 <div className={'glossary-subpage'}>
                     <main>
                         <div className={'container'}>
