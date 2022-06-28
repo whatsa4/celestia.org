@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>User_fill</title>
+    <g id="CELESTIA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NAV-DD-COMMUNITY" transform="translate(-955.000000, -267.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="32team" transform="translate(947.000000, 259.000000)">
+                <g id="User_fill" transform="translate(8.960000, 8.320000)">
+                    <path d="M13.48519,14.6612949 C13.9508365,14.5642571 14.2282197,14.0769624 13.9968284,13.661351 C13.4867062,12.7452202 12.6831122,11.9401099 11.6550341,11.3265482 C10.3310414,10.5364316 8.70885967,10.1081009 7.04001221,10.1081009 C5.37116476,10.1081009 3.74891565,10.5364316 2.4249229,11.3265482 C1.39690377,11.9401099 0.593284484,12.7452202 0.0831791739,13.661351 C-0.148212102,14.0769624 0.129120492,14.5642571 0.594775429,14.6612949 C4.84591414,15.54727 9.23405974,15.54727 13.48519,14.6612949 Z" id="Path"></path>
+                    <circle id="Oval" cx="7.04001221" cy="4.2117087" r="4.2117087"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
