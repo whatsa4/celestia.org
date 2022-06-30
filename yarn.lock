@@ -2253,7 +2253,7 @@
   dependencies:
     "chalk" "^4.1.0"
 
-"@parcel/namer-default@2.5.0":
+"@parcel/namer-default@^2.5.0", "@parcel/namer-default@2.5.0":
   "integrity" "sha512-ahGQqHJzsWE5Qux8zXMAU+lyNBOl+ZpcOFzRGE2DWOsmAlytsHl7DBVCQvzUyNBFg1/HmIj+7D4efv2kjR7rTg=="
   "resolved" "https://registry.npmjs.org/@parcel/namer-default/-/namer-default-2.5.0.tgz"
   "version" "2.5.0"
