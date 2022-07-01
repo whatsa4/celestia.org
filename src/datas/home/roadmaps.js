@@ -11,7 +11,7 @@ export const roadmaps = [
         status: 'current',
     },{
         id: 3,
-        title: '2022',
+        title: '2022/23',
         text: 'Testnet Release <br/> Incentivized Testnet',
         status: 'active',
     },{
