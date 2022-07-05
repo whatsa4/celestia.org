@@ -260,5 +260,18 @@ export const teamMembers = [
             email : '',
             linkedin : '',
          }
+    },{
+        id : 22,
+        name : 'Rootul Patel',
+        title: 'Software Engineer',
+        text: 'Former software engineer at Palantir and AWS',
+        image: 'team/RootulPatel.png',
+        socials: {
+            twitter : 'https://twitter.com/rootulp',
+            discord : '',
+            github : 'https://github.com/rootulp',
+            email : '',
+            linkedin : 'https://www.linkedin.com/in/rootulp/',
+         }
      }
 ]
