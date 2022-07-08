@@ -4,7 +4,7 @@ slug: "/learn/first-principles-of-modular-blockchains"
 edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn/first-principles-of-modular-blockchains.md"
 date: "2022-07-08"
 icon: "/images/modular-scalability.png"
-title: "Modular scalability"
+title: "First Principles of Modular Blockchains"
 description: "A first principles perspective on modular blockchains."
 ---
 
@@ -12,12 +12,12 @@ description: "A first principles perspective on modular blockchains."
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@CelestiaOrg">
   <meta name="twitter:creator" content="@likebeckett">
-  <meta name="twitter:title" content="Modular Scalability">
+  <meta name="twitter:title" content="First Principles of Modular Blockchains">
   <meta name="twitter:description" content="By beginning with the first principles of modular blockchains, their purpose and goals will become easier to understand.">
   <meta name="twitter:image" content="https://raw.githubusercontent.com/celestiaorg/celestia.org/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
 <head/>
 
-# Summary 
+#### Summary 
 * Modular blockchains prioritize decentralization for network security by reducing the cost for users to operate nodes and verify the network.
 * Scaling enables modular blockchains to increase capacity without making it costly for users to verify and secure the network. 
 * A decentralized network of users are ultimately responsible for upholding the security of a blockchain in the presence of malicious validators.
@@ -25,17 +25,17 @@ description: "A first principles perspective on modular blockchains."
 #### Introduction
 Learning a concept by starting at its foundation provides the best path to reaching proficiency. Like any concept, modular blockchains are no different. They come with their own set of fundamental concepts that require understanding to grasp the advanced material. By beginning with the first principles of modular blockchains, their purpose and goals will become easier to understand.
 
-##### Decentralization
+#### Decentralization
 One of the most important distinctions between blockchains and traditional distributed systems is that they are open and verifiable by any individual. A user can operate a node and personally verify that the blockchain is operating correctly. Nodes that fully verify the blockchain, such as full nodes, are critical to its security because they are responsible for ensuring that the rules of the chain are upheld. 
 
 Since verifiability is the core difference between web2 and web3 systems, we measure decentralization by the amount of users that can verify the chain directly themselves. More users running nodes increases decentralization which makes the blockchain more resilient to attacks. Modular blockchains prioritize decentralization for network security by reducing the cost for users to operate nodes and verify the network.
 
-##### Scalability 
+#### Scalability 
 As users increase, blockchains must also increase the number of transactions they can process.  However, increasing the number of transactions a blockchain processes increases the amount of work required to verify the chain. If it becomes more difficult to verify the chain, then less people can run nodes and the blockchain becomes more centralized.
 
 Transaction throughput measures how many transactions a blockchain can process, commonly referred to as transactions per second (TPS). To scale, a blockchain must increase the number of transactions it can process without an equal increase in the cost to operate a secure node. 
 
-- image here
+![GATSBY_EMPTY_ALT](./images/article-5-image-1.png)
 
 If a blockchain can increase the number of transactions it processes without equally increasing the cost for nodes to verify the transactions, it is scaling. Scalability is a core property of modular blockchains which ensures they can increase capacity without making it costly for users to verify the network. Technologies like fraud proofs, validity proofs, and data availability sampling used in the modular blockchain stack enable nodes to verify transactions more efficiently than full nodes while maintaining equivalent security.
 
