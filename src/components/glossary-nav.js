@@ -3,9 +3,6 @@ import { Link } from "gatsby"
 import {glossaries} from "../datas/glossary/data";
 
 class GlossaryNav extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const allGlossaries = []
         let prev, next = []

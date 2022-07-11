@@ -11,7 +11,7 @@
     }
 
     .roadmap-item{
-      width:2.5%;
+      width:2.25%;
       float:left;
 
       @include media-breakpoint-down(md) {
@@ -46,7 +46,8 @@
 
           &:before{
             height:1px;
-            width:480%;
+            max-width:430%;
+            width:17vw;
             content:'';
             position:absolute;
             transform:translateX(-100%) rotate(20deg);
@@ -56,7 +57,15 @@
             border-bottom:1px solid #000;
 
             @include media-breakpoint-down(xl) {
-              width:20vw;
+              width:17vw;
+              transform: translateX(-100%) rotate(24deg);
+              left:10px;
+            }
+
+            @include media-breakpoint-down(lg) {
+              width:15vw;
+              left:10px;
+              top:-10px;
             }
 
             @include media-breakpoint-down(md) {
@@ -79,17 +88,25 @@
 
           &:before{
             height:1px;
-            width:480%;
+            width:420%;
             content:'';
             position:absolute;
             transform:translateX(-100%) rotate(-20deg);
-            left: 18px;
+            left: 10px;
             top: 85px;
             z-index:0;
             border-bottom:1px solid #000;
 
             @include media-breakpoint-down(xl) {
-              width:20vw;
+              width:17vw;
+              transform: translateX(-100%) rotate(-27deg);
+              left: 14px;
+            }
+
+            @include media-breakpoint-down(lg) {
+              width:15vw;
+              left:8px;
+              top:65px;
             }
 
             @include media-breakpoint-down(md) {
@@ -111,7 +128,7 @@
       &:last-child{
         .circle{
           &:before{
-            border-bottom:1px dotted #000;
+            //border-bottom:1px dotted #000;
           }
         }
       }
