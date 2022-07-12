@@ -196,7 +196,6 @@ header{
           cursor:pointer;
         }
 
-
         @include media-breakpoint-down(md) {
           opacity:0;
           transition-delay: 0ms;
@@ -215,7 +214,6 @@ header{
             border-bottom:2px solid black;
           }
         }
-
 
         i{
           font-size:12px;
@@ -358,7 +356,6 @@ header{
             }
           }
         }
-        
         &:nth-last-child(2){
           .submenu{
             right:0;

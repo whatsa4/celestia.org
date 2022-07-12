@@ -5,6 +5,8 @@ import Layout from "../../components/layout";
 import BreadCrumb from "../../components/breadcrumb";
 import SocialShare from "../../components/socialShare";
 import GlossaryNav from "../../components/glossary-nav";
+import {Helmet} from "react-helmet";
+import twitterCardImage from "../../images/glossary-twitter-card.png";
 
 const title = 'Block header';
 
@@ -14,7 +16,6 @@ class GlossaryContent extends React.Component {
             <div className={'glossary-content'}>
                 <p>The header of a block that contains a list of relevant metadata. This typically includes a Merkle root of the transactions in the block body, the hash of the previous block, the block height, and the timestamp, among others. The contents of the block header will also vary by sybil resistance mechanism (PoW or PoS) and by the specifications of the individual blockchain.
                 </p>
-
             </div>
         )
     }
@@ -24,6 +25,18 @@ class GlossarySubpage extends React.Component {
     render() {
         return (
             <Layout footerBoxes={FooterBoxes}>
+                <Helmet>
+                    <meta property="og:url" content={this.props.location.href} />
+                    <meta property="og:title" content={'Celestia - '+title} />
+                    <meta property="og:description" content="" />
+                    <meta property="og:image" content={this.props.location.origin + twitterCardImage} />
+
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:site" content="@CelestiaOrg" />
+                    <meta name="twitter:title" content={'Celestia - '+title} />
+                    <meta name="twitter:description" content="" />
+                    <meta name="twitter:image" content={this.props.location.origin + twitterCardImage} />
+                </Helmet>
                 <div className={'glossary-subpage'}>
                     <main>
                         <div className={'container'}>
