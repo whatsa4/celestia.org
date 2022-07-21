@@ -114,14 +114,14 @@ const navigation = [
                 text: "Learn Modular",
                 subtext: "Learn",
                 url: "/learn/",
-                icon: "menu/devnet.svg",
+                icon: "menu/books.svg",
                 type: 'internal'
             },
             {
                 text: "Glossary",
                 subtext: "Explore",
                 url: "/glossary/",
-                icon: "menu/research.svg",
+                icon: "menu/search.svg",
                 type: 'internal'
             },
             {
