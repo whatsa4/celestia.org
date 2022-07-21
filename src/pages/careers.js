@@ -67,18 +67,6 @@ const CareersPage = () => {
                                 </div>
 
                             </div>
-
-
-                            <div className={'col-12'}>
-                                <div className="row">
-                                    {jobs.allLever.edges.map((job,index) => (
-                                        <div className={'col-12 col-md-6 pb-5'} key={index}>
-                                            {job.node.text}
-                                            {job.node.description}
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
                         </div>
 
                     </div>
