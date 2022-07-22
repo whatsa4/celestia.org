@@ -26,6 +26,10 @@ export const glossaries = [
                 title: 'Composability',
                 text: 'The ability for applications on a blockchain to read and write state to each other.',
             },{
+                url: 'cosmos-sdk',
+                title: 'Cosmos SDK',
+                text: 'The Cosmos SDK is a development kit for building PoS layer 1 blockchains with Tendermint as the consensus mechanism.',
+            },{
                 url: 'cross-chain-interoperability',
                 title: 'Cross-chain interoperability',
                 text: 'The ability for separate blockchains to communicate and interact with each other.',
@@ -49,6 +53,10 @@ export const glossaries = [
                 url: 'data-withholding-attack',
                 title: 'Data withholding attack',
                 text: 'A type of attack that occurs when a block producer proposes a new block but does not share the underlying transaction data that was used to create the block.',
+            },{
+                url: 'dispute-resolution',
+                title: 'Dispute resolution',
+                text: 'The handling and resolution of disputes. Dispute resolution is a term commonly used in relation to optimistic rollups and their fraud proof mechanism.',
             }
         ]
     },{
@@ -64,7 +72,15 @@ export const glossaries = [
             {
                 url: 'fee-market',
                 title: 'Fee market',
-                text: '>A type of market that blockchains implement to prevent malicious actors from spamming the network.',
+                text: 'A type of market that blockchains implement to prevent malicious actors from spamming the network.',
+            },{
+                url: 'fork',
+                title: 'Fork',
+                text: 'A software upgrade that causes the blockchain to split into two chains that may or may not be compatible with each other.',
+            },{
+                url: 'fork-choice-rule',
+                title: 'Fork choice rule',
+                text: 'An algorithm that nodes use to correctly identify and follow the canonical chain.',
             },{
                 url: 'full-node',
                 title: 'Full node',
@@ -134,6 +150,10 @@ export const glossaries = [
     },{
         'S':[
             {
+                url: 'settlement-layer',
+                title: 'Settlement layer',
+                text: 'A settlement layer is a blockchain that has a two-way trust minimized bridge with a rollup or any hybrid rollup, such as a validium or volition.',
+            },{
                 url: 'sharding',
                 title: 'Sharding',
                 text: 'The process of separating a blockchain from a single chain into multiple chains (shards).',
@@ -157,6 +177,10 @@ export const glossaries = [
                 url: 'sovereign-blockchain',
                 title: 'Sovereign blockchain',
                 text: 'A blockchain that has independent control over itself and its applications via social consensus.',
+            },,{
+                url: 'sovereign-rollup',
+                title: 'Sovereign rollup',
+                text: 'A rollup that does not have an enshrined immutable bridge with its L1',
             },{
                 url: 'state-transition-fraud-proof',
                 title: 'State transition fraud proof',
