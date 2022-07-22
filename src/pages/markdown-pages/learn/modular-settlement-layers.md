@@ -3,7 +3,7 @@ path: "/learn/"
 slug: "/learn/modular-settlement-layers"
 edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn/modular-settlement-layers.md"
 date: "2022-07-08"
-icon: "/images/modular-settlement.png"
+icon: "/images/modular-settlement-layer.png"
 title: "Modular settlement layers"
 description: "A first principles perspective on modular blockchains."
 ---
