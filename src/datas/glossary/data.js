@@ -121,6 +121,11 @@ export const glossaries = [
                 url: 'peer-to-peer-network',
                 title: 'Peer to peer network',
                 text: 'A network in which nodes are connected and can communicate directly with each other without reliance on a third party to facilitate communication.',
+            },
+            {
+                url: 'pay-for-data',
+                title: 'PayForData',
+                text: 'A type of transaction, submitting a payload of arbitrary bytes (like a serialized block) , paying for the amount of block space that the submitted data takes up.'
             }
         ]
     },{
