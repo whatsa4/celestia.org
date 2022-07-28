@@ -7,7 +7,7 @@ export const content = {
 
 export const FooterBoxes = [
     {
-        title: 'Build on testnet',
+        title: 'Build on our testnet',
         text: 'Create and experiment with the testnet and its innovative features.',
         button: {
             text: 'Get started',
