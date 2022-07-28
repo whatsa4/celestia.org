@@ -7,8 +7,8 @@ export const content = {
 
 export const FooterBoxes = [
     {
-        title: 'Build on our testnet',
-        text: 'Create and experiment with the testnet and its innovative features.',
+        title: 'Experiment with testnet',
+        text: 'Create and build on the Celestia testnet.',
         button: {
             text: 'Get started',
             href: 'https://docs.celestia.org/',
