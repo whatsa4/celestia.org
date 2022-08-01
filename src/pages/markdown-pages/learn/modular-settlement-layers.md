@@ -2,7 +2,7 @@
 path: "/learn/"
 slug: "/learn/modular-settlement-layers"
 edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn/modular-settlement-layers.md"
-date: "2022-07-08"
+date: "2022-03-08"
 icon: "/images/modular-settlement-layer.png"
 title: "Modular settlement layers"
 description: "A first principles perspective on modular blockchains."
@@ -19,7 +19,7 @@ description: "A first principles perspective on modular blockchains."
 
 
 # Summary 
-* A settlement layer is a blockchain that has a two-way trust minimized bridge with a rollup or any rollup hybrid, such as a validium or volition.
+* A settlement layer is a blockchain used in either of the following ways; providing finality for transactions or as a bridging hub.
 * Settlement layers provide multiple purposes for rollups, which include proof verification & dispute resolution, a hub to facilitate cross-rollup bridging, and a source of liquidity.
 * An optimal settlement layer can provide maximal block space for execution layers by disincentivizing applications from deploying on the settlement layer.
 * By introducing fraud or validity proofs, a settlement layer can enhance the security of light clients, allowing them to verify valid or invalid blocks.
@@ -29,7 +29,11 @@ The modular blockchain paradigm creates many potential configurations in which b
 
 
 ##### Settlement layers
-A settlement layer is a blockchain that has a two-way trust minimized bridge with a rollup or any hybrid rollup, such as a validium or volition. The two-way bridge setup enables tokens to move freely between the settlement layer and the rollup. A bridge is trust minimized when communication only requires only a minority of participants to act honestly for it to function correctly. The minimal trust assumptions made by the bridge are possible because the rollup’s batches are fully verified by the settlement layer - using a combination of fraud/validity proofs and data availability verification.
+A settlement layer is a chain that is used in either of the following ways; providing finality for transactions or as a bridging hub.
+
+Transactions executed on a rollup receive finality from a settlement layer once validity proofs have been verified or once a dispute window has passed, depending on whether it's an optimistic or zk rollup. For example, Ethereum is a settlement layer because it provides finality to rollups that use it.
+
+A chain that enables tokens to get bridged from one chain to another is also a settlement layer. For example, the Cosmos Hub is used in the Cosmos ecosystem as a hub to facilitate token transfers between other Cosmos chains. Additionally, rollups can use the same settlement layer to bridge between each other.
 
 Settlement layers provide multiple purposes for rollups:
 * Proof verification & dispute resolution: A place for rollups to publish their proofs for external verification. This is especially useful for optimistic rollups that rely on interactive fraud proofs. 
@@ -37,13 +41,13 @@ Settlement layers provide multiple purposes for rollups:
 * Liquidity source: Liquidity that lives on the settlement layer can be utilized by all rollups on top.
 
 ##### Settlement in the modular stack 
-Many blockchains can be used as settlement layers, though most of them are monolithic chains that are not specialized for settlement. A settlement layer in the modular stack can decouple the settlement functionality, which execution enables, from the remaining functions, consensus, and data availability. Since a modular settlement layer takes the form of a rollup, it is also referred to as a settlement rollup.
+Many blockchains can be used as settlement layers, though most of them are monolithic chains that are not specialized for settlement. A settlement layer in the modular stack can decouple the settlement functionality, which is execution, from the remaining functions, consensus, and data availability. Since a modular settlement layer can take the form of a rollup, it can also be referred to as a settlement rollup.
 
 - IMAGE HERE
 
-In this example, the rollup at the top is where user-facing applications live. Like a typical rollup, it publishes its batches of transactions to a settlement layer and pays a fee in its designated token. From there, the rollup doesn’t need to have any direct contact with Celestia. The settlement layer will independently build its own batches, which will include transaction data from the rollup, and publish them to Celestia.
+In the three-layer modular stack, the rollup at the top is where user-facing applications live. Like a typical rollup, it publishes batches of transactions to a settlement layer and pays a fee in its designated token. From there, the rollup doesn’t need to have any direct contact with Celestia. The settlement layer will independently build its own batches, which will include transaction data from the rollup, and publish them to Celestia.
 
-Alternatively, the rollup could publish its transaction data directly to Celestia and its proofs to the settlement rollup separately. Regardless, the process is abstracted away from users and apps as they are only exposed to the requirements on the rollup, such as the gas token and wallet type.
+Alternatively, the rollup could publish its transaction data directly to Celestia and its proofs to the settlement layer separately. Regardless, the process is abstracted away from users and apps as they are only exposed to the requirements on the rollup, such as the gas token and wallet type.
 
 #### Specialized settlement layers
 The primary purpose of settlement layers is to cater to the rollups that deploy on top. To create an optimal settlement layer for them, multiple optimizations are possible.
