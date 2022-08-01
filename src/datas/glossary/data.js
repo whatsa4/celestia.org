@@ -125,7 +125,8 @@ export const glossaries = [
             {
                 url: 'pay-for-data',
                 title: 'PayForData',
-                text: 'A type of transaction, submitting a payload of arbitrary bytes (like a serialized block) , paying for the amount of block space that the submitted data takes up.'
+                text: 'A type of transaction, submitting a payload of arbitrary bytes (like a serialized block), paying for the amount of block space that the submitted data takes up.'
+
             }
         ]
     },{
