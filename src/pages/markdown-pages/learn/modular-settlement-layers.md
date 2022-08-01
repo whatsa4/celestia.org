@@ -2,7 +2,7 @@
 path: "/learn/"
 slug: "/learn/modular-settlement-layers"
 edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn/modular-settlement-layers.md"
-date: "2022-03-07"
+date: "2022-04-01"
 icon: "/images/modular-settlement-layer.png"
 title: "Modular settlement layers"
 description: "A first principles perspective on modular blockchains."
@@ -35,7 +35,7 @@ Transactions executed on a rollup receive finality from a settlement layer once 
 
 A chain that enables tokens to get bridged from one chain to another is also a settlement layer. For example, the Cosmos Hub is used in the Cosmos ecosystem as a hub to facilitate token transfers between other Cosmos chains. Additionally, rollups can use the same settlement layer to bridge between each other.
 
-Settlement layers provide multiple purposes for rollups:
+##### Settlement layers provide multiple purposes for rollups:
 * Proof verification & dispute resolution: A place for rollups to publish their proofs for external verification. This is especially useful for optimistic rollups that rely on interactive fraud proofs. 
 * Hub to facilitate bridging: Rollups can bridge between each other if they through a common settlement layer. A hub removes the need for all rollups to have a bridge between each other.
 * Liquidity source: Liquidity that lives on the settlement layer can be utilized by all rollups on top.
