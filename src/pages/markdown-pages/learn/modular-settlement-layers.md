@@ -18,7 +18,7 @@ description: "A first principles perspective on modular blockchains."
 <head/>
 
 
-# Summary 
+#### Summary 
 * A settlement layer is a blockchain used in either of the following ways; providing finality for transactions or as a bridging hub.
 * Settlement layers provide multiple purposes for rollups, which include proof verification & dispute resolution, a hub to facilitate cross-rollup bridging, and a source of liquidity.
 * An optimal settlement layer can provide maximal block space for execution layers by disincentivizing applications from deploying on the settlement layer.
@@ -28,7 +28,7 @@ description: "A first principles perspective on modular blockchains."
 The modular blockchain paradigm creates many potential configurations in which blockchains can connect. Since modular blockchains only handle a subset of functions, more specialization can be facilitated. Settlement is one function, in particular, that can become optimized and specialized by a modular blockchain. 
 
 
-##### Settlement layers
+#### Settlement layers
 A settlement layer is a chain that is used in either of the following ways; providing finality for transactions or as a bridging hub.
 
 Transactions executed on a rollup receive finality from a settlement layer once validity proofs have been verified or once a dispute window has passed, depending on whether it's an optimistic or zk rollup. For example, Ethereum is a settlement layer because it provides finality to rollups that use it.
@@ -40,7 +40,7 @@ Settlement layers provide multiple purposes for rollups:
 * Hub to facilitate bridging: Rollups can bridge between each other if they through a common settlement layer. A hub removes the need for all rollups to have a bridge between each other.
 * Liquidity source: Liquidity that lives on the settlement layer can be utilized by all rollups on top.
 
-##### Settlement in the modular stack 
+#### Settlement in the modular stack 
 Many blockchains can be used as settlement layers, though most of them are monolithic chains that are not specialized for settlement. A settlement layer in the modular stack can decouple the settlement functionality, which is execution, from the remaining functions, consensus, and data availability. Since a modular settlement layer can take the form of a rollup, it can also be referred to as a settlement rollup.
 
 - IMAGE HERE
