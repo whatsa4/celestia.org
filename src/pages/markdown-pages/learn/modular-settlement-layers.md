@@ -43,7 +43,7 @@ A chain that enables tokens to get bridged from one chain to another is also a s
 #### Settlement in the modular stack 
 Many blockchains can be used as settlement layers, though most of them are monolithic chains that are not specialized for settlement. A settlement layer in the modular stack can decouple the settlement functionality, which is execution, from the remaining functions, consensus, and data availability. Since a modular settlement layer can take the form of a rollup, it can also be referred to as a settlement rollup.
 
-- IMAGE HERE
+![GATSBY_EMPTY_ALT](./images/modular-stack.png)
 
 In the three-layer modular stack, the rollup at the top is where user-facing applications live. Like a typical rollup, it publishes batches of transactions to a settlement layer and pays a fee in its designated token. From there, the rollup doesn’t need to have any direct contact with Celestia. The settlement layer will independently build its own batches, which will include transaction data from the rollup, and publish them to Celestia.
 
