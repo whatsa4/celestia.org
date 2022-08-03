@@ -21,7 +21,7 @@ description: "Settlement layers in the modular paradigm."
 #### Summary 
 * A settlement layer is a blockchain used in either of the following ways; providing finality for transactions or as a bridging hub.
 * Settlement layers provide multiple purposes for rollups, which include proof verification & dispute resolution, a hub to facilitate cross-rollup bridging, and a source of liquidity.
-* An optimal settlement layer can provide maximal block space for execution layers by disincentivizing applications from deploying on the settlement layer.
+* An ideal settlement layer can provide maximal block space for execution layers by disincentivizing applications from deploying on the settlement layer.
 * By introducing fraud or validity proofs, a settlement layer can enhance the security of light clients, allowing them to verify valid or invalid blocks.
 
 #### Introduction
