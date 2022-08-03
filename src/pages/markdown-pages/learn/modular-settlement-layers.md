@@ -5,7 +5,7 @@ edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-
 date: "2022-04-01"
 icon: "/images/modular-settlement-layer.png"
 title: "Modular settlement layers"
-description: "A first principles perspective on modular blockchains."
+description: "Settlement layers in the modular paradigm."
 ---
 
 <head>
