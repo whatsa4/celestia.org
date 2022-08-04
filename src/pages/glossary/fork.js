@@ -12,13 +12,7 @@ class GlossaryContent extends React.Component {
     render() {
         return (
             <div className={'glossary-content'}>
-                <p>A software upgrade that causes the blockchain to split into two chains that may or may not be compatible with each other. Forks also occur when there is a temporary divergence in the chain.
-                </p>
-
-                <p>There are two common types of forks that introduce software upgrades; hard forks and soft forks. Hard forks are backwards-incompatible upgrades. Once a hard fork occurs, the chain gets split into two distinct forks, one that has the upgraded version and the other without it. Nodes then need to decide which fork they will follow. As such, a node can’t communicate with another node that isn’t running the same software.
-                </p>
-
-                <p>Soft forks are backwards-compatible upgrades. Once a soft fork occurs, nodes can continue to communicate with each other even if they are on different software versions. This is possible because the new software doesn’t conflict with the previous version, so there is no ‘hard’ split in the chain.
+                <p>A software upgrade that causes a blockchain to split into two chains that may or may not be compatible with each other. Forks can also occur when there is a temporary split in the chain, such as in proof of work.
                 </p>
 
             </div>
