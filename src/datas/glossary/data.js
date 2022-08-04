@@ -228,11 +228,11 @@ export const glossaries = [
             },{
                 url: 'validium',
                 title: 'Validium',
-                text: 'A bridge between two blockchains that doesn’t require an intermediary, a committee, or an honest majority assumption to ensure that funds can’t be stolen.',
+                text: 'A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain.',
             },{
                 url: 'volition',
                 title: 'Volition',
-                text: 'A bridge between two blockchains that doesn’t require an intermediary, a committee, or an honest majority assumption to ensure that funds can’t be stolen.',
+                text: 'A zero-knowledge rollup with options for both on-chain and off-chain data availability.',
             },{
                 url: 'zk-rollup',
                 title: 'zk-Rollup',
