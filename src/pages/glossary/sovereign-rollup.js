@@ -12,13 +12,18 @@ class GlossaryContent extends React.Component {
     render() {
         return (
             <div className={'glossary-content'}>
-                <p>Sovereign rollups are a slight departure from rollups as they are seen on Ethereum. There is no set of smart contracts that validate the rollup’s data and proofs. Instead, the sovereign rollup publishes its data directly to the chain. 
+                <p>A type of rollup that does not use a settlement layer to determine its canonical chain and validity rules. Instead, the canonical chain of the rollup is determined by the nodes in the rollup's peer-to-peer network. This means that settlement occurs on the rollup, rather than a separate settlement layer.
                 </p>
 
-                <p>There is also no enshrined trust-minimized bridge between a sovereign rollup and Celestia. Uniquely, sovereign rollups gain an independent upgrade path via forking. Forks can be instantiated through the sovereign rollup’s social consensus, enabling easier social coordination and more secure upgrades. 
-                </p>
+                <p>Sovereign rollups have three key benefits:</p>
 
-                <p>For more information on sovereign rollups, view the blog post ‘Rollups as sovereign chains’.
+                <ol>
+                    <li>More freedom over the execution environment</li>
+                    <li>No sharing of computation resources</li>
+                    <li>Ability to hard fork if something goes wrong</li>
+                </ol>
+
+                <p>For more information on sovereign rollups, view the blog post <a href="https://blog.celestia.org/sovereign-rollup-chains/">Rollups as sovereign chains</a>.
                 </p>
 
             </div>
