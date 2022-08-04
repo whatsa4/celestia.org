@@ -56,7 +56,7 @@ export const glossaries = [
             },{
                 url: 'dispute-resolution',
                 title: 'Dispute resolution',
-                text: 'The handling and resolution of disputes. Dispute resolution is a term commonly used in relation to optimistic rollups and their fraud proof mechanism.',
+                text: 'The handling and resolution of disputes, commonly used as a term in relation to optimistic rollups and their fraud proof mechanism.',
             }
         ]
     },{
