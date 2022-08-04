@@ -176,7 +176,7 @@ export const glossaries = [
             },,{
                 url: 'sovereign-rollup',
                 title: 'Sovereign rollup',
-                text: 'A rollup that does not have an enshrined immutable bridge with its L1',
+                text: 'A type of rollup that does not use a settlement layer to determine its canonical chain and validity rules.',
             },{
                 url: 'state-transition-fraud-proof',
                 title: 'State transition fraud proof',
