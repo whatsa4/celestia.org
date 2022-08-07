@@ -26,6 +26,10 @@ export const glossaries = [
                 title: 'Composability',
                 text: 'The ability for applications on a blockchain to read and write state to each other.',
             },{
+                url: 'cosmos-sdk',
+                title: 'Cosmos SDK',
+                text: 'The Cosmos SDK is a development kit for building PoS layer 1 blockchains with Tendermint as the consensus mechanism.',
+            },{
                 url: 'cross-chain-interoperability',
                 title: 'Cross-chain interoperability',
                 text: 'The ability for separate blockchains to communicate and interact with each other.',
@@ -49,6 +53,10 @@ export const glossaries = [
                 url: 'data-withholding-attack',
                 title: 'Data withholding attack',
                 text: 'A type of attack that occurs when a block producer proposes a new block but does not share the underlying transaction data that was used to create the block.',
+            },{
+                url: 'dispute-resolution',
+                title: 'Dispute resolution',
+                text: 'The handling and resolution of disputes, commonly used as a term in relation to optimistic rollups and their fraud proof mechanism.',
             }
         ]
     },{
@@ -64,7 +72,15 @@ export const glossaries = [
             {
                 url: 'fee-market',
                 title: 'Fee market',
-                text: '>A type of market that blockchains implement to prevent malicious actors from spamming the network.',
+                text: 'A type of market that blockchains implement to prevent malicious actors from spamming the network.',
+            },{
+                url: 'fork',
+                title: 'Fork',
+                text: 'A software upgrade that causes the blockchain to split into two chains that may or may not be compatible with each other.',
+            },{
+                url: 'fork-choice-rule',
+                title: 'Fork choice rule',
+                text: 'An algorithm that nodes use to correctly identify and follow the canonical chain.',
             },{
                 url: 'full-node',
                 title: 'Full node',
@@ -157,6 +173,10 @@ export const glossaries = [
                 url: 'sovereign-blockchain',
                 title: 'Sovereign blockchain',
                 text: 'A blockchain that has independent control over itself and its applications via social consensus.',
+            },,{
+                url: 'sovereign-rollup',
+                title: 'Sovereign rollup',
+                text: 'A type of rollup that does not use a settlement layer to determine its canonical chain and validity rules.',
             },{
                 url: 'state-transition-fraud-proof',
                 title: 'State transition fraud proof',
@@ -208,11 +228,11 @@ export const glossaries = [
             },{
                 url: 'validium',
                 title: 'Validium',
-                text: 'A bridge between two blockchains that doesn’t require an intermediary, a committee, or an honest majority assumption to ensure that funds can’t be stolen.',
+                text: 'A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain.',
             },{
                 url: 'volition',
                 title: 'Volition',
-                text: 'A bridge between two blockchains that doesn’t require an intermediary, a committee, or an honest majority assumption to ensure that funds can’t be stolen.',
+                text: 'A zero-knowledge rollup with options for both on-chain and off-chain data availability.',
             },{
                 url: 'zk-rollup',
                 title: 'zk-Rollup',
