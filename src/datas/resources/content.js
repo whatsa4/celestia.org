@@ -4,7 +4,7 @@ export const FooterBoxes = [
         text: 'Join a growing ecosystem of developers building rollups and applications on the Mamaki testnet.',
         button: {
             text: 'Get started',
-            href: 'https://celestia-intake.typeform.com/ecosystem#hidden1=xxxxx',
+            href: 'https://docs.celestia.org/',
             id: 'operator',
             type: 'simple'
         }
