@@ -94,7 +94,7 @@ class IndexPage extends React.Component {
                                   <div className={'col col-12 col-lg-6'}>
                                       <h3 className={'with-decor'}>Build on our developer beta</h3>
                                       <div className={'text'}>Build on Celestia and be the first to explore the benefits of its novel architecture.</div>
-                                      <div className={'button button-simple'} id={'developer'} role={'button'} tabIndex={0} onClick={this.handleModalOpen} onKeyDown={this.handleModalOpen} url={'https://docs.celestia.org/'}>Build on Testnet</div>
+                                      <div className={'button button-simple'} role={'button'} url={'https://docs.celestia.org/'}>Build on Testnet</div>
                                   </div>
                               </div>
                           </section>
