@@ -20,14 +20,14 @@ description: "Settlement layers in the modular paradigm."
 
 #### Summary 
 * Settlement layers provide multiple purposes for rollups, which include proof verification & dispute resolution, a hub to facilitate cross-rollup bridging, and a source of liquidity.
-* An ideal settlement layer can provide maximal block space for execution layers by disincentivizing applications from deploying on the settlement layer.
+* An ideal settlement layer can provide maximal capacity to rollups by incentivizing applications to only deploy to rollups and not directly on the settlement layer.
 * By introducing fraud or validity proofs, a settlement layer can enhance the security of light clients, allowing them to verify valid or invalid blocks.
 
 #### Introduction
 The modular blockchain paradigm creates many potential configurations in which blockchains can connect. Since modular blockchains only handle a subset of functions, more specialization can be facilitated. Settlement is one function, in particular, that can become optimized and specialized by a modular blockchain. 
 
 #### Settlement in the modular stack
-Many blockchains can be used as settlement layers, though most of them are monolithic chains that become settlement layers through a necessity to scale. A settlement layer in the modular stack can decouple the settlement functionality, which is execution, from the remaining functions, consensus, and data availability.
+Many blockchains can be used as settlement layers, though most of them are monolithic chains that become settlement layers through a need to process more transactions (scaling). A settlement layer in the modular stack can specialize in settlement while outsourcing the remaining components, like consensus and data availability, to other modular blockchains.
 
 ![GATSBY_EMPTY_ALT](./images/monolithic-to-modular.png)
 
