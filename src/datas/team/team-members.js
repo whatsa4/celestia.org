@@ -304,7 +304,20 @@ export const teamMembers = [
         name : 'Gabriel Blaut',
         title: 'Software Engineer',
         text: 'Hackathon Enjoyer',
-        image: 'team/RGabrielBlaut.png',
+        image: 'team/GabrielBlaut.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 25,
+        name : 'Rahul Ghangas',
+        title: 'Software Engineer',
+        text: 'Former backend engineer at Ren',
+        image: 'team/RahulGhangas.png',
         socials: {
             twitter : '',
             discord : '',
