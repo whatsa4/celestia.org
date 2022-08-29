@@ -295,6 +295,7 @@ export const teamMembers = [
         socials: {
             twitter : '',
             discord : '',
+            twitter : 'https://github.com/walldiss',
             github : '',
             email : '',
             linkedin : '',
@@ -321,7 +322,7 @@ export const teamMembers = [
         socials: {
             twitter : '',
             discord : '',
-            github : '',
+            github : 'https://github.com/rahulghangas',
             email : '',
             linkedin : '',
          }
