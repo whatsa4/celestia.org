@@ -273,5 +273,58 @@ export const teamMembers = [
             email : '',
             linkedin : 'https://www.linkedin.com/in/rootulp/',
          }
+     },{
+        id : 23,
+        name : 'Ryan Ford',
+        title: 'Software Engineer',
+        text: 'Former smart contract engineer',
+        image: 'team/RyanFord.png',
+        socials: {
+            twitter : 'https://twitter.com/distractedm1nd',
+            discord : '',
+            github : 'https://github.com/distractedm1nd',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 24,
+        name : 'Vlad Krinitsin',
+        title: 'Software Engineer',
+        text: 'Former software engineer at Vivid Money',
+        image: 'team/VladKrinitsin.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            twitter : 'https://github.com/walldiss',
+            github : '',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 25,
+        name : 'Gabriel Blaut',
+        title: 'Software Engineer',
+        text: 'Hackathon Enjoyer',
+        image: 'team/GabrielBlaut.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 25,
+        name : 'Rahul Ghangas',
+        title: 'Software Engineer',
+        text: 'Former backend engineer at Ren',
+        image: 'team/RahulGhangas.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            github : 'https://github.com/rahulghangas',
+            email : '',
+            linkedin : '',
+         }
      }
 ]
