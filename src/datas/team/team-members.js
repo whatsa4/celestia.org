@@ -332,7 +332,7 @@ export const teamMembers = [
         text: 'Former DevRel at Ankr & Teaching Assistant at buildspace',
         image: 'team/JoshStein.png',
         socials: {
-            twitter : '',
+            twitter : 'https://twitter.com/JoshCStein',
             discord : '',
             github : '',
             email : '',
