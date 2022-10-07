@@ -1,5 +1,17 @@
 export const videos = [
     {
+        id: 25,
+        category: 'video',
+        title: 'DAS NYC 2022 | ETH L2s and Scaling Solutions',
+        image: 'resources/john-DAS-NYC-thumbnail.png',
+        url: 'https://vimeo.com/750093646',     
+    },{
+        id: 24,
+        category: 'video',
+        title: 'Deploying a Sovereign Rollup on Celestia with Yaz Khoury',
+        image: 'resources/yaz-sovereign-rollup-demo-thumbnail.png',
+        url: 'https://youtu.be/JFeBC-X3YcM',     
+    },{
         id: 23,
         category: 'video',
         title: 'BUIDL Asia 2022 Panel: The Interoperability Round Table',
