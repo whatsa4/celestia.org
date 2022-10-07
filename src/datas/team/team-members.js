@@ -334,7 +334,7 @@ export const teamMembers = [
         socials: {
             twitter : 'https://twitter.com/JoshCStein',
             discord : '',
-            github : '',
+            github : 'https://github.com/jcstein',
             email : '',
             linkedin : '',
          }
