@@ -154,20 +154,6 @@ export const teamMembers = [
         }
     },
     {
-        id : 14,
-        name : 'Aditi Sriram',
-        title: 'Product Manager',
-        text: 'Former product manager at The Graph and ConsenSys, with a background in developer growth',
-        image: 'team/AditiSriram.png',
-        socials: {
-            twitter : 'https://twitter.com/adeets_22',
-            discord : '',
-            github : '',
-            email : '',
-            linkedin : '',
-        }
-    },
-    {
         id : 15,
         name : 'Viacheslav Gonkivskyi',
         title: 'Software Engineer',
@@ -248,19 +234,6 @@ export const teamMembers = [
             linkedin : 'https://www.linkedin.com/in/jeremysklaroff/',
         }
     },{
-        id : 21,
-        name : 'Nader Dabit',
-        title: 'Developer Relations',
-        text: 'Former DevRel at Edge & Node and former DevRel lead at AWS',
-        image: 'team/NaderDabit.png',
-        socials: {
-            twitter : 'https://twitter.com/dabit3',
-            discord : '',
-            github : 'https://github.com/dabit3',
-            email : '',
-            linkedin : '',
-         }
-    },{
         id : 22,
         name : 'Rootul Patel',
         title: 'Software Engineer',
@@ -272,6 +245,98 @@ export const teamMembers = [
             github : 'https://github.com/rootulp',
             email : '',
             linkedin : 'https://www.linkedin.com/in/rootulp/',
+         }
+     },{
+        id : 23,
+        name : 'Ryan Ford',
+        title: 'Software Engineer',
+        text: 'Former smart contract engineer',
+        image: 'team/RyanFord.png',
+        socials: {
+            twitter : 'https://twitter.com/distractedm1nd',
+            discord : '',
+            github : 'https://github.com/distractedm1nd',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 24,
+        name : 'Vlad Krinitsin',
+        title: 'Software Engineer',
+        text: 'Former software engineer at Vivid Money',
+        image: 'team/VladKrinitsin.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            twitter : 'https://github.com/walldiss',
+            github : '',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 25,
+        name : 'Gabriel Blaut',
+        title: 'Software Engineer',
+        text: 'Hackathon Enjoyer',
+        image: 'team/GabrielBlaut.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 25,
+        name : 'Rahul Ghangas',
+        title: 'Software Engineer',
+        text: 'Former backend engineer at Ren',
+        image: 'team/RahulGhangas.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            github : 'https://github.com/rahulghangas',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 26,
+        name : 'Mojtaba Eskandari',
+        title: 'Software Engineer',
+        text: 'Former software engineer at Tendermint',
+        image: 'team/MojtabaEskandari.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            github : 'https://github.com/mojtaba-esk',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 27,
+        name : 'Matt Sevey',
+        title: 'Director of Engineering',
+        text: 'Former core developer of Sia and Skynet, Outdoor Enthusiast and Career Coach',
+        image: 'team/MattSevey.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            github : 'https://github.com/MSevey',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 28,
+        name : 'Josh Stein',
+        title: 'Developer Relations',
+        text: 'Former DevRel at Ankr & Teaching Assistant at buildspace',
+        image: 'team/JoshStein.png',
+        socials: {
+            twitter : 'https://twitter.com/JoshCStein',
+            discord : '',
+            github : 'https://github.com/jcstein',
+            email : '',
+            linkedin : '',
          }
      }
 ]

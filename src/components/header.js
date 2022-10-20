@@ -105,17 +105,17 @@ const navigation = [
                 icon: "menu/faq.svg",
                 type: 'internal'
             },{
-                text: "Podcast",
-                subtext: "Listen",
-                url: "https://podcast.celestia.org/",
-                icon: "menu/mic.svg",
-                type: 'external'
-            },{
                 text: "Learn Modular",
                 subtext: "Learn",
                 url: "/learn/",
                 icon: "menu/books.svg",
                 type: 'internal'
+            },{
+                text: "Podcast",
+                subtext: "Listen",
+                url: "https://podcast.celestia.org/",
+                icon: "menu/mic.svg",
+                type: 'external'
             },
             {
                 text: "Glossary",

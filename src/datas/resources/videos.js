@@ -1,5 +1,47 @@
 export const videos = [
     {
+        id: 25,
+        category: 'video',
+        title: 'DAS NYC 2022 | ETH L2s and Scaling Solutions',
+        image: 'resources/john-DAS-NYC-thumbnail.png',
+        url: 'https://vimeo.com/750093646',     
+    },{
+        id: 24,
+        category: 'video',
+        title: 'Deploying a Sovereign Rollup on Celestia with Yaz Khoury',
+        image: 'resources/yaz-sovereign-rollup-demo-thumbnail.png',
+        url: 'https://youtu.be/JFeBC-X3YcM',     
+    },{
+        id: 23,
+        category: 'video',
+        title: 'BUIDL Asia 2022 Panel: The Interoperability Round Table',
+        image: 'resources/mustafa-buidl-talk-thumbnail.png',
+        url: 'https://youtu.be/FQI0gR-63PI',     
+    },{
+        id: 22,
+        category: 'video',
+        title: 'BUIDL Asia 2022 Panel: The Interoperability Round Table',
+        image: 'resources/interop-panel-buidl-thumbnail.png',
+        url: 'https://youtu.be/H_LRTkd2DRg',     
+    },{
+        id: 21,
+        category: 'video',
+        title: 'Hash Rate - Ep 003: Celestia with Nick White',
+        image: 'resources/nick-hashrate-thumbnail.png',
+        url: 'https://youtu.be/HTU5RJsaRxU',     
+    },{
+        id: 20,
+        category: 'video',
+        title: 'Evan Forbes - Celestiums: Scaling Ethereum Rollups by using Celestia',
+        image: 'resources/Celestiums-evan-talk-thumbnail.png',
+        url: 'https://youtu.be/6uLlTLE7qrQ?list=PLM-Xjhvin-uWN9ov74srLZIuJsbRSc2ou',     
+    },{
+        id: 19,
+        category: 'video',
+        title: 'Crazy Things You Can Do With ABCI++ - Evan Forbes',
+        image: 'resources/Evan-ABCI-talk-thumbnail.png',
+        url: 'https://youtu.be/VGdIZLVYoRs',     
+    },{
         id: 18,
         category: 'video',
         title: 'Nick White || COO of Celestia Labs: Modular Blockchains',
