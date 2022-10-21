@@ -338,5 +338,18 @@ export const teamMembers = [
             email : '',
             linkedin : '',
          }
+     },{
+        id : 29,
+        name : 'Alina Loseva',
+        title: 'Visual Artist',
+        text: 'Explorer of the world.',
+        image: 'team/AlinaLoseva.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : '',
+         }
      }
 ]
