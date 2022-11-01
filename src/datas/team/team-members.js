@@ -223,7 +223,7 @@ export const teamMembers = [
      },{
         id : 20,
         name : 'Jeremy Sklaroff',
-        title: 'General Counsel',
+        title: 'Head of Operations and General Counsel',
         text: 'Former general counsel of Edge & Node/The Graph and financial regulatory attorney at Davis Polk',
         image: 'team/JeremySklaroff.png',
         socials: {
@@ -337,6 +337,32 @@ export const teamMembers = [
             github : 'https://github.com/jcstein',
             email : '',
             linkedin : '',
+         }
+     },{
+        id : 29,
+        name : 'Alina Loseva',
+        title: 'Visual Artist',
+        text: 'Explorer of the world',
+        image: 'team/AlinaLoseva.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 30,
+        name : 'Mary Liu',
+        title: 'Business Development Manager',
+        text: 'Former Galaxy Digital FoF investor, Schwarzman Scholar, BA from Columbia',
+        image: 'team/MaryLiu.png',
+        socials: {
+            twitter : 'https://twitter.com/howdymerry',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : 'https://www.linkedin.com/in/missmaryliu/',
          }
      }
 ]
