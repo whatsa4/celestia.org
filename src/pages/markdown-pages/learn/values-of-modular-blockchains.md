@@ -24,7 +24,6 @@ description: "The values that modular blockchains aim for."
 * Modularism, not maximalism: building blockchain infrastructure should be collaborative, not competitive.
 * Modular blockchains enable communities to become sovereign, enabling them to self-organize independently.
 
-
 #### Introduction
 
 Blockchains are a social movement as much as they are a technology. They help communities of people independently organize and carry out their goals. Of course, this means that blockchains themselves need to stand for certain values. Without values, blockchains would be no better than web2 tech companies. Here are the values that modular blockchains aim for.
@@ -43,7 +42,7 @@ Most effort spent building blockchains has gone towards new L1s. The problem is 
 
 Modular blockchains create a collaborative environment with many connected chains. Each new user that a modular blockchain brings in creates value for the whole modular ecosystem, not just a single L1. Modular blockchains collaborate while monolithic L1s compete.
 
-![GATSBY_EMPTY_ALT](./images/modular-vs-monolithic-approach.png)
+![GATSBY_EMPTY_ALT](./images/Monolithic-Modular-Aproach_V2_No_Logo.png)
 
 The other benefit of collaboration is that developers can reuse and build on existing modular blockchains. This allows them to mix and match the components they need instead of building an entirely new L1 whose tech is limited to a single chain.
 
