@@ -364,5 +364,31 @@ export const teamMembers = [
             email : '',
             linkedin : 'https://www.linkedin.com/in/missmaryliu/',
          }
+     },{
+        id : 31,
+        name : 'Ganesha Upadhyaya',
+        title: 'Senior Research Engineer',
+        text: 'Former lead engineer at Harmony Protocol, MS & PhD in Compilers',
+        image: 'team/GaneshaUpadhyaya.png',
+        socials: {
+            twitter : 'https://twitter.com/gupadhyaya',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 33,
+        name : 'Callum Waters',
+        title: 'Software engineer',
+        text: 'Former lead engineer of the Tendermint consensus protocol. Chief instigator of deadlocks, race conditions and memory leaks.',
+        image: 'team/CallumWaters.png',
+        socials: {
+            twitter : '',
+            discord : '',
+            github : '',
+            email : '',
+            linkedin : '',
+         }
      }
 ]
