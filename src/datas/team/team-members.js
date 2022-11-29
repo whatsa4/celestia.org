@@ -385,8 +385,8 @@ export const teamMembers = [
         image: 'team/ConnorOHara.png',
         socials: {
             twitter : 'https://twitter.com/colludingnode',
-            discord : 'https://github.com/S1nus',
-            github : '',
+            discord : '',
+            github : 'https://github.com/S1nus',
             email : '',
             linkedin : '',
          }
