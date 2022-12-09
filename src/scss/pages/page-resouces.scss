@@ -1,6 +1,13 @@
 .resources-page{
-  //background:url(../images/BG/team.png) no-repeat scroll center right transparent;
   position:relative;
+
+  main{
+    overflow:unset;
+  }
+}
+
+.resources-body{
+  background-image:url(../images/BG/learn.png);
 }
 
 .blog-post{
@@ -137,7 +144,6 @@
   }
 
   .blog-post-content{
-    padding-left:400px;
 
     @include media-breakpoint-down(md) {
       padding-left:0;
@@ -174,9 +180,10 @@
 
 
 .toc{
-  position: absolute;
-  left:0px;
-  width:315px;
+  //position: absolute;
+  left:0;
+  width:100%;
+  float:left;
 
   @include media-breakpoint-down(md) {
     display:none;
@@ -192,49 +199,131 @@
     max-height:calc(100vh - 180px);
     overflow: auto;
 
-    &:before{
-      height:calc(100% - 70px);
-      width: 3px;
-      background: #EAEAEA;
-      position:absolute;
-      left:35px;
-      content:'';
+    & > div{
+      &:first-of-type{
+        .group-title{
+          margin-top:0;
+          padding-top:0;
+          border:none;
+        }
+      }
+    }
+
+    .group-title{
+      font-family: $ruberoid;
+      font-weight:bold;
+      font-size: 18px;
+      color: #000000;
+      letter-spacing: 0;
+      cursor:pointer;
+      margin-bottom:10px;
+
+      border-top: 1px solid #DCDCDC;
+      padding-top:25px;
+      margin-top:10px;
+
+      svg{
+        width:22px;
+        height:22px;
+        float:right;
+        display:inline-block;
+        transition:300ms all ease-in-out;
+      }
+    }
+
+    .subcategory-title{
+      font-weight:500;
+      font-family: $ruberoid;
+      margin-bottom:10px;
+      font-size:15px;
+      cursor:pointer;
+
+      &:hover{
+        color:$purple;
+      }
+    }
+
+    .subcategory-items{
+      max-height:0;
+      overflow:hidden;
+
+      &.opened{
+        max-height:unset;
+      }
+    }
+
+    .group-items{
+      transition:300ms all ease-in-out;
+      .article-title{
+        font-family: $ruberoid;
+        font-weight:500;
+        font-size: 13px;
+        color: #414141;
+        letter-spacing: 0;
+        margin-bottom:10px;
+        padding-left:10px;
+
+        &:hover{
+          color:$purple;
+        }
+
+        .toc-item{
+          div:first-of-type{
+            a{
+              margin-top:10px;
+            }
+          }
+        }
+      }
     }
   }
 
-  a:not(.suggest-button){
+  .article-link{
+    &.active{
+      font-weight:bold;
+    }
+  }
+
+  a:not(.suggest-button):not(.article-link){
     font-family:$ruberoid;
     font-weight:500;
     font-size: 13px;
-    color: #000000;
     letter-spacing: 0;
-    margin:10px 0;
-    padding-left:25px;
+    padding:5px 0 5px 25px;
     display:inline-block;
-  }
-
-  .selected{
-    position: relative;
-    a{
-      font-weight:bold;
-      color: $purple;
-    }
+    color: #414141;
+    line-height: 26px;
+    position:relative;
 
     &:before{
       height:100%;
-      width: 3px;
-      background: $purple;
+      width: 2px;
+      background: #EAEAEA;
       position:absolute;
-      left:0px;
-      border-radius:10px;
+      left:8px;
       content:'';
+    }
+  }
+
+  div.selected{
+    position: relative;
+    a:not(.suggest-button):not(.article-link){
+      font-weight:bold;
+      color: $purple;
+
+      &:before{
+        height:100%;
+        width: 2px;
+        background: $purple;
+        position:absolute;
+        left:8px;
+        border-radius:10px;
+        content:'';
+      }
     }
   }
 }
 
-.sticky{
-  top:100px !important;
-}
 
 .blog-section{
   .section-inner{
@@ -318,6 +407,11 @@
 
       &:nth-child(1){
         border-right:1px solid #E7E4E4;
+
+        @include media-breakpoint-down(md) {
+          border-right:none;
+          border-bottom:1px solid #E7E4E4;
+        }
       }
       &:nth-child(3){
         display:none;
@@ -327,6 +421,10 @@
         background:#FFF !important;
         box-shadow:none;
         padding:40px 50px;
+
+        @include media-breakpoint-down(md) {
+          padding:30px 0;
+        }
 
         .image{
           height:75px;
@@ -351,4 +449,40 @@
       }
     }
   }
+}
+
+.toc-inner{
+  .opened{
+    .group-items{
+      max-height:100vh;
+      overflow:visible;
+    }
+
+    .group-title{
+      svg{
+        transform:rotate(180deg);
+      }
+    }
+  }
+  .closed{
+    .group-items{
+      max-height:0;
+      overflow:hidden;
+    }
+  }
+}
+
+.sticky-container{
+  clip-path: inset(0 0 0 0);
+}
+
+.sticky-box{
+  position:relative;
+  margin-top:100px;
+  transform:unset;
+}
+
+.toc{
+  position:sticky;
+  top:100px;
 }

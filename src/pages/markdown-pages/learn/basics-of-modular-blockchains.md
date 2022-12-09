@@ -1,9 +1,12 @@
 ---
+order: 2
 path: "/learn/"
 slug: "/learn/basics-of-modular-blockchains"
 edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn/basics-of-modular-blockchains.md"
 date: "2022-06-01"
 icon: "/images/basics-of-modular-blockchains.png"
+category: "Beginner"
+subcategory: "Basics of modular blockchains"
 title: "Basics of modular blockchains"
 description: "What are modular blockchains and what makes them different to their monolithic counterparts?"
 ---

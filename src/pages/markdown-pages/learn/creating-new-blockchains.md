@@ -1,12 +1,16 @@
 ---
+order: 7
 path: "/learn/"
 slug: "/learn/creating-new-blockchains"
 edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn/creating-new-blockchains.md"
 date: "2022-02-01"
 icon: "/images/creating-new-blockchains.png"
+category: "Intermediate"
+subcategory: "Creating new blockchains"
 title: "Creating new blockchains"
 description: "How modular blockchains can change the process of launching and deploying new blockchains."
 ---
+
 <head>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@CelestiaOrg">
