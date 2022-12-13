@@ -1,13 +1,13 @@
 ---
-order: 5
+order: 6
 path: "/learn/"
-slug: "/learn/modular-settlement-layers"
-edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn/modular-settlement-layers.md"
+slug: "/learn/modular-settlement-layers/settlement-in-the-modular-stack"
+edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn/modular-settlement-layers-settlement-in-the-modular-stack.md"
 date: "2022-04-01"
-icon: "/images/modular-settlement-layer.png"
+icon: ""
 category: "Intermediate"
 subcategory: "Modular settlement layers"
-title: "Modular settlement layers"
+title: "Settlement in the modular stack"
 description: "Settlement layers in the modular paradigm."
 ---
 
@@ -15,11 +15,10 @@ description: "Settlement layers in the modular paradigm."
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@CelestiaOrg">
   <meta name="twitter:creator" content="@likebeckett">
-  <meta name="twitter:title" content="Modular Settlement Layers">
-  <meta name="twitter:description" content="By beginning with the first principles of modular blockchains, their purpose and goals will become easier to understand.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/celestiaorg/celestia.org/main/src/pages/markdown-pages/learn/images/Learn_Modular_Twitter_Card%201.png">
+  <meta name="twitter:title" content="Settlement in the Modular Stack">
+  <meta name="twitter:description" content="A look at how settlement layers work in the modular paradigm.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/celestiaorg/celestia.org/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
 <head/>
-
 
 #### Summary 
 * Settlement layers provide multiple purposes for rollups, which include proof verification & dispute resolution, a hub to facilitate cross-rollup bridging, and a source of liquidity.

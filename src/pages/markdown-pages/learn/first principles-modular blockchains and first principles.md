@@ -1,13 +1,13 @@
 ---
 order: 1
 path: "/learn/"
-slug: "/learn/first-principles-of-modular-blockchains"
-edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn/first-principles-of-modular-blockchains.md"
+slug: "/learn/first-principles/modular-blockchains-and-first-principles"
+edit: "https://github.com/celestiaorg/celestia.org/tree/main/src/pages/markdown-pages/learn/first-principles-modular-blockchains-and-first-principles.md"
 date: "2022-07-14"
-icon: "/images/first-principles-modular.png"
+icon: ""
 category: "Beginner"
-subcategory: "First Principles of Modular Blockchains"
-title: "First Principles of Modular Blockchains"
+subcategory: "First Principles"
+title: "Modular blockchains and first principles"
 description: "A first principles perspective on modular blockchains."
 ---
 
@@ -15,9 +15,9 @@ description: "A first principles perspective on modular blockchains."
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@CelestiaOrg">
   <meta name="twitter:creator" content="@likebeckett">
-  <meta name="twitter:title" content="First Principles of Modular Blockchains">
-  <meta name="twitter:description" content="By beginning with the first principles of modular blockchains, their purpose and goals will become easier to understand.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/celestiaorg/celestia.org/main/src/pages/markdown-pages/learn/images/Learn_Modular_Twitter_Card%201.png">
+  <meta name="twitter:title" content="Modular blockchains and first principles">
+  <meta name="twitter:description" content="A first principles perspective on modular blockchains.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/celestiaorg/celestia.org/main/src/pages/markdown-pages/learn/images/learn-modular-twitter-card.png">
 <head/>
 
 #### Summary
@@ -38,7 +38,7 @@ As users increase, blockchains must also increase the number of transactions the
 
 Transaction throughput measures how many transactions a blockchain can process, commonly referred to as transactions per second (TPS). To scale, a blockchain must increase the number of transactions it can process without an equal increase in the cost to operate a secure node. 
 
-![GATSBY_EMPTY_ALT](./images/article-5-image-1.png)
+![GATSBY_EMPTY_ALT](./images/Scalability-equation.png)
 
 If a blockchain can increase the number of transactions it processes without equally increasing the cost for nodes to verify the transactions, it is scaling. Scalability is a core property of modular blockchains which ensures they can increase capacity without making it costly for users to verify the network. Technologies like fraud proofs, validity proofs, and <a href="https://celestia.org/glossary/data-availability-sampling/" target="_blank" rel="noopener noreferrer" style="color:#7B2BF9;">data availability sampling</a> used in the modular blockchain stack enable nodes to verify transactions more efficiently than full nodes while maintaining equivalent security.
 
