@@ -1,8 +1,9 @@
 ---
-path: "/resources/"
-slug: "/resources/contribute"
+path: "/celestia/"
+slug: "/celestia/contribute"
 edit: "https://github.com/celestiaorg/celestia.org/blob/main/src/pages/markdown-pages/resources/contribute.md"
 title: "Contribute"
+sidemenu: "true"
 ---
 
 The Celestia community is made up of many individuals with a wide range of skillsets. If you’re interested in getting involved with Celestia, here’s a list of suggestions to help you get started. <br>
